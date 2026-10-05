@@ -1,0 +1,177 @@
+/* AI 生产力飞轮 */
+.fw__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 4px;
+  font-size: var(--fs-small);
+  color: var(--muted);
+}
+
+.fw__wheel {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fw-spin 60s linear infinite;
+}
+.fw.is-fast .fw__wheel {
+  animation-duration: 24s;
+}
+.fw.is-paused .fw__wheel {
+  animation-play-state: paused;
+}
+@keyframes fw-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.fw__rim {
+  fill: none;
+  stroke: var(--grid);
+  stroke-dasharray: 2 6;
+}
+.fw__cog {
+  stroke: var(--grid);
+  stroke-width: 2px;
+}
+
+.fw__track {
+  fill: none;
+  stroke-width: 2px;
+  stroke-opacity: 0.14;
+  stroke-dasharray: 2 5;
+}
+.fw__flow {
+  fill: none;
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-opacity: 0.85;
+}
+.fw__edge--fb .fw__flow {
+  stroke-width: 3.5px;
+}
+.chart .fw__elabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+
+.fw__spoke {
+  fill: none;
+  stroke: var(--worker);
+  stroke-width: 1.5px;
+  stroke-opacity: 0.6;
+  stroke-dasharray: 4 5;
+}
+
+.fw__particle {
+  pointer-events: none;
+}
+
+.fw__node {
+  cursor: default;
+}
+.fw__core {
+  stroke-width: 2px;
+}
+.fw__halo {
+  fill: none;
+  stroke-width: 1px;
+  stroke-opacity: 0;
+  stroke-dasharray: 2 4;
+  transition: stroke-opacity 0.4s;
+}
+.fw__node.is-on .fw__halo {
+  stroke-opacity: 0.6;
+}
+.chart .fw__name {
+  fill: var(--text);
+  font-weight: 800;
+  pointer-events: none;
+}
+.chart .fw__factor {
+  font-size: 11px;
+  fill: var(--muted);
+  pointer-events: none;
+}
+
+/* 证据卡片 */
+.fw__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+.fw__card {
+  position: relative;
+  padding: 10px 12px 10px;
+  border: 1px solid var(--border);
+  border-top: 2px solid var(--c);
+  border-radius: 10px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--c) 9%, var(--panel-2)), var(--panel-2));
+  transition:
+    opacity 0.4s,
+    filter 0.4s;
+}
+.fw__card.is-dim {
+  opacity: 0.35;
+  filter: saturate(0.3);
+}
+.fw__card-head {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+}
+.fw__card-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--c);
+  box-shadow: 0 0 8px var(--c);
+}
+.fw__card-name {
+  font-weight: 800;
+  color: var(--text);
+}
+.fw__card-factor {
+  margin-left: auto;
+  font-size: 11px;
+  color: var(--faint);
+}
+.fw__card-value {
+  margin-top: 4px;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+.fw__card-num {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--c);
+}
+.fw__card-unit {
+  margin-left: 4px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.fw__card-text {
+  margin-top: 6px;
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--text);
+}
+.fw__card-cap {
+  margin: 4px 0 0;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--faint);
+}
+.fw__card-date {
+  white-space: nowrap;
+  font-family: var(--font-mono);
+}

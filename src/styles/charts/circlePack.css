@@ -1,0 +1,170 @@
+/* 生成式 AI 专利数据类型圆堆积 + 圆内图标动画 */
+.circle-pack .cp-node {
+  cursor: pointer;
+}
+.circle-pack .cp-node:focus-visible .cp-circle {
+  stroke: var(--text);
+  stroke-width: 2.5px;
+}
+.circle-pack .cp-node.is-active .cp-circle {
+  fill-opacity: 0.32;
+}
+.circle-pack .cp-name {
+  fill: var(--text);
+  font-weight: 600;
+  pointer-events: none;
+}
+.circle-pack .cp-val {
+  fill: var(--text);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+}
+.circle-pack .cp-pulse {
+  fill: none;
+  stroke-width: 2px;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: cp-pulse 2.4s ease-out infinite;
+  pointer-events: none;
+}
+@keyframes cp-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1.7);
+    opacity: 0;
+  }
+}
+.circle-pack .cp-leader {
+  fill: none;
+  stroke: var(--orange);
+  stroke-width: 1.25px;
+  stroke-dasharray: 3 3;
+}
+.circle-pack .cp-c-name {
+  fill: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+}
+.circle-pack .cp-c-val {
+  fill: var(--muted);
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.circle-pack .cp-c-growth {
+  fill: var(--orange);
+  font-size: 30px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.circle-pack .cp-c-sub {
+  fill: var(--muted);
+  font-size: 12px;
+}
+
+/* ---------- 图标：静止时半透明，悬停/聚焦时播放 ---------- */
+.circle-pack .cp-icon {
+  pointer-events: none;
+  opacity: 0.45;
+  transition: opacity 0.3s;
+}
+.circle-pack .cp-node.is-active .cp-icon {
+  opacity: 1;
+}
+.circle-pack .ic * {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.circle-pack .ic-frame {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2px;
+}
+.circle-pack .ic-sun,
+.circle-pack .ic-hill,
+.circle-pack .ic-line,
+.circle-pack .ic-bar,
+.circle-pack .ic-atom {
+  fill: currentColor;
+}
+.circle-pack .ic-hill {
+  fill-opacity: 0.7;
+}
+.circle-pack .ic-bond {
+  stroke: currentColor;
+  stroke-width: 2px;
+}
+.circle-pack .ic-line {
+  transform-origin: left center;
+}
+.circle-pack .ic-rot {
+  transform-box: view-box;
+  transform-origin: 0 0;
+}
+.circle-pack .is-active .ic-sun {
+  animation: ic-sun 1.6s ease-in-out infinite alternate;
+}
+.circle-pack .is-active .ic-frame {
+  animation: ic-frame 1.6s ease-in-out infinite alternate;
+}
+.circle-pack .is-active .ic-line {
+  animation: ic-type 1.4s ease-out infinite;
+}
+.circle-pack .is-active .ic-bar {
+  animation: ic-wave 0.9s ease-in-out infinite alternate;
+}
+.circle-pack .is-active .ic-rot {
+  animation: ic-spin 4s linear infinite;
+}
+.circle-pack .is-active .ic-atom {
+  animation: ic-atom 1.2s ease-in-out infinite alternate;
+}
+@keyframes ic-sun {
+  from {
+    transform: translateY(6px) scale(0.7);
+  }
+  to {
+    transform: translateY(-2px) scale(1.15);
+  }
+}
+@keyframes ic-frame {
+  from {
+    transform: scale(0.94);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+@keyframes ic-type {
+  0% {
+    transform: scaleX(0);
+  }
+  60%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes ic-wave {
+  from {
+    transform: scaleY(0.25);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes ic-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes ic-atom {
+  from {
+    transform: scale(0.75);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}

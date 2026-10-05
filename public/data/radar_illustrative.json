@@ -1,0 +1,74 @@
+{
+  "id": "radar_illustrative",
+  "title": "传统生产力 vs 新质生产力（示意）",
+  "title_en": "Traditional vs new quality productive forces (illustrative)",
+  "illustrative": true,
+  "notes": "示意，非统计数据：1–5 分为定性对比，仅用于说明概念框架。",
+  "notes_en": "Illustrative, not statistical data: the 1–5 scores are qualitative comparisons used only to explain the conceptual framework.",
+  "axes": [
+    {
+      "key": "worker",
+      "label": "劳动者技能",
+      "label_en": "Worker skills",
+      "factor": "worker"
+    },
+    {
+      "key": "tool",
+      "label": "劳动资料智能化",
+      "label_en": "Intelligent means of labour",
+      "factor": "tool"
+    },
+    {
+      "key": "object",
+      "label": "劳动对象广度",
+      "label_en": "Breadth of objects of labour",
+      "factor": "object"
+    },
+    {
+      "key": "combo",
+      "label": "要素协同",
+      "label_en": "Factor synergy",
+      "factor": "combo"
+    },
+    {
+      "key": "innovation",
+      "label": "创新驱动",
+      "label_en": "Innovation-driven",
+      "factor": "combo"
+    },
+    {
+      "key": "green",
+      "label": "绿色低碳",
+      "label_en": "Green and low-carbon",
+      "factor": "combo"
+    }
+  ],
+  "series": [
+    {
+      "name": "传统生产力",
+      "name_en": "Traditional productive forces",
+      "values": {
+        "worker": 2,
+        "tool": 2,
+        "object": 2,
+        "combo": 2,
+        "innovation": 2,
+        "green": 2
+      },
+      "source_id": "illustrative"
+    },
+    {
+      "name": "新质生产力",
+      "name_en": "New quality productive forces",
+      "values": {
+        "worker": 4,
+        "tool": 5,
+        "object": 5,
+        "combo": 4,
+        "innovation": 5,
+        "green": 4
+      },
+      "source_id": "illustrative"
+    }
+  ]
+}

@@ -1,0 +1,1236 @@
+[
+  {
+    "id": "politburo_2024_01",
+    "org": "新华社（中国政府网）",
+    "org_en": "Xinhua News Agency (gov.cn)",
+    "title": "中央政治局第十一次集体学习",
+    "title_en": "11th group study session of the CPC Central Committee Political Bureau",
+    "date": "2024-02-01",
+    "url": "https://www.gov.cn/yaowen/liebiao/202402/content_6929446.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1
+    ],
+    "quote": "以劳动者、劳动资料、劳动对象及其优化组合的跃升为基本内涵，以全要素生产率大幅提升为核心标志，特点是创新，关键在质优，本质是先进生产力。",
+    "quote_en": "Its basic connotation is the leap in workers, means of labour, objects of labour and their optimal combination; its core hallmark is a substantial increase in total factor productivity; its defining feature is innovation, its key lies in quality, and its essence is advanced productive forces.",
+    "summary": "2024-01-31 中央政治局第十一次集体学习，新华社 2024-02-01 电。同文：“新质生产力本身就是绿色生产力。”",
+    "summary_en": "Group study session held on 2024-01-31; Xinhua dispatch dated 2024-02-01. The same text states: “New quality productive forces are in themselves green productive forces.”"
+  },
+  {
+    "id": "xi_heilongjiang_2023_09",
+    "org": "新华社",
+    "org_en": "Xinhua News Agency",
+    "title": "习近平总书记在黑龙江考察（新时代推动东北全面振兴座谈会等）",
+    "title_en": "General Secretary Xi Jinping's inspection tour of Heilongjiang (including the symposium on promoting the full revitalisation of Northeast China in the new era)",
+    "date": "2023-09-08",
+    "url": "https://www.news.cn/politics/leaders/2023-09/08/c_1129853312.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1
+    ],
+    "summary": "2023-09-06 至 08 在黑龙江考察，首次提出“新质生产力”；新华社《第一观察》2023-09-10 亦有报道。",
+    "summary_en": "Inspection of Heilongjiang from 2023-09-06 to 08, where “new quality productive forces” was proposed for the first time; also reported in Xinhua’s “First Observation” on 2023-09-10.",
+    "quote": "整合科技创新资源，引领发展战略性新兴产业和未来产业，加快形成新质生产力。",
+    "quote_en": "Integrate scientific and technological innovation resources, lead the development of strategic emerging industries and future industries, and accelerate the formation of new quality productive forces."
+  },
+  {
+    "id": "cewc_2023_12",
+    "org": "新华社",
+    "org_en": "Xinhua News Agency",
+    "title": "2023 年中央经济工作会议",
+    "title_en": "2023 Central Economic Work Conference",
+    "date": "2023-12-12",
+    "url": "https://www.news.cn/politics/leaders/2023-12/12/c_1130022917.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1
+    ],
+    "quote": "要以科技创新推动产业创新，特别是以颠覆性技术和前沿技术催生新产业、新模式、新动能，发展新质生产力。",
+    "quote_en": "We must use scientific and technological innovation to drive industrial innovation, especially using disruptive and frontier technologies to spawn new industries, new models and new growth drivers, and develop new quality productive forces.",
+    "summary": "2023-12-11 至 12 日召开。",
+    "summary_en": "Held on 11–12 December 2023."
+  },
+  {
+    "id": "ndrc_eastdata_2022",
+    "org": "国家发展改革委",
+    "org_en": "National Development and Reform Commission (NDRC)",
+    "title": "“东数西算”工程全面启动：8 个国家算力枢纽节点、10 个国家数据中心集群",
+    "title_en": "East Data, West Computing launched in full: 8 national computing hubs and 10 national data-centre clusters",
+    "date": "2022-02-17",
+    "url": "https://www.ndrc.gov.cn/xxgk/jd/jd/202202/t20220217_1315795.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1,
+      2
+    ],
+    "summary": "8 枢纽：内蒙古、宁夏、甘肃、成渝、贵州、京津冀、长三角、粤港澳；10 集群：张家口、长三角生态绿色一体化发展示范区、芜湖、韶关、天府、重庆、贵安、和林格尔、庆阳、中卫。集群内数据中心平均上架率目标至少 65%。",
+    "summary_en": "8 hubs: Inner Mongolia, Ningxia, Gansu, Chengdu–Chongqing, Guizhou, Beijing–Tianjin–Hebei, the Yangtze River Delta and the Guangdong–Hong Kong–Macao Greater Bay Area; 10 clusters: Zhangjiakou, the Yangtze River Delta Eco-Green Integrated Development Demonstration Zone, Wuhu, Shaoguan, Tianfu, Chongqing, Gui'an, Horinger, Qingyang and Zhongwei. Target average rack utilisation of data centres within clusters: at least 65%.",
+    "quote": "集群内数据中心的平均上架率至少要达到65%以上",
+    "quote_en": "The average rack utilisation of data centres within the clusters should reach at least 65%"
+  },
+  {
+    "id": "cac_genai_measures_2023",
+    "org": "国家互联网信息办公室等七部门",
+    "org_en": "Cyberspace Administration of China and six other departments",
+    "title": "《生成式人工智能服务管理暂行办法》",
+    "title_en": "Interim Measures for the Management of Generative Artificial Intelligence Services",
+    "date": "2023-07-10",
+    "url": "https://www.gov.cn/zhengce/zhengceku/202307/content_6891752.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1
+    ],
+    "summary": "2023-07-10 公布，2023-08-15 起施行。",
+    "summary_en": "Published on 2023-07-10; in force from 2023-08-15.",
+    "quote": "现予公布，自2023年8月15日起施行。",
+    "quote_en": "They are hereby published and shall take effect on 15 August 2023."
+  },
+  {
+    "id": "miit_compute_plan_2023",
+    "org": "工业和信息化部等六部门",
+    "org_en": "Ministry of Industry and Information Technology (MIIT) and five other departments",
+    "title": "《算力基础设施高质量发展行动计划》",
+    "title_en": "Action Plan for the High-Quality Development of Computing Infrastructure",
+    "date": "2023-10-09",
+    "url": "https://www.gov.cn/zhengce/zhengceku/202310/P020231009520949915888.pdf",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1,
+      2
+    ],
+    "summary": "到 2025 年算力规模超过 300 EFLOPS，智能算力占比达到 35%。",
+    "summary_en": "By 2025, total computing power to exceed 300 EFLOPS, with AI computing power making up 35%.",
+    "quote": "到2025年，计算力方面，算力规模超过300 EFLOPS，智能算力占比达到35%，东西部算力平衡协调发展。",
+    "quote_en": "By 2025, in terms of computing power, total computing power will exceed 300 EFLOPS, AI computing power will account for 35%, and computing power in the east and west will develop in a balanced and coordinated way."
+  },
+  {
+    "id": "gov_report_2024",
+    "org": "国务院",
+    "org_en": "State Council",
+    "title": "2024 年政府工作报告",
+    "title_en": "2024 Government Work Report",
+    "date": "2024-03-05",
+    "url": "https://www.gov.cn/yaowen/liebiao/202403/content_6939153.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1
+    ],
+    "summary": "首次提出开展“人工智能+”行动。",
+    "summary_en": "Proposed the “AI Plus” initiative for the first time.",
+    "quote": "深化大数据、人工智能等研发应用，开展“人工智能+”行动，打造具有国际竞争力的数字产业集群。",
+    "quote_en": "Deepen R&D and application of big data, artificial intelligence and other technologies, launch the “AI Plus” initiative, and build internationally competitive digital industry clusters."
+  },
+  {
+    "id": "mohrss_2024_new_jobs",
+    "org": "人力资源社会保障部",
+    "org_en": "Ministry of Human Resources and Social Security",
+    "title": "人社部发布 19 个新职业、28 个新工种",
+    "title_en": "Ministry of Human Resources and Social Security announces 19 new occupations and 28 new job types",
+    "date": "2024-07-31",
+    "url": "https://www.gov.cn/lianbo/bumen/202407/content_6965550.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1,
+      5
+    ],
+    "summary": "新职业例子见科技日报（新华网转载，2024-08-19）。新华社中文稿原文：2023 年 10 月公开征集新职业信息，“共收到新职业建议书430余份，是2021年申报量的2倍多”（英文稿见 english.www.gov.cn，2024-05-25）。",
+    "summary_en": "Examples of the new occupations come from Science and Technology Daily (reposted by Xinhuanet, 2024-08-19). The Chinese Xinhua original states that the October 2023 public call for new occupations “received more than 430 proposals, more than twice the number submitted in 2021” (English version at english.www.gov.cn, 2024-05-25).",
+    "quote": "正式发布了生物工程技术人员等19个新职业和汽配销售经理人等28个新工种信息",
+    "quote_en": "Officially released information on 19 new occupations, including bioengineering technicians, and 28 new job types, including auto-parts sales managers"
+  },
+  {
+    "id": "gov_ai_plus_2025",
+    "org": "国务院",
+    "org_en": "State Council",
+    "title": "《国务院关于深入实施“人工智能+”行动的意见》（国发〔2025〕11号）",
+    "title_en": "Opinions of the State Council on Deepening the Implementation of the “AI Plus” Initiative (Guo Fa [2025] No. 11)",
+    "date": "2025-08-26",
+    "url": "https://www.gov.cn/zhengce/content/202508/content_7037861.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1,
+      11
+    ],
+    "summary": "2025-08-21 印发、08-26 公布。到 2027 年新一代智能终端、智能体等应用普及率超 70%，到 2030 年超 90%，到 2035 年全面步入智能经济和智能社会发展新阶段。六大行动：科学技术、产业发展、消费提质、民生福祉、治理能力、全球合作。",
+    "summary_en": "Issued on 2025-08-21 and published on 08-26. By 2027 the adoption rate of new-generation intelligent terminals, AI agents and similar applications should exceed 70%, by 2030 exceed 90%, and by 2035 China should fully enter a new stage of development as an intelligent economy and intelligent society. Six major actions: science and technology, industrial development, consumption upgrading, people’s livelihood and well-being, governance capacity, and global cooperation.",
+    "quote": "到2027年，……新一代智能终端、智能体等应用普及率超70%……到2030年，……新一代智能终端、智能体等应用普及率超90%",
+    "quote_en": "By 2027, … the adoption rate of new-generation intelligent terminals, AI agents and similar applications will exceed 70% … by 2030, … the adoption rate of new-generation intelligent terminals, AI agents and similar applications will exceed 90%"
+  },
+  {
+    "id": "ifr_15th_fyp_2026",
+    "org": "国际机器人联合会（IFR）",
+    "org_en": "International Federation of Robotics (IFR)",
+    "title": "IFR 关于中国“十五五”规划与机器人产业的评述",
+    "title_en": "IFR commentary on China's 15th Five-Year Plan and the robotics industry",
+    "date": "2026-05-05",
+    "url": "https://ifr.org/ifr-press-releases/news/china-makes-ai-powered-robots-core-of-national-strategy",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      1
+    ],
+    "summary": "IFR 指出“十五五”规划（2026–2030）把机器人置于现代产业体系核心。",
+    "summary_en": "The IFR notes that the 15th Five-Year Plan (2026–2030) places robotics at the heart of the modern industrial system.",
+    "quote": "China has launched its 15th Five-Year Plan by placing robotics at the heart of its modern industrial system."
+  },
+  {
+    "id": "miit_2023_dc",
+    "org": "人民日报（中国政府网转载），数据来自工业和信息化部",
+    "org_en": "People's Daily (reposted on gov.cn), data from MIIT",
+    "title": "全国在用数据中心与算力总规模（2023 年 6 月底）",
+    "title_en": "Data centres in use and total computing power nationwide (end-June 2023)",
+    "date": "2023-08-21",
+    "url": "https://www.gov.cn/yaowen/liebiao/202308/content_6899199.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      2
+    ],
+    "summary": "在用数据中心机架总规模超过 760 万标准机架，算力总规模达到 197 EFLOPS，位居全球第二。",
+    "summary_en": "Total racks in data centres in use exceeded 7.6 million standard racks, and total computing power reached 197 EFLOPS, ranking second in the world.",
+    "quote": "截至今年6月底，全国在用数据中心机架总规模超过760万标准机架，算力总规模达到197百亿亿次/秒（EFLOPS）",
+    "quote_en": "As of the end of June this year, the total number of racks in data centres in use nationwide exceeded 7.6 million standard racks, and total computing power reached 197 EFLOPS (10^18 operations per second)"
+  },
+  {
+    "id": "miit_2025_conf",
+    "org": "工业和信息化部（2025 中国算力大会，经济参考报 / 新华网）",
+    "org_en": "MIIT (2025 China Computing Power Conference, via Economic Information Daily / Xinhuanet)",
+    "title": "全国算力中心建设进展（2025 年 6 月底）",
+    "title_en": "Progress in building computing centres nationwide (end-June 2025)",
+    "date": "2025-08-25",
+    "url": "https://www.xinhuanet.com/tech/20250825/e0c74211b58d40048e0bbd278b0bfcef/c.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      2
+    ],
+    "summary": "在用算力中心标准机架达 1085 万架，智能算力规模 788 EFLOPS（FP16），全国算力中心平均 PUE 降至 1.42。",
+    "summary_en": "Standard racks in computing centres in use reached 10.85 million, AI computing power 788 EFLOPS (FP16), and the national average PUE of computing centres fell to 1.42.",
+    "quote": "截至今年6月底，我国智能算力规模达788EFLOPS（每秒百亿亿次浮点运算，FP16半精度）",
+    "quote_en": "As of the end of June this year, China's AI computing power reached 788 EFLOPS (10^18 floating-point operations per second, FP16 half precision)"
+  },
+  {
+    "id": "nda_digital_china_2025",
+    "org": "国家数据局",
+    "org_en": "National Data Administration",
+    "title": "《数字中国发展报告（2025年）》",
+    "title_en": "Digital China Development Report (2025)",
+    "date": "2026-05",
+    "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/0608/ff808081-9e81e648-019e-a78ceae4-00c3.pdf",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      0,
+      2,
+      4
+    ],
+    "summary": "报告 2026-04-29 发布、全文 2026-06-08 公开。另含：网民 11.25 亿；AI 解答问题/生成图片视频/生活助手用户 4.57/2.88/1.84 亿；40 岁以下中青年用户占 74.6%；截至 2025 年底累计建成 3.5 万余家基础级、8200 余家先进级、500 余家卓越级智能工厂，培育 15 家领航级智能工厂；枢纽地区新增算力占全国新增 80% 以上；超大型算力设施平均 PUE 降至 1.34。",
+    "summary_en": "Report released on 2026-04-29, full text published on 2026-06-08. Also includes: 1.125 billion internet users; users using AI to answer questions / generate images and video / as an everyday assistant: 457 / 288 / 184 million; young and middle-aged users under 40 make up 74.6%; by the end of 2025, more than 35,000 basic-level, more than 8,200 advanced-level and more than 500 excellence-level smart factories had been built, and 15 pioneer-level smart factories cultivated; hub regions accounted for over 80% of new computing power added nationwide; the average PUE of hyperscale computing facilities fell to 1.34.",
+    "quote": "截至2025年底，全国在用算力设施机架数超过1373万标准机架，建成万卡智算集群42个，智能算力规模达到159万PFLOPS（FP16，下同），位居全球第二。",
+    "quote_en": "As of the end of 2025, racks in computing facilities in use nationwide exceeded 13.73 million standard racks, 42 ten-thousand-card AI computing clusters had been built, and AI computing power reached 1.59 million PFLOPS (FP16, same below), ranking second in the world."
+  },
+  {
+    "id": "miit_2026_06",
+    "org": "工业和信息化部（国新办新闻发布会，新华社报道）",
+    "org_en": "MIIT (State Council Information Office press conference, reported by Xinhua)",
+    "title": "全国智能算力规模与区域分布（2026 年 6 月底）",
+    "title_en": "National AI computing power and its regional distribution (end-June 2026)",
+    "date": "2026-07-20",
+    "url": "https://www.news.cn/tech/20260720/63025e398f234092b9876272271417fb/c.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      2
+    ],
+    "summary": "区域占比见新华财经同日报道：“东部、中部、西部、东北地区智算规模占全国比例分别是55.9%、10.6%、32.6%、0.9%。”（https://www.cnfin.com/yw-lb/detail/20260720/4442803_1.html）",
+    "summary_en": "Regional shares are from a Xinhua Finance report on the same day: “The eastern, central, western and northeastern regions account for 55.9%, 10.6%, 32.6% and 0.9% of national AI computing power respectively.” (https://www.cnfin.com/yw-lb/detail/20260720/4442803_1.html)",
+    "quote": "截至6月底，智能算力规模达2185EFLOPS（FP16），同比增长177%；全国算力设施整体上架率达71.4%。",
+    "quote_en": "As of the end of June, AI computing power reached 2,185 EFLOPS (FP16), up 177% year on year; overall rack utilisation of computing facilities nationwide reached 71.4%."
+  },
+  {
+    "id": "caict_compute_bluebook_2025",
+    "org": "中国信息通信研究院",
+    "org_en": "China Academy of Information and Communications Technology (CAICT)",
+    "title": "《先进计算暨算力发展指数蓝皮书（2025年）》",
+    "title_en": "Blue Book on the Advanced Computing and Computing Power Development Index (2025)",
+    "date": "2026-03",
+    "url": "https://www.caict.ac.cn/kxyj/qwfb/bps/202603/P020260306392232241580.pdf",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      2
+    ],
+    "summary": "编号 No.202522。全球计算设备算力 4495 EFlops；中国 962 EFlops（FP32），全球占比约 21%；中国智能算力 782 EFlops（换算为 FP32，+96%），与工信部 FP16 口径不可比；2024 年 AI 服务器出货 63 万台（+93%）。",
+    "summary_en": "No. 202522. Global computing-device computing power 4,495 EFlops; China 962 EFlops (FP32), about 21% of the global total; China's AI computing power 782 EFlops (converted to FP32, +96%), not comparable with MIIT's FP16 figures; AI server shipments of 630,000 units in 2024 (+93%).",
+    "quote": "截至2025年6月，计算设备智能算力规模达到782 EFlops（换算为FP32），同比增长96%",
+    "quote_en": "As of June 2025, the AI computing power of computing devices reached 782 EFlops (converted to FP32), up 96% year on year"
+  },
+  {
+    "id": "eastdata_progress_2025",
+    "org": "国家数据局《数字中国发展报告（2025年）》",
+    "org_en": "National Data Administration, Digital China Development Report (2025)",
+    "title": "“东数西算”2025 年进展",
+    "title_en": "East Data, West Computing: progress in 2025",
+    "date": "2026-05",
+    "url": "https://www.nda.gov.cn/sjj/swdt/xwfb/0608/ff808081-9e81e648-019e-a78ceae4-00c3.pdf",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      2,
+      10
+    ],
+    "summary": "PDF 第 15 页；同页：“截至2025年底，全国超大型算力设施平均电能利用效率（PUE）降至1.34”。注意 2025 年的政策目标为新增算力 60% 以上在枢纽集聚，80% 为实际完成值。",
+    "summary_en": "PDF page 15; the same page states: “By the end of 2025, the average power usage effectiveness (PUE) of hyperscale computing facilities nationwide fell to 1.34.” Note that the 2025 policy target was for over 60% of new computing power to be concentrated in hubs; 80% is the actual result.",
+    "quote": "枢纽地区各类新增算力占全国新增算力的80%以上",
+    "quote_en": "New computing power of all types in hub regions accounted for over 80% of new computing power added nationwide"
+  },
+  {
+    "id": "geo_tianditu",
+    "org": "国家地理信息公共服务平台（天地图）/ 国家基础地理信息中心",
+    "org_en": "National Platform for Common GeoSpatial Information Services (Tianditu) / National Geomatics Center of China",
+    "title": "行政区划可视化 · 省级行政区划数据",
+    "title_en": "Administrative division visualisation · provincial administrative division data",
+    "date": "2025-09",
+    "url": "https://cloudcenter.tianditu.gov.cn/administrativeDivision",
+    "reliability": "A",
+    "manual": false,
+    "chapter": [
+      2,
+      9
+    ],
+    "quote": "审图号：GS（2026）4921号",
+    "quote_en": "Map approval number: GS (2026) 4921",
+    "summary": "页面标注：数据更新时间 2025 年 9 月；该数据仅供地图可视化使用。CGCS2000 坐标系，含 34 个省级行政区、南海诸岛及断续线。本站仅将坐标保留 4 位小数，未修改边界。",
+    "summary_en": "Page notes: data updated September 2025; for map visualisation only. CGCS2000 coordinate system, covering 34 provincial-level administrative divisions, the South China Sea Islands and the dashed line. This site only rounds coordinates to 4 decimal places and does not modify any boundary."
+  },
+  {
+    "id": "tianditu_basemap",
+    "org": "国家地理信息公共服务平台（天地图）",
+    "org_en": "National Platform for Common GeoSpatial Information Services (Tianditu)",
+    "title": "天地图在线地图服务（WMTS 矢量/影像底图、全球境界与注记）",
+    "title_en": "Tianditu online map service (WMTS vector/imagery base maps, global boundaries and annotations)",
+    "date": "2026",
+    "url": "https://www.tianditu.gov.cn/",
+    "reliability": "A",
+    "manual": false,
+    "chapter": [
+      9
+    ],
+    "quote": "审图号：GS（2026）4921号",
+    "quote_en": "Map approval number: GS (2026) 4921",
+    "summary": "世界地图与 3D 地球的底图直接使用天地图在线瓦片服务（需在 .env.local 配置 VITE_TDT_TK 浏览器端 Key）；本站只在其上叠加数据符号，不绘制、不修改任何边界。未配置 Key 时只显示经纬网、数据点与天地图中国行政区划轮廓。",
+    "summary_en": "The base maps of the world map and 3D globe use Tianditu online tile services directly (a browser-side key VITE_TDT_TK must be set in .env.local); this site only overlays data symbols and does not draw or modify any boundary. Without a key, only the graticule, data points and the Tianditu outline of China’s administrative divisions are shown."
+  },
+  {
+    "id": "coords_approx",
+    "org": "本站整理",
+    "org_en": "Compiled by this site",
+    "title": "枢纽与集群坐标（城市中心近似点）",
+    "title_en": "Hub and cluster coordinates (approximate city-centre points)",
+    "date": "2026",
+    "url": "",
+    "reliability": "S",
+    "manual": true,
+    "chapter": [
+      2
+    ],
+    "summary": "坐标取所在城市或区域中心的近似点，仅用于地图定位，不代表数据中心精确位置；东西部之间的弧线为示意流向。",
+    "summary_en": "Coordinates are approximate centre points of the city or area, used only for map placement; they do not represent the exact locations of data centres. Arcs between east and west show illustrative flow directions."
+  },
+  {
+    "id": "ai_dev_report_2023",
+    "org": "《中国新一代人工智能科技产业发展报告2023》",
+    "org_en": "China New Generation AI Technology Industry Development Report 2023",
+    "title": "人工智能企业省份分布",
+    "title_en": "Distribution of AI companies by province",
+    "date": "2024-01-23",
+    "url": "https://m.bjnews.com.cn/detail/1705972871168128.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      2
+    ],
+    "summary": "报告原文：2200 家人工智能骨干企业中，北京 28.09%、广东 26.45%、上海 14.23%、浙江 8.95%、江苏 6.86%，前五省份合计 84.58%。数值已与报告原文核对；报告无公开网页，链接为新京报的转述报道。",
+    "summary_en": "Report original: of 2,200 leading AI companies, Beijing 28.09%, Guangdong 26.45%, Shanghai 14.23%, Zhejiang 8.95%, Jiangsu 6.86%; the top five provinces together account for 84.58%. Values checked against the report itself; the report has no public web page, so the link points to The Beijing News coverage.",
+    "quote": "在全国2200家AI骨干企业中，北京企业数量占比为28.09%，位居全国第一，其后为广东（26.45%）、上海（14.23%）、浙江（8.95%）、江苏（6.86%）。",
+    "quote_en": "Of the 2,200 leading AI companies nationwide, Beijing accounts for 28.09%, ranking first in the country, followed by Guangdong (26.45%), Shanghai (14.23%), Zhejiang (8.95%) and Jiangsu (6.86%)."
+  },
+  {
+    "id": "epoch_notable",
+    "org": "Epoch AI",
+    "title": "Notable AI Models 数据库",
+    "title_en": "Notable AI Models database",
+    "date": "2026-09",
+    "url": "https://epoch.ai/data/notable_ai_models.csv",
+    "reliability": "A",
+    "manual": false,
+    "chapter": [
+      3
+    ],
+    "summary": "字段：模型名、发布日期、组织、国家、参数量、训练算力（FLOP）。本站下载于 2026-10-01；中国香港、中国台湾的机构计入中国。各国逐年数量由本站按“机构所在国”统计（多国合作分别计入），与 AI Index 2026 引用的 2026-04 快照略有差异。",
+    "summary_en": "Fields: model name, publication date, organisation, country, parameters, training compute (FLOP). Downloaded by this site on 2026-10-01; organisations in Hong Kong, China and Taiwan, China are counted under China. Yearly counts by country are compiled by this site by “country of the organisation” (multinational collaborations counted for each country), and differ slightly from the 2026-04 snapshot cited by AI Index 2026."
+  },
+  {
+    "id": "cac_genai_2025_03",
+    "org": "国家互联网信息办公室",
+    "org_en": "Cyberspace Administration of China",
+    "title": "生成式人工智能服务已备案信息（截至 2025-03-31）",
+    "title_en": "Information on filed generative AI services (as of 2025-03-31)",
+    "date": "2025-04",
+    "url": "https://www.cac.gov.cn/2025-04/08/c_1745817775881843.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      3
+    ],
+    "summary": "累计 346 款生成式人工智能服务完成备案。",
+    "summary_en": "A cumulative 346 generative AI services had completed filing.",
+    "quote": "截至2025年3月31日，共有346款生成式人工智能服务在国家网信办完成备案；……共有159款生成式人工智能应用或功能在地方网信办完成登记。",
+    "quote_en": "As of 31 March 2025, a total of 346 generative AI services had completed filing with the Cyberspace Administration of China; … a total of 159 generative AI applications or features had completed registration with local cyberspace offices."
+  },
+  {
+    "id": "cac_genai_2025_11",
+    "org": "国家互联网信息办公室",
+    "org_en": "Cyberspace Administration of China",
+    "title": "生成式人工智能服务已备案信息（截至 2025-11-01）",
+    "title_en": "Information on filed generative AI services (as of 2025-11-01)",
+    "date": "2025-11",
+    "url": "https://www.cac.gov.cn/2025-11/11/c_1764585284364412.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      3
+    ],
+    "summary": "累计 611 款。",
+    "summary_en": "A cumulative 611 services.",
+    "quote": "截至11月1日，累计有611款生成式人工智能服务完成备案，306款生成式人工智能应用或功能完成登记。",
+    "quote_en": "As of 1 November, a cumulative 611 generative AI services had completed filing, and 306 generative AI applications or features had completed registration."
+  },
+  {
+    "id": "cac_genai_2025_12a",
+    "org": "人民日报（访中央网信办主任庄荣文）",
+    "org_en": "People's Daily (interview with Zhuang Rongwen, director of the Cyberspace Administration of China)",
+    "title": "推动网信事业高质量发展 开创网络强国建设新局面",
+    "title_en": "Promote high-quality development of cyberspace affairs and open up new prospects for building a strong cyber nation",
+    "date": "2025-12-02",
+    "url": "http://politics.people.com.cn/n1/2025/1202/c461001-40615302.html",
+    "reliability": "B",
+    "manual": true,
+    "chapter": [
+      3
+    ],
+    "summary": "网信办未发布截至 12 月 1 日的备案公告，该数字出自专访；专访未给出登记数。",
+    "summary_en": "The Cyberspace Administration of China issued no filing announcement as of 1 December; the figure comes from the interview, which gave no registration count.",
+    "quote": "截至2025年12月1日，已有663款大模型服务完成备案。",
+    "quote_en": "As of 1 December 2025, 663 large-model services had completed filing."
+  },
+  {
+    "id": "cac_genai_2025_12",
+    "org": "国家互联网信息办公室",
+    "org_en": "Cyberspace Administration of China",
+    "title": "生成式人工智能服务已备案信息（截至 2025-12-31）",
+    "title_en": "Information on filed generative AI services (as of 2025-12-31)",
+    "date": "2026-01",
+    "url": "https://www.cac.gov.cn/2026-01/09/c_1769688009588554.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      3
+    ],
+    "summary": "累计 748 款，其中 2025 年全年新增 446 款；另有 435 款应用或功能完成登记。",
+    "summary_en": "A cumulative 748 services, of which 446 were added during 2025; a further 435 applications or features had completed registration.",
+    "quote": "截至2025年12月31日，累计有748款生成式人工智能服务完成备案，435款生成式人工智能应用或功能完成登记。",
+    "quote_en": "As of 31 December 2025, a cumulative 748 generative AI services had completed filing, and 435 generative AI applications or features had completed registration."
+  },
+  {
+    "id": "cac_genai_2026_04",
+    "org": "国家互联网信息办公室",
+    "org_en": "Cyberspace Administration of China",
+    "title": "生成式人工智能服务已备案信息（2026年3–4月）",
+    "title_en": "Information on filed generative AI services (March–April 2026)",
+    "date": "2026-05",
+    "url": "https://www.cac.gov.cn/2026-05/13/c_1780413225190669.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      0,
+      3
+    ],
+    "quote": "截至4月30日，累计有868款生成式人工智能服务完成备案，530款生成式人工智能应用或功能完成登记。",
+    "quote_en": "As of 30 April, a cumulative 868 generative AI services had completed filing, and 530 generative AI applications or features had completed registration."
+  },
+  {
+    "id": "stanford_ai_index_2025",
+    "org": "Stanford HAI",
+    "title": "AI Index Report 2025",
+    "date": "2025-04",
+    "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      3,
+      9
+    ],
+    "summary": "2024 年 notable 模型：美国 40、中国 15、欧洲 3；2024 年私人 AI 投资：美国 1091 亿美元、中国 93 亿美元、英国 45 亿美元；第 1 章：2023 年中国 AI 论文占全球 23.2%、引用占 22.6%，均居首位，中国 AI 专利占全球授权量 69.7%。",
+    "summary_en": "Notable models in 2024: US 40, China 15, Europe 3; private AI investment in 2024: US $109.1 billion, China $9.3 billion, UK $4.5 billion; Chapter 1: in 2023 China accounted for 23.2% of global AI publications and 22.6% of citations, both ranking first, and 69.7% of global AI patents granted.",
+    "quote": "In 2024, U.S.-based institutions produced 40 notable AI models, compared to China’s 15 and Europe’s three."
+  },
+  {
+    "id": "stanford_ai_index_2026",
+    "org": "Stanford HAI",
+    "title": "AI Index Report 2026",
+    "date": "2026-04",
+    "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      0,
+      3,
+      9
+    ],
+    "summary": "2025 年 notable 模型：美国 59、中国 35、韩国 8、欧洲 2（数据：Epoch AI 2026-04-22 快照）；中美顶级模型性能差距 2.7%（2026 年 3 月 Arena 分数）；2025 年私人 AI 投资：美国 2859 亿美元、中国 124 亿美元，全球 3447 亿美元（+127.5%）；私人投资数据“likely understates”中国（政府引导基金未计入）。",
+    "summary_en": "Notable models in 2025: US 59, China 35, South Korea 8, Europe 2 (data: Epoch AI snapshot of 2026-04-22); performance gap between top US and Chinese models 2.7% (Arena scores, March 2026); private AI investment in 2025: US $285.9 billion, China $12.4 billion, global $344.7 billion (+127.5%); private investment data “likely understates” China (government guidance funds are not counted).",
+    "quote": "This pattern continued in 2025 as the United States led with the release of 59 notable AI models, China with 35, and South Korea with 8."
+  },
+  {
+    "id": "wipo_genai_2024",
+    "org": "世界知识产权组织（WIPO）",
+    "org_en": "World Intellectual Property Organization (WIPO)",
+    "title": "Patent Landscape Report – Generative Artificial Intelligence",
+    "date": "2024-07",
+    "url": "https://www.wipo.int/web-publications/patent-landscape-report-generative-artificial-intelligence-genai/en/index.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      0,
+      4,
+      7,
+      9
+    ],
+    "summary": "国家（发明人所在地）：中国 38,210、美国 6,276、韩国 4,155、日本 3,409、印度 1,350；数据类型：图像/视频 17,996、文本 13,494、语音/音乐 13,480、分子/基因/蛋白质 1,494（2018–2023 年均增长 78.8%）；应用行业（Figure 26）：生命科学 5,346、文档管理与出版 4,976、商业解决方案 4,801、工业与制造 2,522（附录 Table A2 作 2,528）、交通 2,267、安全 2,226、电信 2,194。",
+    "summary_en": "By country (inventor location): China 38,210, US 6,276, South Korea 4,155, Japan 3,409, India 1,350; by data type: image/video 17,996, text 13,494, speech/music 13,480, molecules/genes/proteins 1,494 (average annual growth of 78.8% in 2018–2023); by application industry (Figure 26): life sciences 5,346, document management and publishing 4,976, business solutions 4,801, industry and manufacturing 2,522 (2,528 in Appendix Table A2), transport 2,267, security 2,226, telecommunications 2,194.",
+    "quote": "Patent families in the other categories are smaller in number, with life sciences in second place (5,346 patent families between 2014 and 2023) and document management and publishing (4,976) in third place (Figure 26)."
+  },
+  {
+    "id": "alphafold_db",
+    "org": "EMBL-EBI / Google DeepMind",
+    "title": "AlphaFold Protein Structure Database",
+    "date": "2022",
+    "url": "https://alphafold.ebi.ac.uk/",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      4
+    ],
+    "summary": "数据库正文为“over 200 million entries”；首页标语已更新为“over 260 million protein structure predictions”（2026-10 访问）。",
+    "summary_en": "The database text says “over 200 million entries”; the homepage tagline has been updated to “over 260 million protein structure predictions” (accessed 2026-10).",
+    "quote": "The latest database release contains over 200 million entries, providing broad coverage of UniProt"
+  },
+  {
+    "id": "nobel_chem_2024",
+    "org": "诺贝尔基金会",
+    "org_en": "Nobel Foundation",
+    "title": "2024 年诺贝尔化学奖",
+    "title_en": "The Nobel Prize in Chemistry 2024",
+    "date": "2024-10-09",
+    "url": "https://www.nobelprize.org/prizes/chemistry/2024/summary/",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      4
+    ],
+    "summary": "授予蛋白质设计（David Baker）与蛋白质结构预测（Demis Hassabis、John Jumper）。",
+    "summary_en": "Awarded for protein design (David Baker) and protein structure prediction (Demis Hassabis, John Jumper).",
+    "quote": "The Nobel Prize in Chemistry 2024 was divided, one half awarded to David Baker \"for computational protein design\", the other half jointly to Demis Hassabis and John Jumper \"for protein structure prediction\""
+  },
+  {
+    "id": "nber_w31161",
+    "org": "NBER（Brynjolfsson, Li, Raymond）",
+    "org_en": "NBER (Brynjolfsson, Li, Raymond)",
+    "title": "Generative AI at Work（工作论文 w31161）",
+    "title_en": "Generative AI at Work (working paper w31161)",
+    "date": "2023-04",
+    "url": "https://www.nber.org/papers/w31161",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      5,
+      11
+    ],
+    "summary": "5,179 名客服。表 2 第 6 列首选设定 log 系数 0.138（SE 0.0199，按办公地点聚类）；本站据此推算 95% CI 约 +10.4% 至 +19.4%。",
+    "summary_en": "5,179 customer-support agents. Preferred specification in Table 2, column 6: log coefficient 0.138 (SE 0.0199, clustered by office location); this site derives a 95% CI of about +10.4% to +19.4% from it.",
+    "quote": "Access to the tool increases productivity, as measured by issues resolved per hour, by 14% on average, including a 34% improvement for novice and low-skilled workers"
+  },
+  {
+    "id": "qje_2025_brynjolfsson",
+    "org": "Quarterly Journal of Economics",
+    "title": "Generative AI at Work（QJE 2025 正式版）",
+    "title_en": "Generative AI at Work (QJE 2025, published version)",
+    "date": "2025",
+    "url": "https://doi.org/10.1093/qje/qjae044",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      5
+    ],
+    "summary": "QJE 140(2): 889–942；5,172 名客服、平均 +15%。正式版表格主规格系数 0.301（每小时解决问题数）、标准误 0.0329；本站据此计算 95% 置信区间约 [0.237, 0.365]，论文未直接列出。",
+    "summary_en": "QJE 140(2): 889–942; 5,172 customer-support agents, +15% on average. Main-specification coefficient in the published tables 0.301 (resolutions per hour), standard error 0.0329; from these this site computes a 95% confidence interval of about [0.237, 0.365], which the paper does not list itself.",
+    "quote": "Access to AI assistance increases worker productivity, as measured by issues resolved per hour, by 15% on average, with substantial heterogeneity across workers."
+  },
+  {
+    "id": "peng_2023_copilot",
+    "org": "arXiv 2302.06590（Peng 等）",
+    "org_en": "arXiv 2302.06590 (Peng et al.)",
+    "title": "The Impact of AI on Developer Productivity: Evidence from GitHub Copilot",
+    "date": "2023-02",
+    "url": "https://arxiv.org/abs/2302.06590",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      5,
+      11
+    ],
+    "summary": "95 名开发者随机分组（35 人完成任务与问卷）；完成时间缩短 55.8%，95% CI [21%, 89%]。",
+    "summary_en": "95 developers randomly assigned (35 completed the task and survey); completion time 55.8% shorter, 95% CI [21%, 89%].",
+    "quote": "the treated group completed the task 55.8% faster (95% confidence interval: 21-89%)."
+  },
+  {
+    "id": "noy_zhang_2023",
+    "org": "Science 381(6654)（Noy & Zhang）",
+    "org_en": "Science 381(6654) (Noy & Zhang)",
+    "title": "Experimental evidence on the productivity effects of generative artificial intelligence",
+    "date": "2023-07",
+    "url": "https://doi.org/10.1126/science.adh2586",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      5,
+      11
+    ],
+    "summary": "453 名受过大学教育的专业人员预注册实验（工作论文版为 444 人）。正式版：平均完成时间 −40%、质量 +18%；图中标准化效应为时间 −0.75 个标准差（95% CI [−0.95, −0.55]）、评分 +0.41 个标准差（95% CI [0.23, 0.59]），已与 MIT 工作论文材料交叉核对。",
+    "summary_en": "Pre-registered experiment with 453 college-educated professionals (444 in the working paper version). Published version: average completion time −40%, quality +18%; the standardised effects in the figure are −0.75 SD for time (95% CI [−0.95, −0.55]) and +0.41 SD for ratings (95% CI [0.23, 0.59]), cross-checked against the MIT working-paper materials.",
+    "quote": "The average time taken decreased by 40% and output quality rose by 18%."
+  },
+  {
+    "id": "metr_2025",
+    "org": "METR",
+    "title": "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity",
+    "date": "2025-07",
+    "url": "https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      5,
+      10
+    ],
+    "summary": "16 名资深开源开发者、246 个真实任务；论文 arXiv 2507.09089。95% CI [+2%, +39%]（METR 2026-02-24 更新文章）。",
+    "summary_en": "16 experienced open-source developers, 246 real tasks; paper arXiv 2507.09089. 95% CI [+2%, +39%] (METR update post of 2026-02-24).",
+    "quote": "Surprisingly, we find that allowing AI actually increases completion time by 19%—AI tooling slowed developers down."
+  },
+  {
+    "id": "wef_fojr_2025",
+    "org": "世界经济论坛（WEF）",
+    "org_en": "World Economic Forum (WEF)",
+    "title": "Future of Jobs Report 2025",
+    "date": "2025-01",
+    "url": "https://www.weforum.org/publications/the-future-of-jobs-report-2025/",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      5
+    ],
+    "summary": "PDF：https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf 。净增 7800 万（7%）；调查覆盖 1000 多家雇主、1400 多万员工、22 个行业集群、55 个经济体。",
+    "summary_en": "PDF: https://reports.weforum.org/docs/WEF_Future_of_Jobs_Report_2025.pdf . Net gain of 78 million (7%); the survey covers more than 1,000 employers, more than 14 million workers, 22 industry clusters and 55 economies.",
+    "quote": "In the next five years, 170 million jobs are projected to be created and 92 million jobs to be displaced, constituting a structural labour market churn of 22% of the 1.2 billion formal jobs in the dataset being studied."
+  },
+  {
+    "id": "imf_sdn_2024_001",
+    "org": "国际货币基金组织（IMF）",
+    "org_en": "International Monetary Fund (IMF)",
+    "title": "SDN/2024/001 Gen-AI: Artificial Intelligence and the Future of Work",
+    "date": "2024-01",
+    "url": "https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/01/14/Gen-AI-Artificial-Intelligence-and-the-Future-of-Work-542379",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      5,
+      10
+    ],
+    "summary": "发达经济体约 60%、新兴市场 40%、低收入国家 26%；英国约 70%、美国约 60%，新兴市场中巴西 41%、印度 26%。其余国家的数值未在报告中公布。",
+    "summary_en": "Advanced economies about 60%, emerging markets 40%, low-income countries 26%; UK about 70%, US about 60%; among emerging markets, Brazil 41% and India 26%. Values for other countries are not published in the report.",
+    "quote": "Almost 40 percent of global employment is exposed to AI, with advanced economies at greater risk but also better poised to exploit AI benefits than emerging market and developing economies."
+  },
+  {
+    "id": "illustrative",
+    "org": "本站示意",
+    "org_en": "Illustration by this site",
+    "title": "定性示意评分（非统计数据）",
+    "title_en": "Qualitative illustrative scores (not statistical data)",
+    "date": "2026",
+    "url": "",
+    "reliability": "S",
+    "manual": true,
+    "chapter": [
+      5,
+      6
+    ],
+    "summary": "用于概念示意的 1–5 分定性评分或示意结构，不代表任何统计结果。",
+    "summary_en": "Qualitative 1–5 scores or illustrative structures used to explain concepts; they do not represent any statistical result."
+  },
+  {
+    "id": "ifr_wr_2025",
+    "org": "国际机器人联合会（IFR）",
+    "org_en": "International Federation of Robotics (IFR)",
+    "title": "World Robotics 2025 新闻稿",
+    "title_en": "World Robotics 2025 press release",
+    "date": "2025-09",
+    "url": "https://ifr.org/ifr-press-releases/news/global-robot-demand-in-factories-doubles-over-10-years",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      0,
+      7
+    ],
+    "summary": "2024 年全球安装 54.2 万台；中国 29.5 万台（54%），运行存量 2,027,000 台，国产品牌本土份额 57%（2023 年 47%）；美国 34,200 台、日本 44,500 台、韩国 30,600 台、德国 26,982 台。",
+    "summary_en": "542,000 units installed worldwide in 2024; China 295,000 units (54%), operational stock 2,027,000 units, domestic brands' share of the home market 57% (47% in 2023); US 34,200 units, Japan 44,500, South Korea 30,600, Germany 26,982.",
+    "quote": "China is by far the world’s largest market in 2024, representing 54% of global deployments. The latest figures show that 295,000 industrial robots have been installed - the highest annual total on record."
+  },
+  {
+    "id": "wef_lighthouse_2025_01",
+    "org": "世界经济论坛（WEF）",
+    "org_en": "World Economic Forum (WEF)",
+    "title": "Global Lighthouse Network（2025 年 1 月）",
+    "title_en": "Global Lighthouse Network (January 2025)",
+    "date": "2025-01",
+    "url": "https://reports.weforum.org/docs/WEF_Global_Lighthouse_Network_2025.pdf",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "summary": "共 189 家；白皮书图 1 按地域构成：中国 41%（图表标签，正文未写绝对数）。",
+    "summary_en": "189 sites in total; Figure 1 of the white paper, by region: China 41% (chart label; the text gives no absolute number).",
+    "quote": "Today it includes 189 sites from over 30 countries and 35 industries at the frontier of operational performance."
+  },
+  {
+    "id": "wef_lighthouse_2025_09",
+    "org": "世界经济论坛（WEF），经 CGTN 转述",
+    "org_en": "World Economic Forum (WEF), as reported by CGTN",
+    "title": "Global Lighthouse Network（2025 年 9 月）",
+    "title_en": "Global Lighthouse Network (September 2025)",
+    "date": "2025-09",
+    "url": "https://news.cgtn.com/news/2025-09-18/WEF-s-Global-Lighthouse-Network-welcomes-12-new-members-6-in-China-1GLlve8lz5C/share_amp.html",
+    "reliability": "B",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "summary": "达 201 家，新增 12 家中有 6 家在中国。",
+    "summary_en": "Reached 201 sites; 6 of the 12 newly added are in China.",
+    "quote": "The World Economic Forum (WEF) has welcomed 12 new innovative industrial sites to the Global Lighthouse Network, bringing the total leading production facilities and value chains to 201"
+  },
+  {
+    "id": "wef_lighthouse_2026",
+    "org": "世界经济论坛（WEF）",
+    "org_en": "World Economic Forum (WEF)",
+    "title": "Global Lighthouse Network 2026 报告",
+    "title_en": "Global Lighthouse Network 2026 report",
+    "date": "2026-01",
+    "url": "https://reports.weforum.org/docs/WEF_Global_Lighthouse_Network_2026.pdf",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "summary": "共 223 家（2026 年 1 月）；图 3（2026 年 1 月构成）中国占 45%（图表标签）。正文称 2025 年新增 34 家，而同一白皮书图 4 列出 36 个 2025 年新站点，为 WEF 文件内部不一致。",
+    "summary_en": "223 sites in total (January 2026); Figure 3 (composition as of January 2026) shows China at 45% (chart label). The text says 34 sites were added in 2025, while Figure 4 of the same white paper lists 36 new sites for 2025 — an internal inconsistency in the WEF document.",
+    "quote": "Having expanded from 16 factories to 223 sites across more than 30 countries and 40 industries, the Network remains at the forefront of holistic, scalable performance transformation."
+  },
+  {
+    "id": "wef_lighthouse_2026_06",
+    "org": "世界经济论坛（WEF）",
+    "org_en": "World Economic Forum (WEF)",
+    "title": "New Global Lighthouse Sites Demonstrate How AI Is Rewiring Manufacturing and Supply Chains（新闻稿）",
+    "title_en": "New Global Lighthouse Sites Demonstrate How AI Is Rewiring Manufacturing and Supply Chains (press release)",
+    "date": "2026-06-22",
+    "url": "https://www.weforum.org/press/2026/06/new-global-lighthouse-sites-demonstrate-how-ai-is-rewiring-manufacturing-and-supply-chains/",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "summary": "新增 16 个站点后，全球灯塔网络达到 238 个工业站点。新闻稿未给出本批中国站点数。",
+    "summary_en": "With 16 new sites, the Global Lighthouse Network reached 238 industrial sites. The press release does not give the number of Chinese sites in this cohort.",
+    "quote": "16 new awards … bringing the community to 238 sites of the world’s most advanced manufacturing and supply chain operations."
+  },
+  {
+    "id": "globaltimes_lighthouse_2024",
+    "org": "环球时报",
+    "org_en": "Global Times",
+    "title": "中国灯塔工厂数量（截至 2024 年 10 月）",
+    "title_en": "Number of lighthouse factories in China (as of October 2024)",
+    "date": "2024-10",
+    "url": "https://www.globaltimes.cn/page/202410/1320891.shtml",
+    "reliability": "C",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "summary": "172 家灯塔工厂中，中国有 74 家，占 43%。",
+    "summary_en": "Of 172 lighthouse factories, 74 are in China, or 43%.",
+    "quote": "Since the first selection in 2018, a total of 172 \"lighthouse factories\" have been designated around the world, with 74 located in China, representing 43 percent."
+  },
+  {
+    "id": "miit_smart_factory_2025",
+    "org": "人民日报（中国政府网转载），数据来自工业和信息化部",
+    "org_en": "People's Daily (reposted on gov.cn), data from MIIT",
+    "title": "智能工厂梯度培育进展",
+    "title_en": "Progress in tiered cultivation of smart factories",
+    "date": "2025-09-20",
+    "url": "https://www.gov.cn/lianbo/bumen/202509/content_7041499.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "summary": "截至 2025 年底的更新值（3.5 万余 / 8200 余 / 500 余家，另有 15 家领航级）见国家数据局《数字中国发展报告（2025年）》。",
+    "summary_en": "Updated values as of the end of 2025 (more than 35,000 / more than 8,200 / more than 500, plus 15 pioneer-level factories) are in the National Data Administration’s Digital China Development Report (2025).",
+    "quote": "“十四五”以来，我国智能制造工程扎实推进，已建成3.5万多家基础级、7000多家先进级、230多家卓越级智能工厂",
+    "quote_en": "Since the start of the 14th Five-Year Plan, China’s intelligent manufacturing programme has advanced steadily, with more than 35,000 basic-level, more than 7,000 advanced-level and more than 230 excellence-level smart factories built"
+  },
+  {
+    "id": "caict_weikai_2025_12",
+    "org": "21 世纪经济报道（中国信通院人工智能研究所所长魏凯）",
+    "org_en": "21st Century Business Herald (Wei Kai, director of the CAICT Institute of Artificial Intelligence)",
+    "title": "大模型应用案例环节分布",
+    "title_en": "Distribution of large-model use cases by stage",
+    "date": "2025-12-14",
+    "url": "https://www.21jingji.com/article/20251214/herald/23d536044b8ceaab5017d55aea27db46.html",
+    "reliability": "B",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "summary": "19.9% 为 2024 年、25.9% 为 2025 年；样本为数百个大模型工业应用案例。人民日报 2025-12-15 亦报道同一数据（未点名）。",
+    "summary_en": "19.9% is for 2024 and 25.9% for 2025; the sample is several hundred industrial large-model use cases. People’s Daily reported the same figures on 2025-12-15 (without naming the source).",
+    "quote": "今年生产制造环节已展现出明显抬高趋势，案例占比由去年的19.9%增长至25.9%。",
+    "quote_en": "This year the manufacturing and production stage has shown a clear upward trend, with its share of cases rising from 19.9% last year to 25.9%."
+  },
+  {
+    "id": "mckinsey_genai_2023",
+    "org": "麦肯锡全球研究院",
+    "org_en": "McKinsey Global Institute",
+    "title": "The economic potential of generative AI: The next productivity frontier",
+    "date": "2023-06",
+    "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7,
+      8
+    ],
+    "summary": "63 个用例每年 2.6–4.4 万亿美元；把生成式 AI 嵌入现有软件、作用于知识工作者全部活动后，另增 6.1–7.9 万亿美元/年（Exhibit 2）；到 2040 年劳动生产率每年 +0.1–0.6 个百分点，与其他技术合计 +0.2–3.3 个百分点；银行业 2000–3400 亿美元，零售与消费品 4000–6600 亿美元。",
+    "summary_en": "$2.6–4.4 trillion a year across 63 use cases; embedding generative AI in existing software and applying it to all knowledge-worker activities adds a further $6.1–7.9 trillion a year (Exhibit 2); labour productivity growth +0.1–0.6 percentage points a year to 2040, or +0.2–3.3 points combined with other technologies; banking $200–340 billion, retail and consumer packaged goods $400–660 billion.",
+    "quote": "Our latest research estimates that generative AI could add the equivalent of $2.6 trillion to $4.4 trillion annually across the 63 use cases we analyzed"
+  },
+  {
+    "id": "ai_dev_report_2024",
+    "org": "中国新一代人工智能发展战略研究院《中国新一代人工智能科技产业发展报告2024》",
+    "org_en": "Chinese Institute of New Generation AI Development Strategies, China New Generation AI Technology Industry Development Report 2024",
+    "title": "人工智能核心产业部门企业分层",
+    "title_en": "Companies in core AI industry sectors by layer",
+    "date": "2024",
+    "url": "https://runwise.co/wp-content/uploads/2024/07/创新研报｜中国新一代人工智能科技产业发展报告（2024）_中国新一代人工智能发展战略研究院.pdf",
+    "reliability": "B",
+    "manual": true,
+    "chapter": [
+      7,
+      8
+    ],
+    "summary": "样本为 4311 家人工智能核心产业部门企业（报告原文不称“骨干企业”）；PDF 为第三方托管。",
+    "summary_en": "The sample is 4,311 companies in core AI industry sectors (the report does not call them “leading companies”); the PDF is hosted by a third party.",
+    "quote": "应用层企业数量最多，达到2650家，占比为61.47%；其次是技术层企业，数量为1233家，占比为28.60%；基础层企业428家，占比为9.93%。",
+    "quote_en": "Application-layer companies are the most numerous, at 2,650 or 61.47%; followed by technology-layer companies at 1,233 or 28.60%; foundation-layer companies number 428, or 9.93%."
+  },
+  {
+    "id": "miit_ai_scale_2022",
+    "org": "工业和信息化部",
+    "org_en": "Ministry of Industry and Information Technology (MIIT)",
+    "title": "人工智能核心产业规模（2022 年 7 月）",
+    "title_en": "Size of the core AI industry (July 2022)",
+    "date": "2022-07-26",
+    "url": "http://finance.people.com.cn/n1/2022/0726/c1004-32485842.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      8
+    ],
+    "summary": "核心产业规模超 4000 亿元，企业超 3000 家。",
+    "summary_en": "Core industry size over 400 billion yuan; more than 3,000 companies.",
+    "quote": "据测算，我国人工智能核心产业规模超过4000亿元，企业数量超过3000家。",
+    "quote_en": "By estimate, China's core AI industry exceeds 400 billion yuan in size, with more than 3,000 companies."
+  },
+  {
+    "id": "miit_ai_scale_2024_09",
+    "org": "工业和信息化部",
+    "org_en": "Ministry of Industry and Information Technology (MIIT)",
+    "title": "人工智能核心产业规模（2024 年 9 月）",
+    "title_en": "Size of the core AI industry (September 2024)",
+    "date": "2024-09-14",
+    "url": "https://www.stdaily.com/web/gdxw/2024-09/14/content_229561.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      8
+    ],
+    "summary": "核心产业规模接近 6000 亿元，企业超 4500 家。",
+    "summary_en": "Core industry size nearly 600 billion yuan; more than 4,500 companies.",
+    "quote": "中国初步构建了较为全面的人工智能产业体系，相关企业超过4500家，核心产业规模已接近6000亿元人民币",
+    "quote_en": "China has initially built a fairly comprehensive AI industrial system, with more than 4,500 related companies and a core industry size of nearly 600 billion yuan"
+  },
+  {
+    "id": "caict_ai_scale_2024",
+    "org": "中国信息通信研究院",
+    "org_en": "China Academy of Information and Communications Technology (CAICT)",
+    "title": "2024 年人工智能（核心）产业规模",
+    "title_en": "Size of the (core) AI industry in 2024",
+    "date": "2025-10-01",
+    "url": "https://www.stdaily.com/web/gdxw/2025-10/01/content_411110.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      8
+    ],
+    "summary": "超 9000 亿元，同比增长 24%；不同报道分别称“核心产业规模”与“产业规模”。",
+    "summary_en": "Over 900 billion yuan, up 24% year on year; different reports describe it as “core industry size” or “industry size”.",
+    "quote": "经测算，2024年我国人工智能产业规模已超9000亿元，同比增长24%。",
+    "quote_en": "By estimate, China's AI industry exceeded 900 billion yuan in 2024, up 24% year on year."
+  },
+  {
+    "id": "caict_ai_scale_2025",
+    "org": "中国信息通信研究院（新华财经、中新社报道）",
+    "org_en": "CAICT (reported by Xinhua Finance and China News Service)",
+    "title": "2025 年人工智能产业规模与结构",
+    "title_en": "Size and structure of the AI industry in 2025",
+    "date": "2026-08-03",
+    "url": "https://www.cnfin.com/hg-lb/detail/20260803/4450222_1.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      8
+    ],
+    "summary": "2025 年超 1.2 万亿元，同比增长 40%；截至 2026 年 6 月企业超 6600 家，全球占比 15%；结构：基础层 38%（同比 +59%）、模型框架层 7%（+189%）、应用层 55%（+22%）。",
+    "summary_en": "Over 1.2 trillion yuan in 2025, up 40% year on year; more than 6,600 companies as of June 2026, 15% of the global total; structure: foundation layer 38% (+59% year on year), model & framework layer 7% (+189%), application layer 55% (+22%).",
+    "quote": "经测算，2025年我国人工智能产业规模超1.2万亿元，同比增长40%。",
+    "quote_en": "By estimate, China's AI industry exceeded 1.2 trillion yuan in 2025, up 40% year on year."
+  },
+  {
+    "id": "ctri_rao_2025",
+    "org": "中国电信研究院战略发展研究所所长饶少阳（央视新闻采访）",
+    "org_en": "Rao Shaoyang, director of the Strategic Development Institute, China Telecom Research Institute (CCTV News interview)",
+    "title": "AI 对中国 GDP 贡献预测",
+    "title_en": "Forecast of AI's contribution to China's GDP",
+    "date": "2025-08-24",
+    "url": "https://news.cnr.cn/native/gd/20250824/t20250824_527335681.shtml",
+    "reliability": "B",
+    "manual": true,
+    "chapter": [
+      8
+    ],
+    "summary": "到 2035 年 AI 将为中国 GDP 贡献超过 11 万亿元，约占 GDP 的 4%–5%（预测）。",
+    "summary_en": "By 2035 AI will contribute more than 11 trillion yuan to China's GDP, about 4%–5% of GDP (forecast).",
+    "quote": "到2035年，人工智能将为我国的GDP贡献超过11万亿，大概占到GDP的4%到5%。",
+    "quote_en": "By 2035, AI will contribute more than 11 trillion yuan to our GDP, roughly 4% to 5% of GDP."
+  },
+  {
+    "id": "owid_large_scale",
+    "org": "Our World in Data（数据来自 Epoch AI）",
+    "org_en": "Our World in Data (data from Epoch AI)",
+    "title": "Cumulative number of large-scale AI systems by country",
+    "date": "2026",
+    "url": "https://ourworldindata.org/grapher/cumulative-number-of-large-scale-ai-systems-by-country",
+    "reliability": "A",
+    "manual": false,
+    "chapter": [
+      9
+    ],
+    "summary": "按国家累计的大规模 AI 系统数（训练算力 >10²³ FLOP），年度序列。本站下载于 2026-10-01。",
+    "summary_en": "Cumulative number of large-scale AI systems by country (training compute >10²³ FLOP), annual series. Downloaded by this site on 2026-10-01."
+  },
+  {
+    "id": "vibrancy_2025_vc",
+    "org": "Stanford HAI Global AI Vibrancy Tool 2025（官方数据，本站按默认权重复算）",
+    "org_en": "Stanford HAI Global AI Vibrancy Tool 2025 (official data, recomputed by this site with default weights)",
+    "title": "国家 AI 活力排名（2025 版，数据年份 2024）",
+    "title_en": "National AI vibrancy ranking (2025 edition, data year 2024)",
+    "date": "2025-09-24",
+    "url": "https://hai.stanford.edu/ai-index/global-vibrancy-tool",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      9
+    ],
+    "summary": "工具在浏览器中按权重现场计算分数；本站读取官方数据文件 full_data_09.24.25.csv 并按工具默认权重复算，前三名 78.60 / 36.95 / 21.59 与公开值一致。中国（以及日本、马来西亚、俄罗斯）的“人才”支柱分为官方插补值。",
+    "summary_en": "The tool computes scores in the browser according to the weights; this site reads the official data file full_data_09.24.25.csv and recomputes with the default weights. The top three, 78.60 / 36.95 / 21.59, match the published values. The “talent” pillar scores for China (and Japan, Malaysia and Russia) are officially imputed values.",
+    "quote": "Vibrancy Tool is an interactive visualization that facilitates cross-country comparisons of AI vibrancy across 36 countries, using 23 indicators organized into 7 pillars."
+  },
+  {
+    "id": "iea_energy_ai_2025",
+    "org": "国际能源署（IEA）",
+    "org_en": "International Energy Agency (IEA)",
+    "title": "Energy and AI（2025）",
+    "title_en": "Energy and AI (2025)",
+    "date": "2025-04-10",
+    "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      10
+    ],
+    "summary": "2024 年数据中心用电约 415 TWh（约占全球用电 1.5%）；2030 年约 945 TWh 为 IEA Base Case 情景。",
+    "summary_en": "Data-centre electricity use of about 415 TWh in 2024 (about 1.5% of global electricity use); about 945 TWh in 2030 under the IEA Base Case.",
+    "quote": "Data centre electricity consumption is set to more than double to around 945 TWh by 2030."
+  },
+  {
+    "id": "derived",
+    "org": "本站推算",
+    "org_en": "Derived by this site",
+    "title": "由已引用数值做的简单运算",
+    "title_en": "Simple calculations from cited values",
+    "date": "2026",
+    "url": "",
+    "reliability": "D",
+    "manual": false,
+    "chapter": [],
+    "summary": "差值、比值、单位换算等，运算方法写在图表脚注中，原始值来源见各图其他条目。",
+    "summary_en": "Differences, ratios, unit conversions and similar; methods are described in chart footnotes, and sources of the original values are listed in the other entries for each chart."
+  },
+  {
+    "id": "cac_genai_2026_06",
+    "org": "国家互联网信息办公室",
+    "org_en": "Cyberspace Administration of China",
+    "title": "生成式人工智能服务已备案信息（2026年5–6月）",
+    "title_en": "Information on filed generative AI services (May–June 2026)",
+    "date": "2026-07-10",
+    "url": "https://www.cac.gov.cn/2026-07/10/c_1785427810632554.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      3
+    ],
+    "quote": "截至6月30日，累计有988款生成式人工智能服务完成备案，598款生成式人工智能应用或功能完成登记。",
+    "quote_en": "As of 30 June, a cumulative 988 generative AI services had completed filing, and 598 generative AI applications or features had completed registration."
+  },
+  {
+    "id": "cac_genai_2026_08",
+    "org": "国家互联网信息办公室",
+    "org_en": "Cyberspace Administration of China",
+    "title": "生成式人工智能服务已备案信息（2026年7–8月）",
+    "title_en": "Information on filed generative AI services (July–August 2026)",
+    "date": "2026-09-14",
+    "url": "https://www.cac.gov.cn/2026-09/14/c_1791136833136332.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      0,
+      3
+    ],
+    "quote": "截至8月31日，累计有1112款生成式人工智能服务完成备案，731款生成式人工智能应用或功能完成登记。",
+    "quote_en": "As of 31 August, a cumulative 1,112 generative AI services had completed filing, and 731 generative AI applications or features had completed registration."
+  },
+  {
+    "id": "people_compute_2026_07",
+    "org": "人民日报（首都之窗转载）",
+    "org_en": "People's Daily (reposted by Beijing municipal government portal)",
+    "title": "截至7月底我国智算总规模达到245万PFLOPS",
+    "title_en": "China's total AI computing power reached 2.45 million PFLOPS as of end-July",
+    "date": "2026-08-30",
+    "url": "https://www.beijing.gov.cn/ywdt/zybwdt/202608/t20260830_4842886.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      0,
+      2
+    ],
+    "quote": "截至2026年7月底，全国智算总规模达245万PFLOPS（FP16）",
+    "quote_en": "As of the end of July 2026, total AI computing power nationwide reached 2.45 million PFLOPS (FP16)",
+    "summary": "同文：“八大国家算力枢纽和三个算电协同发展区已建成智算规模占全国比重超85%”。",
+    "summary_en": "The same article: “AI computing power built in the eight national computing hubs and three computing–power coordination zones accounts for more than 85% of the national total”."
+  },
+  {
+    "id": "metr_2026_update",
+    "org": "METR",
+    "title": "Uplift update（2026-02-24）",
+    "title_en": "Uplift update (2026-02-24)",
+    "date": "2026-02-24",
+    "url": "https://metr.org/blog/2026-02-24-uplift-update/",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      5
+    ],
+    "quote": "Our early 2025 study found the use of AI causes tasks to take 19% longer, with a confidence interval between +2% and +39%."
+  },
+  {
+    "id": "ifr_density_2026",
+    "org": "国际机器人联合会（IFR）",
+    "org_en": "International Federation of Robotics (IFR)",
+    "title": "Robot Density Surges in Europe, Asia and Americas（2024 年机器人密度）",
+    "title_en": "Robot Density Surges in Europe, Asia and Americas (robot density in 2024)",
+    "date": "2026-04-08",
+    "url": "https://ifr.org/ifr-press-releases/news/robot-density-surges-in-europe-asia-and-americas",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "quote": "Based on updated labor market data issued by China's National Bureau of Statistics, China ranks 6th in Asia and 22nd worldwide. It has 166 robots for every 10,000 people employed, which is a year-on-year increase of 17%.",
+    "summary": "韩国 1,220、新加坡 818、德国 449、日本 446、美国 307；全球平均 132。中国数值按国家统计局更新后的就业数据计算，与此前公布的旧口径值不可比。World Robotics 2026 已于 2026-09-24 发布（含 2025 年数据），但 IFR 免费公开材料尚未给出 2025 年各国机器人密度，故仍用 2024 年值。",
+    "summary_en": "South Korea 1,220, Singapore 818, Germany 449, Japan 446, US 307; global average 132. China’s value is calculated with employment data updated by the National Bureau of Statistics and is not comparable with previously published values on the old basis. World Robotics 2026 was released on 2026-09-24 (with 2025 data), but the IFR’s free public materials do not yet give 2025 robot density by country, so 2024 values are still used."
+  },
+  {
+    "id": "ifr_wr_2026",
+    "org": "国际机器人联合会（IFR）",
+    "org_en": "International Federation of Robotics (IFR)",
+    "title": "World Robotics 2026 新闻稿（2025 年数据）",
+    "title_en": "World Robotics 2026 press release (2025 data)",
+    "date": "2026-09-24",
+    "url": "https://ifr.org/ifr-press-releases/news/five-million-robots-now-operate-in-factories-globally",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      0,
+      7
+    ],
+    "quote": "Annual installations grew by 20% year-on-year and now account for 59% of global deployments. The latest figures show that 354,000 industrial robots have been installed in 2025",
+    "summary": "2025 年全球安装超过 60 万台、运行存量 500 万台；中国 35.4 万台（59%），国产品牌本土份额 55%；美国 38,400 台。",
+    "summary_en": "More than 600,000 units installed worldwide in 2025, operational stock 5 million units; China 354,000 units (59%), domestic brands' share of the home market 55%; US 38,400 units."
+  },
+  {
+    "id": "cnnic_57",
+    "org": "中国互联网络信息中心（CNNIC，新华网转载科技日报）",
+    "org_en": "China Internet Network Information Center (CNNIC; Science and Technology Daily via Xinhuanet)",
+    "title": "第 57 次《中国互联网络发展状况统计报告》",
+    "title_en": "57th Statistical Report on China’s Internet Development",
+    "date": "2026-03-02",
+    "url": "https://www.news.cn/tech/20260302/66c4ab06b6f34f8d806b416b3acc9f0b/c.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      4,
+      11
+    ],
+    "quote": "生成式人工智能加速普及，用户规模突破6亿，普及率达42.8%",
+    "quote_en": "Generative AI is spreading rapidly, with users exceeding 600 million and a penetration rate of 42.8%",
+    "summary": "截至 2025 年 12 月，生成式 AI 用户 6.02 亿人，普及率 42.8%。该指标是“生成式 AI 用户占总人口比例”，不等于“新一代智能终端、智能体等应用普及率”。",
+    "summary_en": "As of December 2025, generative AI users numbered 602 million, a penetration rate of 42.8%. This indicator is “generative AI users as a share of the total population” and is not the “adoption rate of new-generation intelligent terminals, AI agents and similar applications”."
+  },
+  {
+    "id": "cac_agri_info_2024",
+    "org": "中央网信办网站（转载人民日报客户端）",
+    "org_en": "Cyberspace Administration of China website (reposted from the People’s Daily app)",
+    "title": "农业生产信息化率",
+    "title_en": "Agricultural production informatisation rate",
+    "date": "2024-06-20",
+    "url": "https://www.cac.gov.cn/2024-06/20/c_1720562096346307.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "quote": "数据显示，我国农业生产信息化率为27.6%，大田种植信息化率已达26.4%。",
+    "quote_en": "Data show that China's agricultural production informatisation rate is 27.6%, and the informatisation rate of field crop farming has reached 26.4%.",
+    "summary": "27.6% 为 2023 年数据。",
+    "summary_en": "The 27.6% figure is for 2023."
+  },
+  {
+    "id": "moa_smart_agri_plan",
+    "org": "农业农村部",
+    "org_en": "Ministry of Agriculture and Rural Affairs",
+    "title": "《全国智慧农业行动计划（2024—2028年）》（农市发〔2024〕4号）",
+    "title_en": "National Smart Agriculture Action Plan (2024–2028) (Nong Shi Fa [2024] No. 4)",
+    "date": "2024-10-25",
+    "url": "https://www.moa.gov.cn/govpublic/SCYJJXXS/202410/t20241025_6465041.htm",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "quote": "到2026年底，……农业生产信息化率达到30%以上。到2028年底，……农业生产信息化率达到32%以上。",
+    "quote_en": "By the end of 2026, … the agricultural production informatisation rate will reach over 30%. By the end of 2028, … the agricultural production informatisation rate will reach over 32%."
+  },
+  {
+    "id": "moa_drones_2026",
+    "org": "农业农村部（国新办发布会，中新网报道）",
+    "org_en": "Ministry of Agriculture and Rural Affairs (SCIO press conference, reported by chinanews.com)",
+    "title": "农用无人机保有量",
+    "title_en": "Agricultural drones in use",
+    "date": "2026-04-23",
+    "url": "https://www.chinanews.com/gn/2026/04-23/10609167.shtml",
+    "reliability": "B",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "quote": "我国农用无人机保有量超过30万架，数量居全球首位。",
+    "quote_en": "China's fleet of agricultural drones exceeds 300,000, the largest in the world."
+  },
+  {
+    "id": "moe_platform_2025",
+    "org": "教育部网站（转载中国教育报）",
+    "org_en": "Ministry of Education website (reposted from China Education Daily)",
+    "title": "国家智慧教育公共服务平台",
+    "title_en": "National Smart Education Public Service Platform",
+    "date": "2025-07-24",
+    "url": "http://www.moe.gov.cn/jyb_sy/sy_rdjj/rdjj_ddesjszqhyljyzhggjzsp/202507/t20250725_1199390.html",
+    "reliability": "A",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "quote": "国家平台累计注册用户超1.69亿，浏览量突破646亿。",
+    "quote_en": "The national platform has more than 169 million cumulative registered users and over 64.6 billion page views."
+  },
+  {
+    "id": "moe_ai_courses_2025",
+    "org": "教育部新闻发布会（新京报报道）",
+    "org_en": "Ministry of Education press conference (reported by The Beijing News)",
+    "title": "人工智能教育进展",
+    "title_en": "Progress in AI education",
+    "date": "2025-12-30",
+    "url": "https://www.bjnews.com.cn/detail/1767083680169183.html",
+    "reliability": "B",
+    "manual": true,
+    "chapter": [
+      7
+    ],
+    "quote": "汇聚了基础教育、职业教育、高等教育、终身教育人工智能的精品课程超过1000门……参训学生达到131万人。",
+    "quote_en": "More than 1,000 featured AI courses spanning basic education, vocational education, higher education and lifelong learning have been brought together … 1.31 million students have taken part in training."
+  },
+  {
+    "id": "owid_definition",
+    "org": "Our World in Data（元数据）",
+    "org_en": "Our World in Data (metadata)",
+    "title": "Large-scale AI systems 定义",
+    "title_en": "Definition of large-scale AI systems",
+    "date": "2026-09-04",
+    "url": "https://ourworldindata.org/grapher/cumulative-number-of-large-scale-ai-systems-by-country.metadata.json",
+    "reliability": "A",
+    "manual": false,
+    "chapter": [
+      9
+    ],
+    "quote": "The source defines AI models as \"large-scale\" when their training compute is confirmed to exceed 10²³ floating-point operations.",
+    "summary": "按作者所属机构所在地计入国家，多国合作模型会被多个国家重复计数；2026 年数据不完整（更新至 2026-09-04）。",
+    "summary_en": "Models are attributed to countries by the location of the authors’ organisations, so multinational models are counted for several countries; 2026 data are incomplete (updated to 2026-09-04)."
+  }
+]

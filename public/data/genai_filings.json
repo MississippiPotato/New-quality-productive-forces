@@ -1,0 +1,60 @@
+{
+  "id": "genai_filings",
+  "title": "生成式AI服务累计备案数",
+  "title_en": "Cumulative filings of generative AI services",
+  "unit": "款",
+  "unit_en": "services",
+  "records": [
+    {
+      "date": "2025-03-31",
+      "filed": 346,
+      "registered": 159,
+      "source_id": "cac_genai_2025_03"
+    },
+    {
+      "date": "2025-11-01",
+      "filed": 611,
+      "registered": 306,
+      "source_id": "cac_genai_2025_11"
+    },
+    {
+      "date": "2025-12-01",
+      "filed": 663,
+      "registered": null,
+      "source_id": "cac_genai_2025_12a"
+    },
+    {
+      "date": "2025-12-31",
+      "filed": 748,
+      "registered": 435,
+      "source_id": "cac_genai_2025_12"
+    },
+    {
+      "date": "2026-04-30",
+      "filed": 868,
+      "registered": 530,
+      "source_id": "cac_genai_2026_04"
+    },
+    {
+      "date": "2026-06-30",
+      "filed": 988,
+      "registered": 598,
+      "source_id": "cac_genai_2026_06"
+    },
+    {
+      "date": "2026-08-31",
+      "filed": 1112,
+      "registered": 731,
+      "source_id": "cac_genai_2026_08"
+    }
+  ],
+  "annual_new": [
+    {
+      "year": 2025,
+      "value": 446,
+      "source_id": "cac_genai_2025_12"
+    }
+  ],
+  "notes": "registered 为“应用或功能完成登记”数（地方网信办登记、调用已备案模型的应用）。2025-12-01 的 663 款是备案数，出自中央网信办主任专访；当日登记数未公开（前后两个官方节点为 2025-11-01 登记 306 款、2025-12-31 登记 435 款），本站不插值。",
+  "notes_en": "“registered” counts applications or features that have completed registration (registered with local cyberspace offices; applications that call already-filed models). The 663 services as of 2025-12-01 are filings, from an interview with the director of the Cyberspace Administration of China; the registration count for that date has not been published (the official counts either side are 306 on 2025-11-01 and 435 on 2025-12-31), and this site does not interpolate."
+}

@@ -1,0 +1,127 @@
+{
+  "id": "ai_industry_scale",
+  "title": "中国人工智能（核心）产业规模",
+  "title_en": "China's (core) AI industry size",
+  "unit": "亿元",
+  "unit_en": "100 million yuan",
+  "records": [
+    {
+      "period": "2022-07",
+      "label": "2022 年 7 月",
+      "label_en": "Jul 2022",
+      "value": 4000,
+      "qualifier": "超",
+      "qualifier_en": "over",
+      "yoy": null,
+      "scope": "核心产业",
+      "scope_en": "Core industry",
+      "preliminary": false,
+      "firms": 3000,
+      "firms_qualifier": "超",
+      "firms_qualifier_en": "over",
+      "source_id": "miit_ai_scale_2022"
+    },
+    {
+      "period": "2024-09",
+      "label": "2024 年 9 月",
+      "label_en": "Sep 2024",
+      "value": 6000,
+      "qualifier": "接近",
+      "qualifier_en": "nearly",
+      "yoy": null,
+      "scope": "核心产业",
+      "scope_en": "Core industry",
+      "preliminary": false,
+      "firms": 4500,
+      "firms_qualifier": "超",
+      "firms_qualifier_en": "over",
+      "source_id": "miit_ai_scale_2024_09",
+      "firms_label": "相关企业",
+      "firms_label_en": "related companies"
+    },
+    {
+      "period": "2024",
+      "label": "2024 年",
+      "label_en": "2024",
+      "value": 9000,
+      "qualifier": "超",
+      "qualifier_en": "over",
+      "yoy": 24,
+      "scope": "核心产业/产业（报道表述不一）",
+      "scope_en": "Core industry / industry (reports differ)",
+      "preliminary": false,
+      "firms": null,
+      "source_id": "caict_ai_scale_2024"
+    },
+    {
+      "period": "2025",
+      "label": "2025 年",
+      "label_en": "2025",
+      "value": 12000,
+      "qualifier": "超",
+      "qualifier_en": "over",
+      "yoy": 40,
+      "scope": "产业",
+      "scope_en": "Industry",
+      "preliminary": true,
+      "firms": null,
+      "source_id": "caict_ai_scale_2025"
+    }
+  ],
+  "firms_2026_06": {
+    "value": 6600,
+    "qualifier": "超",
+    "qualifier_en": "over",
+    "global_share": 15,
+    "source_id": "caict_ai_scale_2025"
+  },
+  "structure_2025": [
+    {
+      "layer": "基础层",
+      "layer_en": "Foundation layer",
+      "share": 38,
+      "yoy": 59,
+      "source_id": "caict_ai_scale_2025"
+    },
+    {
+      "layer": "模型框架层",
+      "layer_en": "Model & framework layer",
+      "share": 7,
+      "yoy": 189,
+      "source_id": "caict_ai_scale_2025"
+    },
+    {
+      "layer": "应用层",
+      "layer_en": "Application layer",
+      "share": 55,
+      "yoy": 22,
+      "source_id": "caict_ai_scale_2025"
+    }
+  ],
+  "firms_by_layer_2024": [
+    {
+      "layer": "基础层",
+      "layer_en": "Foundation layer",
+      "value": 428,
+      "source_id": "ai_dev_report_2024"
+    },
+    {
+      "layer": "技术层",
+      "layer_en": "Technology layer",
+      "value": 1233,
+      "source_id": "ai_dev_report_2024"
+    },
+    {
+      "layer": "应用层",
+      "layer_en": "Application layer",
+      "value": 2650,
+      "source_id": "ai_dev_report_2024"
+    }
+  ],
+  "firms_total_2024": {
+    "value": 4311,
+    "source_id": "ai_dev_report_2024"
+  },
+  "notes": "前两个数据点为工信部“核心产业”口径的时点值，后两个为中国信通院年度值；2025 年为初步测算。企业数口径不同：工信部 2024-09 为“相关企业”，信通院为“人工智能企业”，《发展报告2024》为 4311 家“人工智能核心产业部门企业”样本，不可混用。",
+  "notes_en": "The first two data points are point-in-time values on the MIIT “core industry” basis; the last two are annual CAICT values, with 2025 a preliminary estimate. Company counts use different definitions: the MIIT figure for 2024-09 counts “related companies”, CAICT counts “AI companies”, and the 2024 Development Report covers a sample of 4,311 “companies in core AI industry sectors” — they should not be mixed."
+}

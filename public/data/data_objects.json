@@ -1,0 +1,84 @@
+{
+  "id": "data_objects",
+  "title": "新劳动对象：用户规模与 AI for Science",
+  "title_en": "New objects of labour: user base and AI for Science",
+  "users": {
+    "unit": "亿人",
+    "unit_en": "100 million people",
+    "date": "2025-12-31",
+    "netizens": {
+      "value": 11.25,
+      "source_id": "nda_digital_china_2025"
+    },
+    "records": [
+      {
+        "use": "用 AI 解答问题",
+        "use_en": "Using AI to answer questions",
+        "value": 4.57,
+        "source_id": "nda_digital_china_2025"
+      },
+      {
+        "use": "用 AI 生成图片视频",
+        "use_en": "Using AI to generate images and video",
+        "value": 2.88,
+        "source_id": "nda_digital_china_2025"
+      },
+      {
+        "use": "把 AI 作为生活助手",
+        "use_en": "Using AI as an everyday assistant",
+        "value": 1.84,
+        "source_id": "nda_digital_china_2025"
+      }
+    ],
+    "under40_share": {
+      "value": 74.6,
+      "unit": "%",
+      "source_id": "nda_digital_china_2025"
+    },
+    "genai_users": {
+      "value": 6.02,
+      "unit": "亿人",
+      "unit_en": "100 million people",
+      "penetration": 42.8,
+      "date": "2025-12",
+      "source_id": "cnnic_57"
+    }
+  },
+  "science": [
+    {
+      "label": "AlphaFold 数据库蛋白质结构预测",
+      "label_en": "Protein structure predictions in the AlphaFold database",
+      "value": 2,
+      "unit": "亿个",
+      "unit_en": "× 100 million",
+      "qualifier": "超过",
+      "qualifier_en": "more than",
+      "source_id": "alphafold_db"
+    },
+    {
+      "label": "2024 年诺贝尔化学奖",
+      "label_en": "2024 Nobel Prize in Chemistry",
+      "value": null,
+      "text": "授予蛋白质结构预测与蛋白质设计",
+      "text_en": "Awarded for protein structure prediction and protein design",
+      "source_id": "nobel_chem_2024"
+    },
+    {
+      "label": "分子/基因/蛋白质类生成式 AI 专利（2014 年以来）",
+      "label_en": "Generative AI patents on molecules/genes/proteins (since 2014)",
+      "value": 1494,
+      "unit": "项",
+      "unit_en": "patent families",
+      "qualifier": "",
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "label": "分子类专利 2018–2023 年均增长",
+      "label_en": "Average annual growth of molecule patents, 2018–2023",
+      "value": 78.8,
+      "unit": "%",
+      "qualifier": "",
+      "source_id": "wipo_genai_2024"
+    }
+  ]
+}

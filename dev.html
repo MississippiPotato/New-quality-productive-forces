@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>组件预览 · 智能涌现</title>
+    <link rel="icon" href="data:," />
+  </head>
+  <body>
+    <div class="dev">
+      <header class="dev__bar">
+        <label>图表 <select id="dev-chart"></select></label>
+        <span id="dev-steps"></span>
+        <button class="btn" id="dev-theme" type="button">切换主题</button>
+        <button class="btn" id="dev-lang" type="button">中 / EN</button>
+        <label>宽度 <input id="dev-width" type="range" min="320" max="1200" value="900" /></label>
+        <span id="dev-w" class="tabular"></span>
+      </header>
+      <div id="dev-stage"></div>
+    </div>
+    <script type="module" src="/src/dev.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+/* 中美镜像条形 */
+.chart .mb__head {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+}
+.chart .mb__metric {
+  font-size: 13px;
+  font-weight: 700;
+  fill: var(--text);
+}
+.chart .mb__ratio {
+  font-size: 11px;
+  fill: var(--faint);
+  font-variant-numeric: tabular-nums;
+}
+.chart .mb__val {
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.chart .mb__val--in {
+  fill: var(--bg);
+}
+.chart .mb__val--out {
+  fill: var(--text);
+}
+.chart .mb__val tspan.u {
+  font-weight: 500;
+  opacity: 0.85;
+}
+.mb__row {
+  transition: opacity 0.4s;
+}
+.mb__axis {
+  stroke: var(--muted);
+  stroke-width: 1px;
+}
+.mb__track {
+  fill: var(--grid);
+}

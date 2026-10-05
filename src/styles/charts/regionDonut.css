@@ -1,0 +1,92 @@
+/* 区域智算占比环图 + PUE 小图 */
+.rd__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+.rd__grid.is-wide {
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 28px;
+}
+.rd__panel {
+  min-width: 0;
+  transition: opacity 0.5s;
+}
+.rd__panel.is-dim {
+  opacity: 0.35;
+}
+.rd__grid.is-wide .rd__panel--pue {
+  padding-left: 24px;
+  border-left: 1px dashed var(--border);
+}
+.rd__grid:not(.is-wide) .rd__panel--pue {
+  padding-top: 14px;
+  border-top: 1px dashed var(--border);
+}
+.rd__title {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+.rd__sub {
+  margin: 0 0 6px;
+  font-size: 12px;
+  color: var(--faint);
+}
+.chart .rd__center-big {
+  font-size: 17px;
+  font-weight: 700;
+  fill: var(--text);
+}
+.chart .rd__center-small {
+  font-size: 12px;
+  fill: var(--muted);
+}
+.chart .rd__in-name {
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--bg);
+}
+.chart .rd__in-val {
+  font-size: 15px;
+  font-weight: 800;
+  fill: var(--bg);
+  font-variant-numeric: tabular-nums;
+}
+.chart .rd__out {
+  font-size: 12px;
+  font-weight: 600;
+  fill: var(--text);
+}
+.chart .rd__out tspan.v {
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.rd__leader {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1px;
+}
+.rd__slice {
+  stroke: var(--panel);
+  stroke-width: 1.5px;
+  transition: opacity 0.4s;
+}
+.chart .rd__pue-val {
+  font-size: 15px;
+  font-weight: 800;
+  fill: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.chart .rd__ref {
+  font-size: 11px;
+  fill: var(--green);
+}
+.chart .rd__tick {
+  font-size: 11px;
+  fill: var(--muted);
+}
+.chart .rd__tick tspan.d {
+  fill: var(--faint);
+}

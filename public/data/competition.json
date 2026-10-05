@@ -1,0 +1,809 @@
+{
+  "id": "competition",
+  "title": "全球竞争格局",
+  "title_en": "The global competitive landscape",
+  "investment": {
+    "unit": "亿美元",
+    "unit_en": "100 million US dollars",
+    "records": [
+      {
+        "year": 2024,
+        "country": "美国",
+        "country_en": "United States",
+        "value": 1091,
+        "source_id": "stanford_ai_index_2025"
+      },
+      {
+        "year": 2024,
+        "country": "中国",
+        "country_en": "China",
+        "value": 93,
+        "source_id": "stanford_ai_index_2025"
+      },
+      {
+        "year": 2024,
+        "country": "英国",
+        "country_en": "United Kingdom",
+        "value": 45,
+        "source_id": "stanford_ai_index_2025"
+      },
+      {
+        "year": 2025,
+        "country": "美国",
+        "country_en": "United States",
+        "value": 2859,
+        "source_id": "stanford_ai_index_2026"
+      },
+      {
+        "year": 2025,
+        "country": "中国",
+        "country_en": "China",
+        "value": 124,
+        "source_id": "stanford_ai_index_2026"
+      }
+    ],
+    "global_2025": {
+      "value": 3447,
+      "yoy": 127.5,
+      "source_id": "stanford_ai_index_2026"
+    },
+    "caveat": "AI Index 提示私人投资数据“likely understates”中国，因为政府引导基金未计入。",
+    "caveat_en": "The AI Index notes that private investment data “likely understates” China, because government guidance funds are not counted."
+  },
+  "research_share_2023": [
+    {
+      "label": "AI 论文占全球",
+      "label_en": "Share of global AI publications",
+      "value": 23.2,
+      "unit": "%",
+      "source_id": "stanford_ai_index_2025"
+    },
+    {
+      "label": "AI 论文引用占全球",
+      "label_en": "Share of global AI publication citations",
+      "value": 22.6,
+      "unit": "%",
+      "source_id": "stanford_ai_index_2025"
+    },
+    {
+      "label": "AI 专利占全球授权量",
+      "label_en": "Share of global AI patents granted",
+      "value": 69.7,
+      "unit": "%",
+      "source_id": "stanford_ai_index_2025"
+    }
+  ],
+  "mirror": {
+    "notes": "各项指标单位不同，各自按“两国中较大值 = 100%”标准化后对照；条形旁标注原始值。",
+    "notes_en": "The indicators use different units, so each is normalised with the larger of the two countries = 100%; raw values are labelled beside the bars.",
+    "records": [
+      {
+        "metric": "私人 AI 投资（2025）",
+        "metric_en": "Private AI investment (2025)",
+        "unit": "亿美元",
+        "unit_en": "100 million US dollars",
+        "us": 2859,
+        "cn": 124,
+        "source_id": "stanford_ai_index_2026"
+      },
+      {
+        "metric": "notable AI 模型（2025）",
+        "metric_en": "Notable AI models (2025)",
+        "unit": "个",
+        "unit_en": "models",
+        "us": 59,
+        "cn": 35,
+        "source_id": "stanford_ai_index_2026"
+      },
+      {
+        "metric": "生成式 AI 专利（2014–2023）",
+        "metric_en": "Generative AI patents (2014–2023)",
+        "unit": "项",
+        "unit_en": "patent families",
+        "us": 6276,
+        "cn": 38210,
+        "source_id": "wipo_genai_2024"
+      },
+      {
+        "metric": "工业机器人新装量（2024）",
+        "metric_en": "Industrial robot installations (2024)",
+        "unit": "台",
+        "unit_en": "units",
+        "us": 34200,
+        "cn": 295000,
+        "source_id": "ifr_wr_2025"
+      },
+      {
+        "metric": "累计大规模 AI 系统（2025）",
+        "metric_en": "Cumulative large-scale AI systems (2025)",
+        "unit": "个",
+        "unit_en": "systems",
+        "us": null,
+        "cn": null,
+        "from_owid": 2025,
+        "source_id": "owid_large_scale"
+      }
+    ]
+  },
+  "vibrancy_2025": {
+    "coverage": {
+      "countries": 36,
+      "indicators": 23,
+      "pillars": 7
+    },
+    "data_year": 2024,
+    "pillars": [
+      {
+        "key": "rd",
+        "name": "研发",
+        "name_en": "R&D",
+        "weight": 1
+      },
+      {
+        "key": "responsible_ai",
+        "name": "负责任 AI",
+        "name_en": "Responsible AI",
+        "weight": 0.2
+      },
+      {
+        "key": "economy",
+        "name": "经济",
+        "name_en": "Economy",
+        "weight": 0.8
+      },
+      {
+        "key": "talent",
+        "name": "人才",
+        "name_en": "Talent",
+        "weight": 0.6
+      },
+      {
+        "key": "policy",
+        "name": "政策与治理",
+        "name_en": "Policy & governance",
+        "weight": 0.2
+      },
+      {
+        "key": "public_opinion",
+        "name": "公众舆论",
+        "name_en": "Public opinion",
+        "weight": 0.2
+      },
+      {
+        "key": "infrastructure",
+        "name": "基础设施",
+        "name_en": "Infrastructure",
+        "weight": 0.6
+      }
+    ],
+    "records": [
+      {
+        "iso3": "USA",
+        "country": "美国",
+        "country_en": "United States",
+        "score": 78.6,
+        "rank": 1,
+        "pillars": {
+          "rd": 68.93,
+          "responsible_ai": 100,
+          "economy": 100,
+          "talent": 50.47,
+          "policy": 76,
+          "public_opinion": 50.91,
+          "infrastructure": 97.28
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "CHN",
+        "country": "中国",
+        "country_en": "China",
+        "score": 36.95,
+        "rank": 2,
+        "pillars": {
+          "rd": 62.01,
+          "responsible_ai": 40.06,
+          "economy": 8.81,
+          "talent": 34.22,
+          "policy": 4.58,
+          "public_opinion": 57.3,
+          "infrastructure": 38.41
+        },
+        "imputed": [
+          "talent"
+        ],
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "IND",
+        "country": "印度",
+        "country_en": "India",
+        "score": 21.59,
+        "rank": 3,
+        "pillars": {
+          "rd": 25.67,
+          "responsible_ai": 6.28,
+          "economy": 3.83,
+          "talent": 54.75,
+          "policy": 2.03,
+          "public_opinion": 60.62,
+          "infrastructure": 3.92
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "KOR",
+        "country": "韩国",
+        "country_en": "South Korea",
+        "score": 17.24,
+        "rank": 4,
+        "pillars": {
+          "rd": 6.77,
+          "responsible_ai": 2.24,
+          "economy": 2.94,
+          "talent": 29.76,
+          "policy": 32.44,
+          "public_opinion": 64.6,
+          "infrastructure": 25.37
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "GBR",
+        "country": "英国",
+        "country_en": "United Kingdom",
+        "score": 16.64,
+        "rank": 5,
+        "pillars": {
+          "rd": 9.26,
+          "responsible_ai": 10.01,
+          "economy": 7.3,
+          "talent": 32.89,
+          "policy": 45.46,
+          "public_opinion": 22.41,
+          "infrastructure": 15.8
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "SGP",
+        "country": "新加坡",
+        "country_en": "Singapore",
+        "score": 16.43,
+        "rank": 6,
+        "pillars": {
+          "rd": 5.43,
+          "responsible_ai": 5.83,
+          "economy": 2.13,
+          "talent": 55.84,
+          "policy": 10.15,
+          "public_opinion": 31.13,
+          "infrastructure": 15.17
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "ESP",
+        "country": "西班牙",
+        "country_en": "Spain",
+        "score": 16.37,
+        "rank": 7,
+        "pillars": {
+          "rd": 2.97,
+          "responsible_ai": 0.3,
+          "economy": 0.99,
+          "talent": 33.03,
+          "policy": 64.29,
+          "public_opinion": 38.49,
+          "infrastructure": 24.59
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "ARE",
+        "country": "阿联酋",
+        "country_en": "UAE",
+        "score": 16.06,
+        "rank": 8,
+        "pillars": {
+          "rd": 1.31,
+          "responsible_ai": 1.35,
+          "economy": 1.21,
+          "talent": 45.48,
+          "policy": 12.39,
+          "public_opinion": 42.01,
+          "infrastructure": 28.52
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "JPN",
+        "country": "日本",
+        "country_en": "Japan",
+        "score": 16.04,
+        "rank": 9,
+        "pillars": {
+          "rd": 5.39,
+          "responsible_ai": 5.38,
+          "economy": 2.3,
+          "talent": 34.22,
+          "policy": 3.82,
+          "public_opinion": 41.52,
+          "infrastructure": 33.04
+        },
+        "imputed": [
+          "talent"
+        ],
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "CAN",
+        "country": "加拿大",
+        "country_en": "Canada",
+        "score": 15.56,
+        "rank": 10,
+        "pillars": {
+          "rd": 6.46,
+          "responsible_ai": 8.22,
+          "economy": 3.64,
+          "talent": 47.66,
+          "policy": 6.21,
+          "public_opinion": 18.42,
+          "infrastructure": 19.14
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "CHE",
+        "country": "瑞士",
+        "country_en": "Switzerland",
+        "score": 14.86,
+        "rank": 11,
+        "pillars": {
+          "rd": 1.87,
+          "responsible_ai": 4.19,
+          "economy": 1.18,
+          "talent": 45.77,
+          "policy": 4.18,
+          "public_opinion": 32.36,
+          "infrastructure": 25.14
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "LUX",
+        "country": "卢森堡",
+        "country_en": "Luxembourg",
+        "score": 14.73,
+        "rank": 12,
+        "pillars": {
+          "rd": 0.07,
+          "responsible_ai": 0.45,
+          "economy": 0.17,
+          "talent": 51.92,
+          "policy": 4.46,
+          "public_opinion": 40.23,
+          "infrastructure": 21.05
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "FRA",
+        "country": "法国",
+        "country_en": "France",
+        "score": 14.63,
+        "rank": 13,
+        "pillars": {
+          "rd": 5.69,
+          "responsible_ai": 3.74,
+          "economy": 3.87,
+          "talent": 21.62,
+          "policy": 27.46,
+          "public_opinion": 19.81,
+          "infrastructure": 34.55
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "ISR",
+        "country": "以色列",
+        "country_en": "Israel",
+        "score": 14.26,
+        "rank": 14,
+        "pillars": {
+          "rd": 1.46,
+          "responsible_ai": 2.24,
+          "economy": 2.25,
+          "talent": 41.7,
+          "policy": 0,
+          "public_opinion": 23.41,
+          "infrastructure": 29.85
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "DEU",
+        "country": "德国",
+        "country_en": "Germany",
+        "score": 13.15,
+        "rank": 15,
+        "pillars": {
+          "rd": 7.74,
+          "responsible_ai": 11.96,
+          "economy": 3.91,
+          "talent": 34.54,
+          "policy": 9.29,
+          "public_opinion": 3.41,
+          "infrastructure": 18.02
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "BRA",
+        "country": "巴西",
+        "country_en": "Brazil",
+        "score": 12.74,
+        "rank": 16,
+        "pillars": {
+          "rd": 2.92,
+          "responsible_ai": 2.24,
+          "economy": 1.08,
+          "talent": 38.98,
+          "policy": 2.15,
+          "public_opinion": 50.83,
+          "infrastructure": 12.71
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "IRL",
+        "country": "爱尔兰",
+        "country_en": "Ireland",
+        "score": 12.49,
+        "rank": 17,
+        "pillars": {
+          "rd": 0.74,
+          "responsible_ai": 0.15,
+          "economy": 0.47,
+          "talent": 47.95,
+          "policy": 17.32,
+          "public_opinion": 12.51,
+          "infrastructure": 15.16
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "FIN",
+        "country": "芬兰",
+        "country_en": "Finland",
+        "score": 12.27,
+        "rank": 18,
+        "pillars": {
+          "rd": 0.92,
+          "responsible_ai": 0.75,
+          "economy": 0.55,
+          "talent": 47.82,
+          "policy": 4.9,
+          "public_opinion": 16.56,
+          "infrastructure": 16.1
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "SAU",
+        "country": "沙特阿拉伯",
+        "country_en": "Saudi Arabia",
+        "score": 12.1,
+        "rank": 19,
+        "pillars": {
+          "rd": 4.7,
+          "responsible_ai": 0.45,
+          "economy": 0.14,
+          "talent": 39.41,
+          "policy": 3.46,
+          "public_opinion": 42.32,
+          "infrastructure": 9.72
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "PRT",
+        "country": "葡萄牙",
+        "country_en": "Portugal",
+        "score": 12.07,
+        "rank": 20,
+        "pillars": {
+          "rd": 0.72,
+          "responsible_ai": 0.15,
+          "economy": 0.26,
+          "talent": 30.52,
+          "policy": 40.54,
+          "public_opinion": 23.41,
+          "infrastructure": 18.97
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "DNK",
+        "country": "丹麦",
+        "country_en": "Denmark",
+        "score": 11.97,
+        "rank": 21,
+        "pillars": {
+          "rd": 0.64,
+          "responsible_ai": 1.05,
+          "economy": 0.73,
+          "talent": 35.4,
+          "policy": 2.87,
+          "public_opinion": 30.13,
+          "infrastructure": 23.02
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "NLD",
+        "country": "荷兰",
+        "country_en": "Netherlands",
+        "score": 11.58,
+        "rank": 22,
+        "pillars": {
+          "rd": 2.21,
+          "responsible_ai": 4.63,
+          "economy": 1.59,
+          "talent": 28.54,
+          "policy": 2.75,
+          "public_opinion": 24.52,
+          "infrastructure": 24.54
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "BEL",
+        "country": "比利时",
+        "country_en": "Belgium",
+        "score": 11.36,
+        "rank": 23,
+        "pillars": {
+          "rd": 0.61,
+          "responsible_ai": 1.05,
+          "economy": 0.49,
+          "talent": 22.21,
+          "policy": 58.63,
+          "public_opinion": 30.08,
+          "infrastructure": 14.39
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "AUS",
+        "country": "澳大利亚",
+        "country_en": "Australia",
+        "score": 11.21,
+        "rank": 24,
+        "pillars": {
+          "rd": 4.42,
+          "responsible_ai": 3.44,
+          "economy": 1.22,
+          "talent": 34.94,
+          "policy": 19.15,
+          "public_opinion": 24.01,
+          "infrastructure": 7.77
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "SWE",
+        "country": "瑞典",
+        "country_en": "Sweden",
+        "score": 11.11,
+        "rank": 25,
+        "pillars": {
+          "rd": 1.28,
+          "responsible_ai": 0,
+          "economy": 2.8,
+          "talent": 34.5,
+          "policy": 3.34,
+          "public_opinion": 30.33,
+          "infrastructure": 15.08
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "MYS",
+        "country": "马来西亚",
+        "country_en": "Malaysia",
+        "score": 11.05,
+        "rank": 26,
+        "pillars": {
+          "rd": 1.48,
+          "responsible_ai": 0.15,
+          "economy": 0.08,
+          "talent": 34.22,
+          "policy": 5.25,
+          "public_opinion": 26.22,
+          "infrastructure": 18.98
+        },
+        "imputed": [
+          "talent"
+        ],
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "ITA",
+        "country": "意大利",
+        "country_en": "Italy",
+        "score": 10.68,
+        "rank": 27,
+        "pillars": {
+          "rd": 3.23,
+          "responsible_ai": 3.44,
+          "economy": 1.03,
+          "talent": 27,
+          "policy": 23.19,
+          "public_opinion": 29.39,
+          "infrastructure": 11.66
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "RUS",
+        "country": "俄罗斯",
+        "country_en": "Russia",
+        "score": 10.67,
+        "rank": 28,
+        "pillars": {
+          "rd": 2.13,
+          "responsible_ai": 0.75,
+          "economy": 0,
+          "talent": 34.22,
+          "policy": 54.53,
+          "public_opinion": 1.53,
+          "infrastructure": 7.31
+        },
+        "imputed": [
+          "talent"
+        ],
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "AUT",
+        "country": "奥地利",
+        "country_en": "Austria",
+        "score": 10.62,
+        "rank": 29,
+        "pillars": {
+          "rd": 0.69,
+          "responsible_ai": 1.05,
+          "economy": 1.17,
+          "talent": 33.88,
+          "policy": 16.86,
+          "public_opinion": 45.89,
+          "infrastructure": 5.86
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "NOR",
+        "country": "挪威",
+        "country_en": "Norway",
+        "score": 10.19,
+        "rank": 30,
+        "pillars": {
+          "rd": 0.8,
+          "responsible_ai": 0,
+          "economy": 0.49,
+          "talent": 23.82,
+          "policy": 7.4,
+          "public_opinion": 51.97,
+          "infrastructure": 15.56
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "POL",
+        "country": "波兰",
+        "country_en": "Poland",
+        "score": 10.14,
+        "rank": 31,
+        "pillars": {
+          "rd": 1.55,
+          "responsible_ai": 0.3,
+          "economy": 0.24,
+          "talent": 30.85,
+          "policy": 1.55,
+          "public_opinion": 32.04,
+          "infrastructure": 15.81
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "MEX",
+        "country": "墨西哥",
+        "country_en": "Mexico",
+        "score": 8.23,
+        "rank": 32,
+        "pillars": {
+          "rd": 0.87,
+          "responsible_ai": 0,
+          "economy": 0.18,
+          "talent": 30.14,
+          "policy": 4.3,
+          "public_opinion": 37.39,
+          "infrastructure": 3.66
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "EST",
+        "country": "爱沙尼亚",
+        "country_en": "Estonia",
+        "score": 7.89,
+        "rank": 33,
+        "pillars": {
+          "rd": 0.03,
+          "responsible_ai": 0,
+          "economy": 0.14,
+          "talent": 33.53,
+          "policy": 3.58,
+          "public_opinion": 13.64,
+          "infrastructure": 7.85
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "TUR",
+        "country": "土耳其",
+        "country_en": "Türkiye",
+        "score": 7.32,
+        "rank": 34,
+        "pillars": {
+          "rd": 2.16,
+          "responsible_ai": 0,
+          "economy": 0.47,
+          "talent": 26.21,
+          "policy": 3.46,
+          "public_opinion": 34.7,
+          "infrastructure": 0.76
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "NZL",
+        "country": "新西兰",
+        "country_en": "New Zealand",
+        "score": 7.2,
+        "rank": 35,
+        "pillars": {
+          "rd": 0.47,
+          "responsible_ai": 0,
+          "economy": 0.09,
+          "talent": 20.23,
+          "policy": 1.43,
+          "public_opinion": 16.49,
+          "infrastructure": 16.08
+        },
+        "source_id": "vibrancy_2025_vc"
+      },
+      {
+        "iso3": "ZAF",
+        "country": "南非",
+        "country_en": "South Africa",
+        "score": 6.65,
+        "rank": 36,
+        "pillars": {
+          "rd": 0.58,
+          "responsible_ai": 0,
+          "economy": 0.19,
+          "talent": 28.83,
+          "policy": 3.12,
+          "public_opinion": 22.39,
+          "infrastructure": 1.34
+        },
+        "source_id": "vibrancy_2025_vc"
+      }
+    ],
+    "source_id": "vibrancy_2025_vc",
+    "notes": "分数为 0–100；总分 = 各支柱分按默认权重加权（研发 1、经济 0.8、人才 0.6、基础设施 0.6、负责任 AI 0.2、政策与治理 0.2、公众舆论 0.2）。中国、日本、马来西亚、俄罗斯的“人才”支柱为官方插补值。",
+    "notes_en": "Scores range from 0 to 100; the total is the weighted sum of pillar scores using the default weights (R&D 1, economy 0.8, talent 0.6, infrastructure 0.6, responsible AI 0.2, policy & governance 0.2, public opinion 0.2). The “talent” pillar scores for China, Japan, Malaysia and Russia are officially imputed values."
+  }
+}

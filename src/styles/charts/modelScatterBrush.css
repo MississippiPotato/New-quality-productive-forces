@@ -1,0 +1,124 @@
+/* 模型训练算力散点 + 时间刷选 */
+.msb__stage {
+  position: relative;
+}
+.msb__canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.msb__svg {
+  position: relative;
+}
+.msb__hit {
+  fill: transparent;
+  cursor: crosshair;
+}
+.msb__hit:focus-visible {
+  stroke: var(--cyan);
+  stroke-width: 1.5px;
+  stroke-dasharray: 4 4;
+}
+.msb .ctx-frame {
+  fill: var(--bg-2);
+  fill-opacity: 0.55;
+  stroke: var(--border);
+}
+.msb .brush .selection {
+  fill: var(--cyan);
+  fill-opacity: 0.12;
+  stroke: var(--cyan);
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+.msb .brush .overlay {
+  cursor: crosshair;
+}
+.msb .brush-handle {
+  fill: var(--cyan);
+  stroke: var(--panel);
+  stroke-width: 1.5px;
+  pointer-events: none;
+}
+.msb .ctx-hint {
+  font-size: 11px;
+  fill: var(--faint);
+}
+.msb .ctx-shade {
+  fill: var(--bg);
+  fill-opacity: 0.55;
+  pointer-events: none;
+}
+.msb .ms__label {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--text);
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+.msb .ms__sub {
+  font-size: 10px;
+  fill: var(--muted);
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 3px;
+}
+.msb .ms__leader {
+  stroke: var(--muted);
+  stroke-width: 1px;
+  fill: none;
+}
+.msb .ms__ring {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.5px;
+}
+.msb .hover-ring {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 2px;
+  pointer-events: none;
+}
+.msb .size-key text {
+  font-size: 10px;
+  fill: var(--faint);
+}
+.msb .size-key circle {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1px;
+}
+.msb__legend .legend__item {
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 8px;
+  margin: -2px -4px;
+  border-radius: 999px;
+  transition: opacity 0.2s, background 0.2s;
+}
+.msb__legend .legend__item:hover {
+  background: var(--bg-2);
+}
+.msb__legend .legend__item.is-off {
+  opacity: 0.38;
+  text-decoration: line-through;
+}
+.msb__legend .legend__item.is-dim {
+  opacity: 0.55;
+}
+.msb__size {
+  align-items: center;
+  gap: 8px;
+}
+.msb__size circle {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1px;
+}
+.msb__size text {
+  font-size: 11px;
+  fill: var(--muted);
+}

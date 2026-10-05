@@ -1,0 +1,94 @@
+/* 设计令牌：图表只通过 var(--x) 或 theme.color('x') 取色 */
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #0b1020;
+  --bg-2: #0e1428;
+  --panel: #121a2f;
+  --panel-2: #172038;
+  --border: rgba(255, 255, 255, 0.1);
+  --grid: rgba(255, 255, 255, 0.08);
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --faint: #64748b;
+
+  --cyan: #22d3ee;
+  --violet: #a78bfa;
+  --orange: #f59e0b;
+  --rose: #f43f5e;
+  --green: #34d399;
+  --blue: #60a5fa;
+  --slate: #64748b;
+
+  /* 三要素固定配色 */
+  --worker: var(--green);
+  --tool: var(--cyan);
+  --object: var(--violet);
+  --combo: var(--orange);
+
+  /* 国家/地区 */
+  --cn: var(--orange);
+  --us: var(--blue);
+  --eu: var(--violet);
+  --other: #94a3b8;
+
+  --glow: 0 0 24px rgba(34, 211, 238, 0.25);
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  --hatch: rgba(255, 255, 255, 0.35);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --bg-2: #eef1f8;
+  --panel: #ffffff;
+  --panel-2: #f1f4fa;
+  --border: rgba(15, 23, 42, 0.12);
+  --grid: rgba(15, 23, 42, 0.09);
+  --text: #0f172a;
+  --muted: #475569;
+  --faint: #64748b;
+
+  --cyan: #0891b2;
+  --violet: #7c3aed;
+  --orange: #c2410c;
+  --rose: #e11d48;
+  --green: #059669;
+  --blue: #2563eb;
+  --slate: #64748b;
+  --other: #64748b;
+
+  --glow: 0 0 0 transparent;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.1);
+  --hatch: rgba(15, 23, 42, 0.35);
+}
+
+:root {
+  --font-sans: 'HarmonyOS Sans SC', 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+
+  --fs-h1: clamp(40px, 7vw, 56px);
+  --fs-h2: clamp(28px, 4.2vw, 36px);
+  --fs-h3: 20px;
+  --fs-body: 17px;
+  --fs-small: 13px;
+
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-6: 48px;
+  --sp-8: 64px;
+  --sp-12: 96px;
+
+  --radius: 12px;
+  --maxw: 1200px;
+  --duration: 750ms;
+  --nav-h: 60px;
+  --ease: cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* 英文模式：西文字体优先，避免引号与撇号按中文全角显示 */
+:root[data-lang='en'] {
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+}

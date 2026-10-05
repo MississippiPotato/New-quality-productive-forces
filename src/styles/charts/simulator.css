@@ -1,0 +1,317 @@
+/* AI 生产力模拟器 */
+.sim__banner {
+  position: sticky;
+  top: calc(var(--nav-h, 0px) + 8px);
+  z-index: 6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  border: 1px solid color-mix(in srgb, var(--rose) 55%, var(--border));
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--rose) 12%, var(--panel));
+  backdrop-filter: blur(8px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
+  color: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.sim__banner-icon {
+  color: var(--rose);
+  font-size: 16px;
+}
+.sim__banner .tag {
+  background: var(--panel);
+}
+
+.sim__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+.sim {
+  container-type: inline-size;
+}
+@container (min-width: 720px) {
+  .sim__grid {
+    grid-template-columns: minmax(280px, 5fr) minmax(0, 7fr);
+    align-items: start;
+  }
+}
+
+/* 控件 */
+.sim__controls {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--panel-2);
+}
+.sim__field {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  min-width: 0;
+}
+.sim__label {
+  padding: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+.sim__seg {
+  display: flex;
+  margin: 8px 0 8px;
+}
+.sim__seg button {
+  flex: 1;
+}
+.sim__param {
+  font-size: 13px;
+}
+.sim__param-vals {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.sim__pill {
+  padding: 1px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--cyan) 14%, transparent);
+  color: var(--muted);
+}
+.sim__pill b {
+  font-family: var(--font-mono);
+  color: var(--cyan);
+}
+.sim__pill-k {
+  font-size: 12px;
+  color: var(--faint);
+}
+.sim__src {
+  margin: 6px 0 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--faint);
+}
+.sim__src-note {
+  color: var(--muted);
+}
+
+.sim__row {
+  display: grid;
+  gap: 2px;
+  transition: opacity 0.3s;
+}
+.sim__row.is-disabled {
+  opacity: 0.45;
+}
+.sim__row-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.sim__num-wrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.sim__num {
+  width: 76px;
+  padding: 2px 6px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg-2);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  text-align: right;
+}
+.sim__num:focus-visible {
+  outline-offset: 1px;
+}
+.sim__unit {
+  min-width: 28px;
+  font-size: 12px;
+  color: var(--muted);
+}
+.sim__range {
+  width: 100%;
+  margin: 4px 0 0;
+  accent-color: var(--cyan);
+  cursor: pointer;
+}
+.sim__range:disabled {
+  cursor: not-allowed;
+}
+.sim__hint {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--faint);
+}
+.sim__form-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 10px;
+  border-top: 1px dashed var(--border);
+}
+.sim__defaults {
+  flex: 1 1 180px;
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--orange);
+}
+
+/* 输出 */
+.sim__out {
+  min-width: 0;
+}
+.sim__kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin-bottom: 12px;
+}
+.sim__kpi {
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: linear-gradient(160deg, color-mix(in srgb, var(--kc) 12%, var(--panel-2)), var(--panel-2));
+}
+.sim__kpi--fte {
+  --kc: var(--green);
+}
+.sim__kpi--hours {
+  --kc: var(--cyan);
+}
+.sim__kpi-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.sim__kpi-head .tag {
+  font-size: 11px;
+  padding: 0 6px;
+}
+.sim__kpi-val {
+  margin-top: 4px;
+  line-height: 1.1;
+}
+.sim__kpi-num {
+  font-family: var(--font-mono);
+  font-size: clamp(28px, 5cqi, 40px);
+  font-weight: 800;
+  color: var(--kc);
+  font-variant-numeric: tabular-nums;
+}
+.sim__kpi-unit {
+  margin-left: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.sim__kpi-sub {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--faint);
+}
+.sim__viz-head {
+  margin: 4px 0 2px;
+  font-size: 12px;
+  color: var(--faint);
+  text-align: right;
+}
+.sim__p {
+  fill: var(--slate);
+  fill-opacity: 0.35;
+  transition:
+    fill 0.3s,
+    fill-opacity 0.3s;
+}
+.sim__p.is-on {
+  fill: var(--tool);
+  fill-opacity: 0.95;
+}
+.sim__e-ring {
+  fill: color-mix(in srgb, var(--green) 10%, transparent);
+  stroke: var(--green);
+  stroke-width: 1.2px;
+  stroke-dasharray: 3 2;
+}
+.sim__e-fill {
+  fill: var(--green);
+  fill-opacity: 0.9;
+}
+.chart .sim__wlabel {
+  font-size: 12px;
+  font-weight: 700;
+  fill: var(--muted);
+}
+.chart .sim__wlabel.is-extra {
+  fill: var(--green);
+}
+.chart .sim__empty {
+  font-size: 12px;
+  fill: var(--faint);
+}
+
+/* 计算方法 */
+.sim__method {
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-2);
+}
+.sim__method summary {
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+}
+.sim__method summary:hover {
+  color: var(--cyan);
+}
+.sim__method-body {
+  padding: 0 14px 12px;
+}
+.sim__formula {
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text);
+}
+.sim__f-k {
+  display: inline-block;
+  margin-right: 6px;
+  color: var(--cyan);
+  font-weight: 700;
+}
+.sim__f-v {
+  font-family: var(--font-mono);
+  color: var(--muted);
+  word-break: break-word;
+}
+.sim__caveat {
+  margin: 0 0 8px;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--orange);
+}
+.sim__svg.is-small .sim__e-ring {
+  stroke-dasharray: none;
+}

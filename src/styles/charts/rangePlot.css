@@ -1,0 +1,154 @@
+/* AI 经济贡献预测区间：小多图 + 中国 2035 卡片 */
+.range-plot {
+  container-type: inline-size;
+}
+.rp-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+@container (min-width: 760px) {
+  .rp-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.rp-panel {
+  min-width: 0;
+  padding: 12px 12px 4px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--bg-2);
+  transition: opacity 0.5s, border-color 0.5s, box-shadow 0.5s;
+}
+.rp-panel.is-dim,
+.rp-cn.is-dim {
+  opacity: 0.4;
+}
+.rp-panel.is-hot,
+.rp-cn.is-hot {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--orange) 40%, transparent);
+}
+.rp-panel__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.rp-panel__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+.rp-panel__unit {
+  margin: 2px 0 2px;
+  font-size: 12px;
+  color: var(--faint);
+}
+.range-plot .rp-label__main {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+}
+.range-plot .rp-label__org {
+  fill: var(--faint);
+  font-size: 11px;
+}
+.range-plot .rp-range {
+  stroke: var(--orange);
+  stroke-width: 1px;
+  stroke-dasharray: 3 3;
+}
+.range-plot .rp-cap {
+  stroke: var(--orange);
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+}
+.range-plot .rp-val {
+  fill: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.range-plot .rp-row:focus-visible .rp-range {
+  stroke: var(--text);
+  stroke-dasharray: none;
+}
+
+.rp-cn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px 32px;
+  margin-top: 14px;
+  padding: 16px 20px;
+  border: 1px dashed color-mix(in srgb, var(--orange) 60%, transparent);
+  border-radius: 14px;
+  background:
+    linear-gradient(120deg, color-mix(in srgb, var(--orange) 12%, transparent), transparent 55%),
+    var(--bg-2);
+  transition: opacity 0.5s, border-color 0.5s, box-shadow 0.5s;
+}
+.rp-cn__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.rp-cn__value {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-top: 4px;
+}
+.rp-cn__value strong {
+  font-size: 44px;
+  line-height: 1;
+  color: var(--orange);
+  font-variant-numeric: tabular-nums;
+}
+.rp-cn__q,
+.rp-cn__u {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+.rp-cn__desc {
+  font-size: 13px;
+  color: var(--muted);
+}
+.rp-cn__share {
+  min-width: 160px;
+}
+.rp-cn__range {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.rp-cn__bar {
+  position: relative;
+  height: 8px;
+  margin-top: 6px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--slate) 25%, transparent);
+}
+.rp-cn__bar i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--orange) 35%, transparent), var(--orange), color-mix(in srgb, var(--orange) 35%, transparent));
+}
+.rp-cn__scale {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--faint);
+}
+.rp-cn__org {
+  flex-basis: 100%;
+  font-size: 12px;
+  color: var(--faint);
+}

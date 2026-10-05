@@ -1,0 +1,165 @@
+/* 三要素力导向图解 */
+.ff__svg {
+  touch-action: pan-y;
+  user-select: none;
+}
+.ff__bg circle {
+  fill: none;
+  stroke: var(--grid);
+  stroke-dasharray: 2 6;
+}
+.chart .ff__hint {
+  font-size: 12px;
+  fill: var(--faint);
+}
+.chart .ff__hint.is-hidden {
+  display: none;
+}
+
+.ff__arc {
+  fill: none;
+  stroke: var(--combo);
+  stroke-width: 2px;
+  stroke-opacity: 0.55;
+  stroke-dasharray: 3 7;
+  stroke-linecap: round;
+  animation: ff-dash 1.6s linear infinite;
+  transition:
+    stroke-opacity 0.4s,
+    stroke-width 0.4s;
+}
+.ff__arc.is-hot {
+  stroke-opacity: 1;
+  stroke-width: 3px;
+}
+.ff__arc.is-dim {
+  stroke-opacity: 0.15;
+}
+
+.ff__link-base {
+  stroke-width: 2px;
+  stroke-opacity: 0.25;
+}
+.ff__link-flow {
+  stroke-width: 3px;
+  stroke-linecap: round;
+  stroke-dasharray: 2 14;
+  animation: ff-dash 1.1s linear infinite;
+}
+.ff__link {
+  transition: opacity 0.4s;
+}
+.ff__link.is-dim {
+  opacity: 0.15;
+}
+.ff__link.is-hot .ff__link-base {
+  stroke-opacity: 0.6;
+}
+@keyframes ff-dash {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+.ff.is-paused .ff__arc,
+.ff.is-paused .ff__link-flow,
+.ff.is-paused .ff__aura {
+  animation-play-state: paused;
+}
+
+.ff__node,
+.ff__combo {
+  transition: opacity 0.4s;
+}
+.ff__node > *,
+.ff__combo > * {
+  transition: opacity 0.4s;
+}
+.ff__node.is-dim > :not(.ff__mask, .ff__aura),
+.ff__combo.is-dim > :not(.ff__pill-mask) {
+  opacity: 0.28;
+}
+.ff__node.is-dim > .ff__aura {
+  opacity: 0.02;
+}
+.ff__mask,
+.ff__pill-mask {
+  fill: var(--panel);
+}
+.ff__aura {
+  opacity: 0.07;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: ff-breathe 4s ease-in-out infinite;
+}
+.ff__node--center .ff__aura {
+  opacity: 0.12;
+}
+.ff__node.is-hot .ff__aura {
+  opacity: 0.22;
+}
+@keyframes ff-breathe {
+  50% {
+    transform: scale(1.12);
+  }
+}
+.ff__orbit {
+  fill: none;
+  stroke-width: 1px;
+  stroke-opacity: 0.35;
+  stroke-dasharray: 1 5;
+}
+.ff__core {
+  stroke-width: 2px;
+  transition: stroke-width 0.25s;
+}
+.ff__node:hover .ff__core,
+.ff__node:focus-visible .ff__core,
+.ff__node.is-hot .ff__core {
+  stroke-width: 3.5px;
+}
+.chart .ff__node:focus-visible > .ff__orbit {
+  stroke: var(--text);
+  stroke-opacity: 1;
+  stroke-dasharray: none;
+  stroke-width: 2px;
+}
+.chart .ff__name {
+  fill: var(--text);
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  pointer-events: none;
+}
+.chart .ff__desc {
+  fill: var(--muted);
+  font-size: 12px;
+  pointer-events: none;
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 4px;
+  stroke-linejoin: round;
+}
+.ff__node.is-hot .ff__desc {
+  fill: var(--text);
+}
+
+.ff__pill {
+  stroke: var(--combo);
+  stroke-width: 1.5px;
+}
+.ff__combo:hover .ff__pill,
+.ff__combo:focus-visible .ff__pill,
+.ff__combo.is-hot .ff__pill {
+  stroke-width: 2.5px;
+}
+.chart .ff__pill-text {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  pointer-events: none;
+}
+.chart .ff__combo:focus-visible > .ff__pill {
+  stroke: var(--text);
+}
+.ff.is-dragging .ff__node {
+  cursor: grabbing;
+}

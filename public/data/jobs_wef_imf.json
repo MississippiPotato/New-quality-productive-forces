@@ -1,0 +1,154 @@
+{
+  "id": "jobs_wef_imf",
+  "title": "就业结构变化与 AI 暴露度",
+  "title_en": "Changes in job structure and AI exposure",
+  "wef": {
+    "horizon": "2025–2030",
+    "unit": "百万个岗位",
+    "unit_en": "million jobs",
+    "created": {
+      "value": 170,
+      "source_id": "wef_fojr_2025"
+    },
+    "displaced": {
+      "value": 92,
+      "source_id": "wef_fojr_2025"
+    },
+    "net": {
+      "value": 78,
+      "source_id": "wef_fojr_2025"
+    },
+    "structural_churn": {
+      "value": 22,
+      "unit": "%",
+      "source_id": "wef_fojr_2025"
+    },
+    "survey": {
+      "employers": 1000,
+      "workers_million": 14,
+      "industries": 22,
+      "economies": 55,
+      "qualifier": "多",
+      "qualifier_en": "more than",
+      "source_id": "wef_fojr_2025"
+    }
+  },
+  "imf": {
+    "unit": "% 就业暴露于 AI",
+    "unit_en": "% of employment exposed to AI",
+    "groups": [
+      {
+        "name": "全球",
+        "name_en": "World",
+        "key": "world",
+        "value": 40,
+        "source_id": "imf_sdn_2024_001"
+      },
+      {
+        "name": "发达经济体",
+        "name_en": "Advanced economies",
+        "key": "advanced",
+        "value": 60,
+        "source_id": "imf_sdn_2024_001"
+      },
+      {
+        "name": "新兴市场",
+        "name_en": "Emerging markets",
+        "key": "emerging",
+        "value": 40,
+        "source_id": "imf_sdn_2024_001"
+      },
+      {
+        "name": "低收入国家",
+        "name_en": "Low-income countries",
+        "key": "low_income",
+        "value": 26,
+        "source_id": "imf_sdn_2024_001"
+      }
+    ],
+    "countries": [
+      {
+        "name": "英国",
+        "name_en": "United Kingdom",
+        "group": "advanced",
+        "value": 70,
+        "source_id": "imf_sdn_2024_001"
+      },
+      {
+        "name": "美国",
+        "name_en": "United States",
+        "group": "advanced",
+        "value": 60,
+        "source_id": "imf_sdn_2024_001"
+      },
+      {
+        "name": "巴西",
+        "name_en": "Brazil",
+        "group": "emerging",
+        "value": 41,
+        "source_id": "imf_sdn_2024_001"
+      },
+      {
+        "name": "印度",
+        "name_en": "India",
+        "group": "emerging",
+        "value": 26,
+        "source_id": "imf_sdn_2024_001"
+      }
+    ],
+    "notes": "原文为“约”值。报告未逐国公布其他国家的暴露度（按“不估算”原则不读图取值）。",
+    "notes_en": "Original values are approximate (“about”). The report does not publish exposure for other individual countries, and this site does not estimate values from its charts."
+  },
+  "new_occupations": {
+    "date": "2024-07-31",
+    "occupations": {
+      "value": 19,
+      "source_id": "mohrss_2024_new_jobs"
+    },
+    "work_types": {
+      "value": 28,
+      "source_id": "mohrss_2024_new_jobs"
+    },
+    "suggestions_2023_10": {
+      "value": 430,
+      "qualifier": "余份",
+      "qualifier_en": "more than",
+      "ratio_vs_2021": 2,
+      "ratio_qualifier": "多倍",
+      "ratio_qualifier_en": "more than",
+      "source_id": "mohrss_2024_new_jobs"
+    },
+    "examples": [
+      {
+        "name": "生成式人工智能系统应用员",
+        "name_en": "Generative AI system application specialist",
+        "factor": "worker",
+        "source_id": "mohrss_2024_new_jobs"
+      },
+      {
+        "name": "智能网联汽车测试员",
+        "name_en": "Intelligent connected vehicle tester",
+        "factor": "worker",
+        "source_id": "mohrss_2024_new_jobs"
+      },
+      {
+        "name": "智能制造系统运维员",
+        "name_en": "Intelligent manufacturing system O&M technician",
+        "factor": "worker",
+        "source_id": "mohrss_2024_new_jobs"
+      },
+      {
+        "name": "工业互联网运维员",
+        "name_en": "Industrial internet O&M technician",
+        "factor": "worker",
+        "source_id": "mohrss_2024_new_jobs"
+      },
+      {
+        "name": "云网智能运维员",
+        "name_en": "Cloud network intelligent O&M technician",
+        "factor": "worker",
+        "source_id": "mohrss_2024_new_jobs"
+      }
+    ]
+  }
+}

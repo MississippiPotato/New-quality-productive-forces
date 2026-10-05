@@ -1,0 +1,62 @@
+.radar__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-bottom: 4px;
+}
+.radar__head .seg {
+  margin: 0;
+}
+.radar__tag.tag {
+  padding: 4px 14px;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  background: color-mix(in srgb, var(--violet) 12%, transparent);
+}
+.radar .ring {
+  fill: none;
+  stroke: var(--grid);
+}
+.radar .ring--outer {
+  stroke: var(--border);
+}
+.radar .spoke {
+  stroke: var(--grid);
+}
+.radar .ring-label {
+  fill: var(--faint);
+  font-size: 10px;
+}
+.radar .axis-name {
+  font-size: 13px;
+  font-weight: 700;
+}
+.radar .poly--old {
+  fill: var(--other);
+  fill-opacity: 0.14;
+  stroke: var(--other);
+  stroke-width: 1.5;
+  stroke-dasharray: 5 4;
+}
+.radar .poly--new {
+  fill-opacity: 0.28;
+  stroke-width: 2.5;
+  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--tool) 40%, transparent));
+}
+:root[data-theme='light'] .radar .poly--new {
+  filter: none;
+}
+.radar .vertex {
+  stroke: var(--panel);
+  stroke-width: 2;
+  cursor: default;
+}
+.radar .vertex--old {
+  fill: var(--other);
+}
+.radar .series-label {
+  font-size: 12px;
+  font-weight: 700;
+}

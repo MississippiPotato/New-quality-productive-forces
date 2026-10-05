@@ -1,0 +1,29 @@
+/* 生成式 AI 备案阶梯图：顶部 KPI 胶囊 */
+.sf-kpi {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0 8px 10px 0;
+  padding: 4px 14px 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-2);
+}
+.sf-kpi__label {
+  font-size: 13px;
+  color: var(--muted);
+}
+.sf-kpi__value {
+  font-family: var(--font-mono);
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+}
+.sf-kpi--line .sf-kpi__value {
+  color: var(--violet);
+}
+.sf-kpi__unit {
+  font-size: 13px;
+  color: var(--muted);
+}

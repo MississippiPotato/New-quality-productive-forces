@@ -1,0 +1,124 @@
+.wm__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+.wm__head .seg {
+  margin: 0;
+}
+.wm__year {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.wm__year.is-hidden {
+  visibility: hidden;
+}
+.wm__year input {
+  width: 140px;
+  accent-color: var(--cyan);
+}
+.wm__year-val {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text);
+}
+.wm__stage {
+  position: relative;
+  margin-top: 12px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--bg-2);
+}
+.wm__svg {
+  display: block;
+  cursor: grab;
+  touch-action: pan-y;
+}
+.wm__svg:active {
+  cursor: grabbing;
+}
+/* 暗色主题下对天地图瓦片做色彩反转以融入页面（只改色调，不改变任何地图要素） */
+.wm__tiles--dark image {
+  filter: invert(0.92) hue-rotate(180deg) saturate(0.6) brightness(0.9);
+}
+.wm__sphere {
+  fill: var(--bg-2);
+  stroke: var(--border);
+}
+.wm__gl {
+  fill: none;
+  stroke: var(--grid);
+  stroke-width: 0.6px;
+}
+.wm__prov {
+  fill: color-mix(in srgb, var(--cn) 14%, transparent);
+  stroke: color-mix(in srgb, var(--cn) 55%, transparent);
+  stroke-width: 0.4px;
+}
+.wm__line {
+  fill: none;
+  stroke: color-mix(in srgb, var(--cn) 70%, transparent);
+  stroke-width: 0.8px;
+}
+.wm__bubbles circle {
+  fill-opacity: 0.72;
+  stroke: var(--panel);
+  stroke-width: 1px;
+  cursor: pointer;
+}
+.wm__bubbles circle:hover,
+.wm__bubbles circle:focus-visible {
+  fill-opacity: 0.95;
+  stroke: var(--text);
+}
+.chart text.wm__label {
+  fill: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 3px;
+  pointer-events: none;
+}
+.wm__credit {
+  position: absolute;
+  left: 8px;
+  bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--panel) 80%, transparent);
+  pointer-events: none;
+}
+.wm__zoom {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.wm__zoom .icon-btn {
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+}
+.wm__nokey {
+  position: absolute;
+  left: 8px;
+  right: 48px;
+  top: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--orange);
+  background: color-mix(in srgb, var(--panel) 85%, transparent);
+  border: 1px dashed color-mix(in srgb, var(--orange) 60%, transparent);
+}

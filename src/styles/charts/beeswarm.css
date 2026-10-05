@@ -1,0 +1,44 @@
+.beeswarm .node {
+  cursor: default;
+  transition: opacity 0.4s;
+}
+.beeswarm .node--group circle.halo {
+  fill-opacity: 0.16;
+  stroke-width: 2;
+}
+.beeswarm .node--country circle {
+  stroke: var(--panel);
+  stroke-width: 1.5;
+}
+.beeswarm .node__label {
+  font-size: 12px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+.beeswarm .node--group .node__label {
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.beeswarm .node__label tspan.v {
+  font-variant-numeric: tabular-nums;
+}
+.beeswarm .node.is-dim {
+  opacity: 0.18;
+}
+.beeswarm .lane {
+  stroke: var(--grid);
+  stroke-dasharray: 2 4;
+}
+.beeswarm .world-line {
+  stroke: var(--text);
+  stroke-opacity: 0.35;
+  stroke-dasharray: 4 4;
+}
+.beeswarm .missing {
+  fill: var(--faint);
+  font-size: 11px;
+}

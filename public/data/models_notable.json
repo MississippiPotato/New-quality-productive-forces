@@ -1,0 +1,91 @@
+{
+  "id": "models_notable",
+  "title": "各国当年发布的知名（notable）AI 模型数",
+  "title_en": "Notable AI models released per year, by country/region",
+  "unit": "个",
+  "unit_en": "models",
+  "records": [
+    {
+      "year": 2024,
+      "region": "美国",
+      "region_en": "United States",
+      "value": 57,
+      "source_id": "epoch_notable"
+    },
+    {
+      "year": 2024,
+      "region": "中国",
+      "region_en": "China",
+      "value": 31,
+      "source_id": "epoch_notable"
+    },
+    {
+      "year": 2024,
+      "region": "欧洲",
+      "region_en": "Europe",
+      "value": 8,
+      "source_id": "epoch_notable"
+    },
+    {
+      "year": 2025,
+      "region": "美国",
+      "region_en": "United States",
+      "value": 64,
+      "source_id": "epoch_notable"
+    },
+    {
+      "year": 2025,
+      "region": "中国",
+      "region_en": "China",
+      "value": 35,
+      "source_id": "epoch_notable"
+    },
+    {
+      "year": 2025,
+      "region": "欧洲",
+      "region_en": "Europe",
+      "value": 2,
+      "source_id": "epoch_notable"
+    }
+  ],
+  "performance_gap": {
+    "value": 2.7,
+    "unit": "%",
+    "label": "中美顶级模型性能差距",
+    "label_en": "Performance gap between top US and Chinese models",
+    "source_id": "stanford_ai_index_2026"
+  },
+  "notes": "2024、2025 年数量由本站按 Epoch AI notable 模型库（2026-09 下载）统计：按机构所在国计数，多国合作分别计入；中国含中国香港、中国台湾的机构；欧洲含英国、瑞士等。AI Index 2026 使用 2026-04 快照，美国为 59（本站统计 64），两者差异来自 Epoch 的后续收录。不同年份版本的 AI Index 数值（如 2025 版的 40/15）因数据修订不宜与本图混用。",
+  "notes_en": "Counts for 2024 and 2025 are compiled by this site from the Epoch AI notable models database (downloaded 2026-09): models are counted by the country of the developing organisation, with multinational collaborations counted for each country; China includes organisations in Hong Kong, China and Taiwan, China; Europe includes the UK, Switzerland and others. AI Index 2026 uses a 2026-04 snapshot and reports 59 for the US (64 in this site's count); the difference comes from Epoch's later additions. Figures from other editions of the AI Index (e.g. 40/15 in the 2025 edition) reflect data revisions and should not be mixed with this chart.",
+  "derived": true,
+  "ai_index_2026": {
+    "label": "AI Index 2026 发布值（2025 年）",
+    "label_en": "AI Index 2026 published values (2025)",
+    "records": [
+      {
+        "region": "美国",
+        "region_en": "United States",
+        "value": 59,
+        "source_id": "stanford_ai_index_2026"
+      },
+      {
+        "region": "中国",
+        "region_en": "China",
+        "value": 35,
+        "source_id": "stanford_ai_index_2026"
+      },
+      {
+        "region": "韩国",
+        "region_en": "South Korea",
+        "value": 8,
+        "source_id": "stanford_ai_index_2026"
+      },
+      {
+        "region": "欧洲",
+        "region_en": "Europe",
+        "value": 2,
+        "source_id": "stanford_ai_index_2026"
+      }
+    ]
+  }
+}

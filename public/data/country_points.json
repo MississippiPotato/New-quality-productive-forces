@@ -1,0 +1,322 @@
+{
+  "id": "country_points",
+  "title": "国家/地区代表点（用于在底图上放置数据气泡）",
+  "title_en": "Representative points for countries/regions (for placing data bubbles on the base map)",
+  "notes": "代表点为首都或主要城市附近的近似坐标（WGS84），仅用于放置数据符号，不表示任何边界。OWID 单列的“中国香港”按中国的一部分标注为“中国香港”。",
+  "notes_en": "Representative points are approximate coordinates near capitals or major cities (WGS84), used only to place data symbols; they do not represent any boundary. Hong Kong, listed separately by OWID, is labelled “Hong Kong, China” as part of China.",
+  "source_id": "coords_approx",
+  "records": [
+    {
+      "entity": "United States",
+      "iso3": "USA",
+      "name": "美国",
+      "name_en": "United States",
+      "lon": -77.04,
+      "lat": 38.91
+    },
+    {
+      "entity": "China",
+      "iso3": "CHN",
+      "name": "中国",
+      "name_en": "China",
+      "lon": 116.4,
+      "lat": 39.9
+    },
+    {
+      "entity": "Hong Kong",
+      "iso3": "HKG",
+      "name": "中国香港",
+      "name_en": "Hong Kong, China",
+      "lon": 114.17,
+      "lat": 22.32
+    },
+    {
+      "entity": "United Kingdom",
+      "iso3": "GBR",
+      "name": "英国",
+      "name_en": "United Kingdom",
+      "lon": -0.13,
+      "lat": 51.51
+    },
+    {
+      "entity": "France",
+      "iso3": "FRA",
+      "name": "法国",
+      "name_en": "France",
+      "lon": 2.35,
+      "lat": 48.86
+    },
+    {
+      "entity": "Germany",
+      "iso3": "DEU",
+      "name": "德国",
+      "name_en": "Germany",
+      "lon": 13.4,
+      "lat": 52.52
+    },
+    {
+      "entity": "South Korea",
+      "iso3": "KOR",
+      "name": "韩国",
+      "name_en": "South Korea",
+      "lon": 126.98,
+      "lat": 37.57
+    },
+    {
+      "entity": "Japan",
+      "iso3": "JPN",
+      "name": "日本",
+      "name_en": "Japan",
+      "lon": 139.69,
+      "lat": 35.69
+    },
+    {
+      "entity": "Canada",
+      "iso3": "CAN",
+      "name": "加拿大",
+      "name_en": "Canada",
+      "lon": -75.7,
+      "lat": 45.42
+    },
+    {
+      "entity": "Israel",
+      "iso3": "ISR",
+      "name": "以色列",
+      "name_en": "Israel",
+      "lon": 34.9,
+      "lat": 31.5
+    },
+    {
+      "entity": "United Arab Emirates",
+      "iso3": "ARE",
+      "name": "阿联酋",
+      "name_en": "UAE",
+      "lon": 54.37,
+      "lat": 24.45
+    },
+    {
+      "entity": "Saudi Arabia",
+      "iso3": "SAU",
+      "name": "沙特阿拉伯",
+      "name_en": "Saudi Arabia",
+      "lon": 46.72,
+      "lat": 24.71
+    },
+    {
+      "entity": "Singapore",
+      "iso3": "SGP",
+      "name": "新加坡",
+      "name_en": "Singapore",
+      "lon": 103.82,
+      "lat": 1.35
+    },
+    {
+      "entity": "Switzerland",
+      "iso3": "CHE",
+      "name": "瑞士",
+      "name_en": "Switzerland",
+      "lon": 7.45,
+      "lat": 46.95
+    },
+    {
+      "entity": "Finland",
+      "iso3": "FIN",
+      "name": "芬兰",
+      "name_en": "Finland",
+      "lon": 24.94,
+      "lat": 60.17
+    },
+    {
+      "entity": "Australia",
+      "iso3": "AUS",
+      "name": "澳大利亚",
+      "name_en": "Australia",
+      "lon": 149.13,
+      "lat": -35.28
+    },
+    {
+      "entity": "Russia",
+      "iso3": "RUS",
+      "name": "俄罗斯",
+      "name_en": "Russia",
+      "lon": 37.62,
+      "lat": 55.76
+    },
+    {
+      "entity": "Poland",
+      "iso3": "POL",
+      "name": "波兰",
+      "name_en": "Poland",
+      "lon": 21.01,
+      "lat": 52.23
+    },
+    {
+      "entity": "Ukraine",
+      "iso3": "UKR",
+      "name": "乌克兰",
+      "name_en": "Ukraine",
+      "lon": 30.52,
+      "lat": 50.45
+    },
+    {
+      "entity": "Bulgaria",
+      "iso3": "BGR",
+      "name": "保加利亚",
+      "name_en": "Bulgaria",
+      "lon": 23.32,
+      "lat": 42.7
+    },
+    {
+      "entity": "India",
+      "iso3": "IND",
+      "name": "印度",
+      "name_en": "India",
+      "lon": 77.21,
+      "lat": 28.61
+    },
+    {
+      "entity": "Spain",
+      "iso3": "ESP",
+      "name": "西班牙",
+      "name_en": "Spain",
+      "lon": -3.7,
+      "lat": 40.42
+    },
+    {
+      "entity": "Luxembourg",
+      "iso3": "LUX",
+      "name": "卢森堡",
+      "name_en": "Luxembourg",
+      "lon": 6.13,
+      "lat": 49.61
+    },
+    {
+      "entity": "Brazil",
+      "iso3": "BRA",
+      "name": "巴西",
+      "name_en": "Brazil",
+      "lon": -47.88,
+      "lat": -15.79
+    },
+    {
+      "entity": "Ireland",
+      "iso3": "IRL",
+      "name": "爱尔兰",
+      "name_en": "Ireland",
+      "lon": -6.26,
+      "lat": 53.35
+    },
+    {
+      "entity": "Portugal",
+      "iso3": "PRT",
+      "name": "葡萄牙",
+      "name_en": "Portugal",
+      "lon": -9.14,
+      "lat": 38.72
+    },
+    {
+      "entity": "Denmark",
+      "iso3": "DNK",
+      "name": "丹麦",
+      "name_en": "Denmark",
+      "lon": 12.57,
+      "lat": 55.68
+    },
+    {
+      "entity": "Netherlands",
+      "iso3": "NLD",
+      "name": "荷兰",
+      "name_en": "Netherlands",
+      "lon": 4.9,
+      "lat": 52.37
+    },
+    {
+      "entity": "Belgium",
+      "iso3": "BEL",
+      "name": "比利时",
+      "name_en": "Belgium",
+      "lon": 4.35,
+      "lat": 50.85
+    },
+    {
+      "entity": "Sweden",
+      "iso3": "SWE",
+      "name": "瑞典",
+      "name_en": "Sweden",
+      "lon": 18.07,
+      "lat": 59.33
+    },
+    {
+      "entity": "Malaysia",
+      "iso3": "MYS",
+      "name": "马来西亚",
+      "name_en": "Malaysia",
+      "lon": 101.69,
+      "lat": 3.14
+    },
+    {
+      "entity": "Italy",
+      "iso3": "ITA",
+      "name": "意大利",
+      "name_en": "Italy",
+      "lon": 12.5,
+      "lat": 41.9
+    },
+    {
+      "entity": "Austria",
+      "iso3": "AUT",
+      "name": "奥地利",
+      "name_en": "Austria",
+      "lon": 16.37,
+      "lat": 48.21
+    },
+    {
+      "entity": "Norway",
+      "iso3": "NOR",
+      "name": "挪威",
+      "name_en": "Norway",
+      "lon": 10.75,
+      "lat": 59.91
+    },
+    {
+      "entity": "Mexico",
+      "iso3": "MEX",
+      "name": "墨西哥",
+      "name_en": "Mexico",
+      "lon": -99.13,
+      "lat": 19.43
+    },
+    {
+      "entity": "Estonia",
+      "iso3": "EST",
+      "name": "爱沙尼亚",
+      "name_en": "Estonia",
+      "lon": 24.75,
+      "lat": 59.44
+    },
+    {
+      "entity": "Turkey",
+      "iso3": "TUR",
+      "name": "土耳其",
+      "name_en": "Türkiye",
+      "lon": 32.86,
+      "lat": 39.93
+    },
+    {
+      "entity": "New Zealand",
+      "iso3": "NZL",
+      "name": "新西兰",
+      "name_en": "New Zealand",
+      "lon": 174.78,
+      "lat": -41.29
+    },
+    {
+      "entity": "South Africa",
+      "iso3": "ZAF",
+      "name": "南非",
+      "name_en": "South Africa",
+      "lon": 28.19,
+      "lat": -25.75
+    }
+  ]
+}

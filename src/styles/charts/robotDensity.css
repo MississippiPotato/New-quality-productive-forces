@@ -1,0 +1,37 @@
+.robot-density .bar-row {
+  transition: opacity 0.4s;
+}
+.robot-density .bar-row.is-dim {
+  opacity: 0.3;
+}
+.robot-density .row-name {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+}
+.robot-density .row-value {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.robot-density .bar--suspect {
+  stroke: var(--cn);
+  stroke-width: 1.4;
+  stroke-dasharray: 4 3;
+}
+.robot-density .flag rect {
+  fill: color-mix(in srgb, var(--rose) 16%, transparent);
+  stroke: var(--rose);
+}
+.robot-density .flag text {
+  fill: var(--rose);
+  font-size: 11px;
+  font-weight: 700;
+}
+.robot-density .chart-note--warn {
+  padding: 8px 12px;
+  border: 1px solid color-mix(in srgb, var(--rose) 40%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--rose) 8%, transparent);
+}

@@ -1,0 +1,92 @@
+{
+  "id": "economic_estimates",
+  "title": "AI 经济贡献测算（预测，区间）",
+  "title_en": "Estimates of AI's economic contribution (forecasts, ranges)",
+  "forecast": true,
+  "value_ranges": {
+    "unit": "万亿美元/年",
+    "unit_en": "trillion US dollars per year",
+    "records": [
+      {
+        "label": "生成式 AI · 63 个用例",
+        "label_en": "Generative AI · 63 use cases",
+        "low": 2.6,
+        "high": 4.4,
+        "org": "麦肯锡",
+        "org_en": "McKinsey",
+        "source_id": "mckinsey_genai_2023"
+      },
+      {
+        "label": "另加：嵌入现有软件等更广泛应用",
+        "label_en": "Plus: broader uses such as embedding in existing software",
+        "low": 6.1,
+        "high": 7.9,
+        "org": "麦肯锡",
+        "org_en": "McKinsey",
+        "source_id": "mckinsey_genai_2023",
+        "note": "原文为在 63 个用例之外“另增”的 6.1–7.9 万亿美元/年（Exhibit 2）",
+        "note_en": "In the original, an additional $6.1–7.9 trillion per year on top of the 63 use cases (Exhibit 2)"
+      }
+    ]
+  },
+  "industry_ranges": {
+    "unit": "亿美元/年",
+    "unit_en": "100 million US dollars per year",
+    "records": [
+      {
+        "label": "银行业",
+        "label_en": "Banking",
+        "low": 2000,
+        "high": 3400,
+        "org": "麦肯锡",
+        "org_en": "McKinsey",
+        "source_id": "mckinsey_genai_2023"
+      },
+      {
+        "label": "零售与消费品",
+        "label_en": "Retail and consumer packaged goods",
+        "low": 4000,
+        "high": 6600,
+        "org": "麦肯锡",
+        "org_en": "McKinsey",
+        "source_id": "mckinsey_genai_2023"
+      }
+    ]
+  },
+  "productivity_ranges": {
+    "unit": "个百分点/年（劳动生产率增速）",
+    "unit_en": "percentage points per year (labour productivity growth)",
+    "records": [
+      {
+        "label": "生成式 AI（至 2040 年）",
+        "label_en": "Generative AI (to 2040)",
+        "low": 0.1,
+        "high": 0.6,
+        "org": "麦肯锡",
+        "org_en": "McKinsey",
+        "source_id": "mckinsey_genai_2023"
+      },
+      {
+        "label": "生成式 AI + 其他技术",
+        "label_en": "Generative AI + other technologies",
+        "low": 0.2,
+        "high": 3.3,
+        "org": "麦肯锡",
+        "org_en": "McKinsey",
+        "source_id": "mckinsey_genai_2023"
+      }
+    ]
+  },
+  "china_gdp_2035": {
+    "value": 11,
+    "unit": "万亿元",
+    "unit_en": "trillion yuan",
+    "qualifier": "超过",
+    "qualifier_en": "more than",
+    "gdp_share_low": 4,
+    "gdp_share_high": 5,
+    "org": "中国电信研究院（饶少阳）",
+    "org_en": "China Telecom Research Institute (Rao Shaoyang)",
+    "source_id": "ctri_rao_2025"
+  }
+}

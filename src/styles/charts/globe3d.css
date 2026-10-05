@@ -1,0 +1,90 @@
+.gl3__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 14px;
+}
+.gl3__year {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+.gl3__year input {
+  width: 160px;
+  accent-color: var(--cyan);
+}
+.gl3__year-val {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--text);
+  min-width: 3em;
+}
+.gl3__stage {
+  position: relative;
+  margin-top: 12px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: radial-gradient(ellipse at 50% 45%, color-mix(in srgb, var(--cyan) 10%, var(--bg-2)), var(--bg) 70%);
+}
+.gl3__canvas {
+  display: block;
+  cursor: grab;
+  touch-action: pan-y;
+}
+.gl3__canvas:active {
+  cursor: grabbing;
+}
+.gl3__labels {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.gl3__label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: -26px 0 0 6px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  white-space: nowrap;
+  color: var(--text);
+  background: color-mix(in srgb, var(--panel) 82%, transparent);
+  border: 1px solid var(--border);
+}
+.gl3__label b {
+  font-family: var(--font-mono);
+  color: var(--cyan);
+}
+.gl3__credit {
+  position: absolute;
+  left: 8px;
+  bottom: 6px;
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 11px;
+  color: var(--muted);
+  background: color-mix(in srgb, var(--panel) 80%, transparent);
+  pointer-events: none;
+}
+.gl3__status {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  top: 8px;
+  font-size: 12px;
+  color: var(--muted);
+  pointer-events: none;
+}
+.gl3__status--warn {
+  padding: 6px 10px;
+  border-radius: 8px;
+  line-height: 1.5;
+  color: var(--orange);
+  background: color-mix(in srgb, var(--panel) 85%, transparent);
+  border: 1px dashed color-mix(in srgb, var(--orange) 60%, transparent);
+}

@@ -1,0 +1,114 @@
+{
+  "id": "lighthouse",
+  "title": "灯塔工厂与智能工厂",
+  "title_en": "Lighthouse factories and smart factories",
+  "network": [
+    {
+      "date": "2024-10",
+      "total": 172,
+      "china": 74,
+      "china_share": 43,
+      "source_id": "globaltimes_lighthouse_2024"
+    },
+    {
+      "date": "2025-01",
+      "total": 189,
+      "china": null,
+      "source_id": "wef_lighthouse_2025_01",
+      "china_share": 41
+    },
+    {
+      "date": "2025-09",
+      "total": 201,
+      "china": null,
+      "new_batch": 12,
+      "new_batch_china": 6,
+      "source_id": "wef_lighthouse_2025_09"
+    },
+    {
+      "date": "2026-01",
+      "total": 223,
+      "china": null,
+      "source_id": "wef_lighthouse_2026",
+      "china_share": 45
+    },
+    {
+      "date": "2026-06",
+      "total": 238,
+      "china": null,
+      "new_batch": 16,
+      "source_id": "wef_lighthouse_2026_06"
+    }
+  ],
+  "new_2025_disagreement": [
+    {
+      "org": "WEF 白皮书正文",
+      "org_en": "WEF white paper (main text)",
+      "value": 34,
+      "source_id": "wef_lighthouse_2026"
+    },
+    {
+      "org": "同一白皮书图 4",
+      "org_en": "Figure 4 of the same white paper",
+      "value": 36,
+      "source_id": "wef_lighthouse_2026"
+    }
+  ],
+  "smart_factories": {
+    "unit": "家",
+    "unit_en": "factories",
+    "period_label": "截至 2025 年底",
+    "period_label_en": "as of end-2025",
+    "records": [
+      {
+        "level": "领航级",
+        "level_en": "Pioneer level",
+        "value": 15,
+        "qualifier": "",
+        "source_id": "nda_digital_china_2025"
+      },
+      {
+        "level": "卓越级",
+        "level_en": "Excellence level",
+        "value": 500,
+        "qualifier": "余",
+        "qualifier_en": "more than",
+        "source_id": "nda_digital_china_2025"
+      },
+      {
+        "level": "先进级",
+        "level_en": "Advanced level",
+        "value": 8200,
+        "qualifier": "余",
+        "qualifier_en": "more than",
+        "source_id": "nda_digital_china_2025"
+      },
+      {
+        "level": "基础级",
+        "level_en": "Basic level",
+        "value": 35000,
+        "qualifier": "余",
+        "qualifier_en": "more than",
+        "source_id": "nda_digital_china_2025"
+      }
+    ]
+  },
+  "manufacturing_case_share": [
+    {
+      "label": "2024 年",
+      "label_en": "2024",
+      "value": 19.9,
+      "unit": "%",
+      "source_id": "caict_weikai_2025_12"
+    },
+    {
+      "label": "2025 年",
+      "label_en": "2025",
+      "value": 25.9,
+      "unit": "%",
+      "source_id": "caict_weikai_2025_12"
+    }
+  ],
+  "network_notes": "中国占比：2024-10 为环球时报报道的 74/172（43%）；2025-01 的 41% 与 2026-01 的 45% 来自 WEF 白皮书图表标签，WEF 未给出绝对数。",
+  "network_notes_en": "China's share: the 2024-10 figure is 74/172 (43%) as reported by the Global Times; the 41% for 2025-01 and 45% for 2026-01 come from chart labels in WEF white papers, and the WEF gives no absolute numbers."
+}

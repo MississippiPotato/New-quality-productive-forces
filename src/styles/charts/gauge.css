@@ -1,0 +1,205 @@
+/* “人工智能+”目标仪表 */
+.gg__metric {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--text);
+}
+.gg__metric-k {
+  padding: 0 8px;
+  border-radius: 6px;
+  background: var(--bg-2);
+  border: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--muted);
+}
+.gg__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+.gg__card {
+  flex: 1 1 140px;
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background:
+    radial-gradient(90% 70% at 50% 100%, color-mix(in srgb, var(--orange) 10%, transparent), transparent 70%),
+    var(--panel-2);
+  transition:
+    opacity 0.5s,
+    border-color 0.5s,
+    box-shadow 0.5s,
+    filter 0.5s;
+}
+.gg__card.is-dim {
+  opacity: 0.4;
+  filter: saturate(0.4);
+}
+.gg__card.is-hot {
+  border-color: color-mix(in srgb, var(--orange) 60%, var(--border));
+  box-shadow: 0 0 32px color-mix(in srgb, var(--orange) 14%, transparent);
+}
+.gg__svg {
+  width: 100%;
+  height: auto;
+}
+.gg__track {
+  fill: var(--text);
+  fill-opacity: 0.06;
+  stroke: var(--grid);
+}
+.gg__fill {
+  fill-opacity: 0.9;
+}
+.gg__edge {
+  fill: var(--orange);
+}
+.gg__tick {
+  stroke: var(--faint);
+}
+.chart .gg__tick-label {
+  font-size: 11px;
+  fill: var(--faint);
+  font-family: var(--font-mono);
+}
+.gg__needle line {
+  stroke: var(--orange);
+  stroke-width: 2px;
+  stroke-dasharray: 3 3;
+}
+.gg__needle circle {
+  fill: var(--orange);
+}
+.chart .gg__big {
+  fill: var(--orange);
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.chart .gg__sub {
+  font-size: 12px;
+  fill: var(--muted);
+}
+.gg__cap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.gg__year {
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text);
+}
+.gg__now {
+  margin: 8px 0 0;
+  padding: 2px 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--muted);
+  background: var(--bg-2);
+}
+.gg__now.is-missing {
+  color: var(--faint);
+  border: 1px dashed var(--border);
+}
+
+.gg__lower {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 14px;
+  margin-top: 16px;
+  transition: opacity 0.5s;
+}
+.gg__lower.is-dim {
+  opacity: 0.45;
+}
+.gg__mile,
+.gg__actions {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--panel-2);
+  transition:
+    border-color 0.5s,
+    box-shadow 0.5s;
+}
+.gg__lower.is-hot .gg__mile,
+.gg__lower.is-hot .gg__actions {
+  border-color: color-mix(in srgb, var(--orange) 50%, var(--border));
+  box-shadow: 0 0 28px color-mix(in srgb, var(--orange) 10%, transparent);
+}
+.gg__mile {
+  position: relative;
+  border-left: 3px dashed var(--orange);
+}
+.gg__mile-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.gg__mile-year {
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--orange);
+  line-height: 1.1;
+}
+.gg__mile-text {
+  margin: 6px 0 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.6;
+}
+.gg__ah {
+  margin: 0 0 10px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.gg__chips {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.gg__chip {
+  padding: 3px 12px;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--cyan) 40%, var(--border));
+  background: color-mix(in srgb, var(--cyan) 8%, transparent);
+  color: var(--text);
+  font-size: 13px;
+  transition:
+    transform 0.3s,
+    background 0.3s;
+}
+.gg__lower.is-hot .gg__chip {
+  background: color-mix(in srgb, var(--cyan) 18%, transparent);
+  animation: gg-pop 0.5s ease-out both;
+  animation-delay: calc(var(--i) * 70ms);
+}
+@keyframes gg-pop {
+  from {
+    transform: translateY(6px);
+    opacity: 0;
+  }
+}
+.chart .gg__big-aux {
+  font-size: 0.55em;
+  font-weight: 700;
+}

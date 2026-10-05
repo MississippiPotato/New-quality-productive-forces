@@ -1,0 +1,68 @@
+.sankey-chart .link {
+  fill-opacity: 0.38;
+  transition:
+    fill-opacity 0.3s,
+    opacity 0.3s;
+  cursor: default;
+}
+.sankey-chart .link--lb {
+  fill-opacity: 0.75;
+  stroke-dasharray: 4 3;
+  stroke-width: 1.2;
+  stroke-opacity: 0.9;
+}
+.sankey-chart .node rect {
+  transition: opacity 0.3s;
+}
+.sankey-chart .node--lb rect {
+  stroke-dasharray: 3 2;
+  stroke-width: 1.4;
+}
+.sankey-chart .node__name {
+  fill: var(--text);
+  font-size: 12.5px;
+  font-weight: 600;
+}
+.sankey-chart .node__value {
+  fill: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+.sankey-chart .node__value.is-lb {
+  fill: var(--orange);
+}
+.sankey-chart .node--cn .node__name,
+.sankey-chart .node--cn .node__value {
+  fill: var(--cn);
+}
+.sankey-chart .center-label {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+}
+.sankey-chart .col-label {
+  fill: var(--faint);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+.sankey-chart.is-hover .link {
+  fill-opacity: 0.06;
+}
+.sankey-chart.is-hover .link.is-on {
+  fill-opacity: 0.7;
+}
+.sankey-chart.is-hover .node {
+  opacity: 0.35;
+}
+.sankey-chart.is-hover .node.is-on {
+  opacity: 1;
+}
+.sankey-chart .node {
+  transition: opacity 0.3s;
+}
+.sankey-chart .chart-note--warn {
+  padding: 8px 12px;
+  border: 1px solid color-mix(in srgb, var(--rose) 40%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--rose) 8%, transparent);
+}

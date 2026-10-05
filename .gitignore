@@ -1,0 +1,16 @@
+node_modules/
+dist/
+raw/
+docs/
+shots/
+output/
+.env
+.env.*
+*.md
+*.MD
+*.doc
+*.docx
+*.pdf
+*.ppt
+*.pptx
+.DS_Store

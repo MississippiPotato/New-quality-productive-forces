@@ -1,0 +1,966 @@
+{
+  "id": "facts",
+  "title": "正文数字（index.html 中 data-fact 引用）",
+  "title_en": "Figures in the narrative (referenced by data-fact in index.html)",
+  "notes": "value 为数字时按原精度格式化；单位换算（如 295000 台 → 29.5 万台）在 note 中注明。kind: forecast 表示预测/目标。",
+  "notes_en": "Numeric values are formatted at their original precision; where the Chinese display converts units (e.g. 295,000 units shown in units of 10,000), the original figure is given in the note. In English, value_en/unit_en give the exact equivalent in thousands/millions/billions. kind: forecast marks forecasts/targets.",
+  "facts": {
+    "genai_filed_2026_04": {
+      "value": 868,
+      "unit": " 款",
+      "unit_en": " services",
+      "label": "累计完成备案的生成式 AI 服务（截至 2026-04-30）",
+      "label_en": "Generative AI services that have completed filing, cumulative (as of 2026-04-30)",
+      "source_id": "cac_genai_2026_04"
+    },
+    "registered_2026_04": {
+      "value": 530,
+      "unit": " 款",
+      "unit_en": "",
+      "label": "完成登记的生成式 AI 应用或功能（截至 2026-04-30）",
+      "label_en": "Generative AI applications or features that have completed registration (as of 2026-04-30)",
+      "source_id": "cac_genai_2026_04"
+    },
+    "filed_2025_03": {
+      "value": 346,
+      "unit": " 款",
+      "unit_en": "",
+      "label": "累计备案（截至 2025-03-31）",
+      "label_en": "Cumulative filings (as of 2025-03-31)",
+      "source_id": "cac_genai_2025_03"
+    },
+    "filed_2025_12": {
+      "value": 748,
+      "unit": " 款",
+      "unit_en": "",
+      "label": "累计备案（截至 2025-12-31）",
+      "label_en": "Cumulative filings (as of 2025-12-31)",
+      "source_id": "cac_genai_2025_12"
+    },
+    "filed_new_2025": {
+      "value": 446,
+      "unit": " 款",
+      "unit_en": "",
+      "label": "2025 年全年新增备案",
+      "label_en": "New filings in 2025",
+      "source_id": "cac_genai_2025_12"
+    },
+    "compute_intel_2025_pflops": {
+      "value": 159,
+      "value_en": 1.59,
+      "unit": " 万 PFLOPS",
+      "unit_en": " million PFLOPS",
+      "label": "智能算力规模（FP16，2025 年底）",
+      "label_en": "AI computing power (FP16, end-2025)",
+      "source_id": "nda_digital_china_2025"
+    },
+    "compute_intel_2025_eflops": {
+      "value": 1590,
+      "unit": " EFLOPS",
+      "label": "智能算力规模（FP16，2025 年底）",
+      "label_en": "AI computing power (FP16, end-2025)",
+      "note": "原文 159 万 PFLOPS，换算为 1590 EFLOPS",
+      "note_en": "Original figure: 1.59 million PFLOPS, converted to 1,590 EFLOPS",
+      "source_id": "nda_digital_china_2025"
+    },
+    "compute_intel_2025_06": {
+      "value": 788,
+      "unit": " EFLOPS",
+      "label": "智能算力规模（FP16，2025-06）",
+      "label_en": "AI computing power (FP16, 2025-06)",
+      "source_id": "miit_2025_conf"
+    },
+    "compute_intel_2026_06": {
+      "value": 2185,
+      "unit": " EFLOPS",
+      "label": "智能算力规模（FP16，2026-06）",
+      "label_en": "AI computing power (FP16, 2026-06)",
+      "source_id": "miit_2026_06"
+    },
+    "compute_total_2023": {
+      "value": 197,
+      "unit": " EFLOPS",
+      "label": "算力总规模（2023-06）",
+      "label_en": "Total computing power (2023-06)",
+      "source_id": "miit_2023_dc"
+    },
+    "compute_target_2025": {
+      "value": 300,
+      "unit": " EFLOPS",
+      "label": "2025 年算力规模目标",
+      "label_en": "2025 target for total computing power",
+      "kind": "forecast",
+      "source_id": "miit_compute_plan_2023"
+    },
+    "intel_share_target": {
+      "value": 35,
+      "unit": "%",
+      "label": "2025 年智能算力占比目标",
+      "label_en": "2025 target for the share of AI computing power",
+      "kind": "forecast",
+      "source_id": "miit_compute_plan_2023"
+    },
+    "racks_2023": {
+      "value": 760,
+      "value_en": 7.6,
+      "unit": " 万标准机架",
+      "unit_en": " million",
+      "label": "在用数据中心机架总规模（2023-06）",
+      "label_en": "Total racks in data centres in use (2023-06)",
+      "source_id": "miit_2023_dc"
+    },
+    "racks_2025_06": {
+      "value": 1085,
+      "value_en": 10.85,
+      "unit": " 万架",
+      "unit_en": " million",
+      "label": "在用算力中心标准机架（2025-06）",
+      "label_en": "Standard racks in computing centres in use (2025-06)",
+      "source_id": "miit_2025_conf"
+    },
+    "racks_2025_12": {
+      "value": 1373,
+      "value_en": 13.73,
+      "unit": " 万标准机架",
+      "unit_en": " million",
+      "label": "在用算力设施机架（2025 年底）",
+      "label_en": "Racks in computing facilities in use (end-2025)",
+      "source_id": "nda_digital_china_2025"
+    },
+    "wanka_clusters": {
+      "value": 42,
+      "unit": " 个",
+      "unit_en": "",
+      "label": "万卡智算集群（2025 年底）",
+      "label_en": "AI computing clusters at ten-thousand-card scale (end-2025)",
+      "source_id": "nda_digital_china_2025"
+    },
+    "pue_2025_06": {
+      "value": 1.42,
+      "unit": "",
+      "label": "全国在用算力中心平均 PUE（2025-06）",
+      "label_en": "Average PUE of computing centres in use nationwide (2025-06)",
+      "source_id": "miit_2025_conf"
+    },
+    "pue_hyperscale": {
+      "value": 1.34,
+      "unit": "",
+      "label": "超大型算力设施平均 PUE",
+      "label_en": "Average PUE of hyperscale computing facilities",
+      "source_id": "eastdata_progress_2025"
+    },
+    "utilization_2026": {
+      "value": 71.4,
+      "unit": "%",
+      "label": "全国算力设施整体上架率（2026-06）",
+      "label_en": "Overall rack utilisation of computing facilities nationwide (2026-06)",
+      "source_id": "miit_2026_06"
+    },
+    "hub_new_share": {
+      "value": 80,
+      "unit": "% 以上",
+      "unit_en": "% or more",
+      "label": "2025 年枢纽地区新增算力占全国新增比重",
+      "label_en": "Hub regions’ share of new computing power added nationwide (2025)",
+      "source_id": "eastdata_progress_2025"
+    },
+    "rack_util_target": {
+      "value": 65,
+      "unit": "%",
+      "label": "集群内数据中心平均上架率目标",
+      "label_en": "Target average rack utilisation of data centres within clusters",
+      "kind": "forecast",
+      "source_id": "ndrc_eastdata_2022"
+    },
+    "eastdata_hubs": {
+      "value": 8,
+      "unit": " 个",
+      "unit_en": "",
+      "label": "国家算力枢纽节点",
+      "label_en": "National computing hubs",
+      "source_id": "ndrc_eastdata_2022"
+    },
+    "eastdata_clusters": {
+      "value": 10,
+      "unit": " 个",
+      "unit_en": "",
+      "label": "国家数据中心集群",
+      "label_en": "National data-centre clusters",
+      "source_id": "ndrc_eastdata_2022"
+    },
+    "device_cn_fp32": {
+      "value": 962,
+      "unit": " EFlops",
+      "label": "中国计算设备算力总规模（FP32，2025-06）",
+      "label_en": "Total computing power of China's computing devices (FP32, 2025-06)",
+      "source_id": "caict_compute_bluebook_2025"
+    },
+    "device_cn_share": {
+      "value": 21,
+      "unit": "%",
+      "label": "中国计算设备算力全球占比（约）",
+      "label_en": "China's share of global device computing power (approx.)",
+      "source_id": "caict_compute_bluebook_2025"
+    },
+    "device_intel": {
+      "value": 782,
+      "unit": " EFlops",
+      "label": "中国智能算力（设备侧 FP32，2025-06）",
+      "label_en": "China's AI computing power (device side, FP32, 2025-06)",
+      "source_id": "caict_compute_bluebook_2025"
+    },
+    "device_intel_yoy": {
+      "value": 96,
+      "unit": "%",
+      "label": "设备侧智能算力同比增速",
+      "label_en": "Year-on-year growth of device-side AI computing power",
+      "source_id": "caict_compute_bluebook_2025"
+    },
+    "ai_servers_2024": {
+      "value": 63,
+      "value_en": 630000,
+      "unit": " 万台",
+      "unit_en": " units",
+      "label": "2024 年中国 AI 服务器出货量",
+      "label_en": "AI server shipments in China, 2024",
+      "source_id": "caict_compute_bluebook_2025"
+    },
+    "ai_servers_yoy": {
+      "value": 93,
+      "unit": "%",
+      "label": "AI 服务器出货同比增速",
+      "label_en": "Year-on-year growth of AI server shipments",
+      "source_id": "caict_compute_bluebook_2025"
+    },
+    "prov_beijing": {
+      "value": 28.09,
+      "unit": "%",
+      "label": "北京人工智能企业占比",
+      "label_en": "Beijing’s share of AI companies",
+      "source_id": "ai_dev_report_2023"
+    },
+    "prov_guangdong": {
+      "value": 26.45,
+      "unit": "%",
+      "label": "广东人工智能企业占比",
+      "label_en": "Guangdong’s share of AI companies",
+      "source_id": "ai_dev_report_2023"
+    },
+    "prov_shanghai": {
+      "value": 14.23,
+      "unit": "%",
+      "label": "上海人工智能企业占比",
+      "label_en": "Shanghai’s share of AI companies",
+      "source_id": "ai_dev_report_2023"
+    },
+    "netizens": {
+      "value": 11.25,
+      "value_en": 1.125,
+      "unit": " 亿",
+      "unit_en": " billion",
+      "label": "网民规模（2025 年底）",
+      "label_en": "Internet users (end-2025)",
+      "source_id": "nda_digital_china_2025"
+    },
+    "users_qa": {
+      "value": 4.57,
+      "value_en": 457,
+      "unit": " 亿",
+      "unit_en": " million",
+      "label": "用 AI 解答问题的用户",
+      "label_en": "Users who use AI to answer questions",
+      "source_id": "nda_digital_china_2025"
+    },
+    "users_gen": {
+      "value": 2.88,
+      "value_en": 288,
+      "unit": " 亿",
+      "unit_en": " million",
+      "label": "用 AI 生成图片视频的用户",
+      "label_en": "Users who use AI to generate images and video",
+      "source_id": "nda_digital_china_2025"
+    },
+    "users_assist": {
+      "value": 1.84,
+      "value_en": 184,
+      "unit": " 亿",
+      "unit_en": " million",
+      "label": "把 AI 作为生活助手的用户",
+      "label_en": "Users who use AI as an everyday assistant",
+      "source_id": "nda_digital_china_2025"
+    },
+    "users_under40": {
+      "value": 74.6,
+      "unit": "%",
+      "label": "40 岁以下用户占生成式 AI 用户比重",
+      "label_en": "Share of generative AI users under 40",
+      "source_id": "nda_digital_china_2025"
+    },
+    "alphafold_structures": {
+      "value": 2,
+      "value_en": 200,
+      "unit": " 亿多个",
+      "unit_en": " million+",
+      "label": "AlphaFold 数据库蛋白质结构预测",
+      "label_en": "Protein structure predictions in the AlphaFold database",
+      "source_id": "alphafold_db"
+    },
+    "patents_molecule": {
+      "value": 1494,
+      "unit": " 项",
+      "unit_en": "",
+      "label": "分子/基因/蛋白质类生成式 AI 专利（2014–2023）",
+      "label_en": "Generative AI patents on molecules/genes/proteins (2014–2023)",
+      "source_id": "wipo_genai_2024"
+    },
+    "patents_molecule_cagr": {
+      "value": 78.8,
+      "unit": "%",
+      "label": "分子/基因/蛋白质类专利 2018–2023 年均增长",
+      "label_en": "Average annual growth of molecule/gene/protein patents, 2018–2023",
+      "source_id": "wipo_genai_2024"
+    },
+    "bryn_avg": {
+      "value": 14,
+      "unit": "%",
+      "label": "客服每小时解决问题数平均提升（NBER 工作论文）",
+      "label_en": "Average gain in issues resolved per hour by customer-support agents (NBER working paper)",
+      "source_id": "nber_w31161"
+    },
+    "bryn_novice": {
+      "value": 34,
+      "unit": "%",
+      "label": "新手和低技能员工提升",
+      "label_en": "Gain for novice and low-skilled workers",
+      "source_id": "nber_w31161"
+    },
+    "bryn_n": {
+      "value": 5179,
+      "unit": " 名",
+      "unit_en": "",
+      "label": "样本客服人数（工作论文）",
+      "label_en": "Customer-support agents in the sample (working paper)",
+      "source_id": "nber_w31161"
+    },
+    "qje_avg": {
+      "value": 15,
+      "unit": "%",
+      "label": "QJE 正式版平均提升",
+      "label_en": "Average gain in the published QJE version",
+      "source_id": "qje_2025_brynjolfsson"
+    },
+    "qje_n": {
+      "value": 5172,
+      "unit": " 名客服",
+      "unit_en": " agents",
+      "label": "QJE 正式版样本",
+      "label_en": "Sample in the published QJE version",
+      "source_id": "qje_2025_brynjolfsson"
+    },
+    "copilot_faster": {
+      "value": 55.8,
+      "unit": "%",
+      "label": "使用 Copilot 完成任务更快",
+      "label_en": "Faster task completion with Copilot",
+      "source_id": "peng_2023_copilot"
+    },
+    "copilot_n": {
+      "value": 95,
+      "unit": " 名",
+      "unit_en": "",
+      "label": "实验开发者人数",
+      "label_en": "Developers in the experiment",
+      "source_id": "peng_2023_copilot"
+    },
+    "noy_time": {
+      "value": 40,
+      "unit": "%",
+      "label": "写作任务平均完成时间缩短",
+      "label_en": "Reduction in average completion time for writing tasks",
+      "source_id": "noy_zhang_2023"
+    },
+    "noy_quality": {
+      "value": 18,
+      "unit": "%",
+      "label": "写作产出质量提高",
+      "label_en": "Improvement in writing output quality",
+      "source_id": "noy_zhang_2023"
+    },
+    "metr_n": {
+      "value": 16,
+      "unit": " 名",
+      "unit_en": "",
+      "label": "资深开源开发者人数",
+      "label_en": "Experienced open-source developers",
+      "source_id": "metr_2025"
+    },
+    "metr_tasks": {
+      "value": 246,
+      "unit": " 个",
+      "unit_en": "",
+      "label": "真实任务数",
+      "label_en": "Real tasks",
+      "source_id": "metr_2025"
+    },
+    "metr_slower": {
+      "value": 19,
+      "unit": "%",
+      "label": "使用 AI 工具后完成时间延长",
+      "label_en": "Increase in completion time with AI tools",
+      "kind": "risk",
+      "source_id": "metr_2025"
+    },
+    "wef_created": {
+      "value": 1.7,
+      "value_en": 170,
+      "unit": " 亿个",
+      "unit_en": " million",
+      "label": "2030 年前创造岗位",
+      "label_en": "Jobs created by 2030",
+      "note": "原文 170 million",
+      "note_en": "Original: 170 million",
+      "kind": "forecast",
+      "source_id": "wef_fojr_2025"
+    },
+    "wef_displaced": {
+      "value": 9200,
+      "value_en": 92,
+      "unit": " 万个",
+      "unit_en": " million",
+      "label": "2030 年前替代岗位",
+      "label_en": "Jobs displaced by 2030",
+      "note": "原文 92 million",
+      "note_en": "Original: 92 million",
+      "kind": "forecast",
+      "source_id": "wef_fojr_2025"
+    },
+    "wef_net": {
+      "value": 7800,
+      "value_en": 78,
+      "unit": " 万个",
+      "unit_en": " million",
+      "label": "净增岗位",
+      "label_en": "Net job gain",
+      "note": "原文 78 million",
+      "note_en": "Original: 78 million",
+      "kind": "forecast",
+      "source_id": "wef_fojr_2025"
+    },
+    "wef_churn": {
+      "value": 22,
+      "unit": "%",
+      "label": "结构性变动占比",
+      "label_en": "Structural labour-market churn",
+      "kind": "forecast",
+      "source_id": "wef_fojr_2025"
+    },
+    "imf_world": {
+      "value": 40,
+      "unit": "%",
+      "label": "全球就业暴露于 AI 的比例（约）",
+      "label_en": "Share of global employment exposed to AI (approx.)",
+      "source_id": "imf_sdn_2024_001"
+    },
+    "imf_advanced": {
+      "value": 60,
+      "unit": "%",
+      "label": "发达经济体（约）",
+      "label_en": "Advanced economies (approx.)",
+      "source_id": "imf_sdn_2024_001"
+    },
+    "imf_low": {
+      "value": 26,
+      "unit": "%",
+      "label": "低收入国家（约）",
+      "label_en": "Low-income countries (approx.)",
+      "source_id": "imf_sdn_2024_001"
+    },
+    "new_occupations": {
+      "value": 19,
+      "unit": " 个",
+      "unit_en": "",
+      "label": "新职业",
+      "label_en": "New occupations",
+      "source_id": "mohrss_2024_new_jobs"
+    },
+    "new_work_types": {
+      "value": 28,
+      "unit": " 个",
+      "unit_en": "",
+      "label": "新工种",
+      "label_en": "New job types",
+      "source_id": "mohrss_2024_new_jobs"
+    },
+    "robots_world_2024": {
+      "value": 54.2,
+      "value_en": 542000,
+      "unit": " 万台",
+      "unit_en": " units",
+      "label": "2024 年全球工业机器人安装量",
+      "label_en": "Industrial robot installations worldwide, 2024",
+      "note": "原文 542,000 台",
+      "note_en": "Original: 542,000 units",
+      "source_id": "ifr_wr_2025"
+    },
+    "robots_cn_2024_wan": {
+      "value": 29.5,
+      "value_en": 295000,
+      "unit": " 万台",
+      "unit_en": " units",
+      "label": "2024 年中国工业机器人安装量",
+      "label_en": "Industrial robot installations in China, 2024",
+      "note": "原文 295,000 台",
+      "note_en": "Original: 295,000 units",
+      "source_id": "ifr_wr_2025"
+    },
+    "robots_cn_share": {
+      "value": 54,
+      "unit": "%",
+      "label": "中国占全球安装量比重",
+      "label_en": "China's share of global installations",
+      "source_id": "ifr_wr_2025"
+    },
+    "robots_cn_stock": {
+      "value": 202.7,
+      "value_en": 2027000,
+      "unit": " 万台",
+      "unit_en": " units",
+      "label": "中国工业机器人运行存量",
+      "label_en": "Operational stock of industrial robots in China",
+      "note": "原文 2,027,000 台",
+      "note_en": "Original: 2,027,000 units",
+      "source_id": "ifr_wr_2025"
+    },
+    "domestic_share_2023": {
+      "value": 47,
+      "unit": "%",
+      "label": "国产品牌本土市场份额（2023）",
+      "label_en": "Domestic brands’ share of the home market (2023)",
+      "source_id": "ifr_wr_2025"
+    },
+    "domestic_share_2024": {
+      "value": 57,
+      "unit": "%",
+      "label": "国产品牌本土市场份额（2024）",
+      "label_en": "Domestic brands’ share of the home market (2024)",
+      "source_id": "ifr_wr_2025"
+    },
+    "smart_basic": {
+      "value": 3.5,
+      "value_en": 35000,
+      "unit": " 万余家",
+      "unit_en": "",
+      "label": "基础级智能工厂（截至 2025 年底）",
+      "label_en": "Basic-level smart factories (as of end-2025)",
+      "note": "原文“3.5万余家”",
+      "note_en": "Original: “more than 35,000”",
+      "source_id": "nda_digital_china_2025"
+    },
+    "smart_advanced": {
+      "value": 8200,
+      "unit": " 余家",
+      "unit_en": "+",
+      "label": "先进级智能工厂（截至 2025 年底）",
+      "label_en": "Advanced-level smart factories (as of end-2025)",
+      "source_id": "nda_digital_china_2025"
+    },
+    "smart_excellent": {
+      "value": 500,
+      "unit": " 余家",
+      "unit_en": "+",
+      "label": "卓越级智能工厂（截至 2025 年底）",
+      "label_en": "Excellence-level smart factories (as of end-2025)",
+      "source_id": "nda_digital_china_2025"
+    },
+    "lighthouse_2025_09": {
+      "value": 201,
+      "unit": " 家",
+      "unit_en": "",
+      "label": "WEF 灯塔网络成员（2025-09）",
+      "label_en": "Members of the WEF Lighthouse network (2025-09)",
+      "source_id": "wef_lighthouse_2025_09"
+    },
+    "lighthouse_batch": {
+      "value": 12,
+      "unit": " 家",
+      "unit_en": "",
+      "label": "2025 年 9 月新增",
+      "label_en": "Added in September 2025",
+      "source_id": "wef_lighthouse_2025_09"
+    },
+    "lighthouse_batch_cn": {
+      "value": 6,
+      "unit": " 家",
+      "unit_en": "",
+      "label": "其中位于中国",
+      "label_en": "Of which in China",
+      "source_id": "wef_lighthouse_2025_09"
+    },
+    "lighthouse_2026_06": {
+      "value": 238,
+      "unit": " 家",
+      "unit_en": "",
+      "label": "WEF 灯塔网络成员（2026-06）",
+      "label_en": "Members of the WEF Lighthouse network (2026-06)",
+      "source_id": "wef_lighthouse_2026_06"
+    },
+    "lighthouse_batch_2026_06": {
+      "value": 16,
+      "unit": " 家",
+      "unit_en": "",
+      "label": "2026 年 6 月新增",
+      "label_en": "Added in June 2026",
+      "source_id": "wef_lighthouse_2026_06"
+    },
+    "mfg_case_before": {
+      "value": 19.9,
+      "unit": "%",
+      "label": "生产制造环节大模型应用案例占比（2024 年）",
+      "label_en": "Share of large-model use cases in manufacturing and production (2024)",
+      "source_id": "caict_weikai_2025_12"
+    },
+    "mfg_case_after": {
+      "value": 25.9,
+      "unit": "%",
+      "label": "生产制造环节大模型应用案例占比（2025 年）",
+      "label_en": "Share of large-model use cases in manufacturing and production (2025)",
+      "source_id": "caict_weikai_2025_12"
+    },
+    "ai_scale_2022": {
+      "value": 4000,
+      "value_en": 400,
+      "unit": " 亿元",
+      "unit_en": " billion yuan",
+      "label": "人工智能核心产业规模（2022-07）",
+      "label_en": "Size of the core AI industry (2022-07)",
+      "source_id": "miit_ai_scale_2022"
+    },
+    "ai_scale_2024": {
+      "value": 9000,
+      "value_en": 900,
+      "unit": " 亿元",
+      "unit_en": " billion yuan",
+      "label": "人工智能（核心）产业规模（2024）",
+      "label_en": "Size of the (core) AI industry (2024)",
+      "source_id": "caict_ai_scale_2024"
+    },
+    "ai_scale_2024_yoy": {
+      "value": 24,
+      "unit": "%",
+      "label": "2024 年同比增速",
+      "label_en": "Year-on-year growth in 2024",
+      "source_id": "caict_ai_scale_2024"
+    },
+    "ai_scale_2025": {
+      "value": 1.2,
+      "value_en": 1.2,
+      "unit": " 万亿元",
+      "unit_en": " trillion yuan",
+      "label": "人工智能产业规模（2025，初步测算）",
+      "label_en": "Size of the AI industry (2025, preliminary estimate)",
+      "note": "原文“超 1.2 万亿元”",
+      "note_en": "Original: “over 1.2 trillion yuan”",
+      "source_id": "caict_ai_scale_2025"
+    },
+    "ai_scale_2025_yoy": {
+      "value": 40,
+      "unit": "%",
+      "label": "2025 年同比增速",
+      "label_en": "Year-on-year growth in 2025",
+      "source_id": "caict_ai_scale_2025"
+    },
+    "ai_firms_2026": {
+      "value": 6600,
+      "unit": " 家",
+      "unit_en": "",
+      "label": "人工智能企业（截至 2026-06）",
+      "label_en": "AI companies (as of 2026-06)",
+      "source_id": "caict_ai_scale_2025"
+    },
+    "ai_firms_global_share": {
+      "value": 15,
+      "unit": "%",
+      "label": "全球占比",
+      "label_en": "Share of global total",
+      "source_id": "caict_ai_scale_2025"
+    },
+    "layer_model_yoy": {
+      "value": 189,
+      "unit": "%",
+      "label": "模型框架层同比增长（2025）",
+      "label_en": "Year-on-year growth of the model & framework layer (2025)",
+      "source_id": "caict_ai_scale_2025"
+    },
+    "layer_base_yoy": {
+      "value": 59,
+      "unit": "%",
+      "label": "基础层同比增长（2025）",
+      "label_en": "Year-on-year growth of the foundation layer (2025)",
+      "source_id": "caict_ai_scale_2025"
+    },
+    "layer_app_share": {
+      "value": 55,
+      "unit": "%",
+      "label": "应用层占比（2025）",
+      "label_en": "Share of the application layer (2025)",
+      "source_id": "caict_ai_scale_2025"
+    },
+    "mck_value": {
+      "value": "2.6–4.4",
+      "value_en": "$2.6–4.4",
+      "unit": " 万亿美元",
+      "unit_en": " trillion",
+      "label": "生成式 AI 每年可创造的价值（63 个用例）",
+      "label_en": "Annual value generative AI could create (63 use cases)",
+      "kind": "forecast",
+      "source_id": "mckinsey_genai_2023"
+    },
+    "mck_productivity": {
+      "value": "0.1–0.6",
+      "unit": " 个百分点",
+      "unit_en": " percentage points",
+      "label": "到 2040 年每年劳动生产率提升",
+      "label_en": "Annual boost to labour productivity growth through 2040",
+      "kind": "forecast",
+      "source_id": "mckinsey_genai_2023"
+    },
+    "gdp_2035": {
+      "value": 11,
+      "value_en": 11,
+      "unit": " 万亿元",
+      "unit_en": " trillion yuan",
+      "label": "2035 年 AI 对中国 GDP 的贡献（预测）",
+      "label_en": "AI's contribution to China's GDP in 2035 (forecast)",
+      "kind": "forecast",
+      "source_id": "ctri_rao_2025"
+    },
+    "vibrancy_us": {
+      "value": 78.6,
+      "unit": "",
+      "label": "美国 AI 活力总分（Stanford HAI，2025 版）",
+      "label_en": "US overall AI vibrancy score (Stanford HAI, 2025 edition)",
+      "source_id": "vibrancy_2025_vc"
+    },
+    "vibrancy_cn": {
+      "value": 36.95,
+      "unit": "",
+      "label": "中国 AI 活力总分（Stanford HAI，2025 版）",
+      "label_en": "China overall AI vibrancy score (Stanford HAI, 2025 edition)",
+      "source_id": "vibrancy_2025_vc"
+    },
+    "invest_us_2025": {
+      "value": 2859,
+      "value_en": 285.9,
+      "unit": " 亿美元",
+      "unit_en": " billion US dollars",
+      "label": "2025 年美国私人 AI 投资",
+      "label_en": "Private AI investment in the US, 2025",
+      "source_id": "stanford_ai_index_2026"
+    },
+    "invest_cn_2025": {
+      "value": 124,
+      "value_en": 12.4,
+      "unit": " 亿美元",
+      "unit_en": " billion US dollars",
+      "label": "2025 年中国私人 AI 投资",
+      "label_en": "Private AI investment in China, 2025",
+      "source_id": "stanford_ai_index_2026"
+    },
+    "invest_global_2025": {
+      "value": 3447,
+      "value_en": 344.7,
+      "unit": " 亿美元",
+      "unit_en": " billion US dollars",
+      "label": "2025 年全球私人 AI 投资",
+      "label_en": "Global private AI investment, 2025",
+      "source_id": "stanford_ai_index_2026"
+    },
+    "invest_global_yoy": {
+      "value": 127.5,
+      "unit": "%",
+      "label": "同比增长",
+      "label_en": "Year-on-year growth",
+      "source_id": "stanford_ai_index_2026"
+    },
+    "patents_cn": {
+      "value": 38210,
+      "unit": " 项",
+      "unit_en": "",
+      "label": "中国生成式 AI 专利（2014–2023）",
+      "label_en": "Generative AI patents, China (2014–2023)",
+      "source_id": "wipo_genai_2024"
+    },
+    "patents_us": {
+      "value": 6276,
+      "unit": " 项",
+      "unit_en": "",
+      "label": "美国生成式 AI 专利（2014–2023）",
+      "label_en": "Generative AI patents, United States (2014–2023)",
+      "source_id": "wipo_genai_2024"
+    },
+    "iea_2024": {
+      "value": 415,
+      "unit": " TWh",
+      "label": "2024 年全球数据中心用电（约）",
+      "label_en": "Global data-centre electricity use in 2024 (approx.)",
+      "source_id": "iea_energy_ai_2025"
+    },
+    "iea_2030": {
+      "value": 945,
+      "unit": " TWh",
+      "label": "2030 年全球数据中心用电（约，IEA 基准情景预测）",
+      "label_en": "Global data-centre electricity use in 2030 (approx.; IEA Base Case projection)",
+      "kind": "forecast",
+      "source_id": "iea_energy_ai_2025"
+    },
+    "target_2027": {
+      "value": 70,
+      "unit": "%",
+      "label": "2027 年应用普及率目标",
+      "label_en": "Target adoption rate for 2027",
+      "kind": "forecast",
+      "source_id": "gov_ai_plus_2025"
+    },
+    "target_2030": {
+      "value": 90,
+      "unit": "%",
+      "label": "2030 年应用普及率目标",
+      "label_en": "Target adoption rate for 2030",
+      "kind": "forecast",
+      "source_id": "gov_ai_plus_2025"
+    },
+    "genai_filed_2026_08": {
+      "value": 1112,
+      "unit": " 款",
+      "unit_en": " services",
+      "label": "累计完成备案的生成式 AI 服务（截至 2026-08-31）",
+      "label_en": "Generative AI services that have completed filing, cumulative (as of 2026-08-31)",
+      "source_id": "cac_genai_2026_08"
+    },
+    "registered_2026_08": {
+      "value": 731,
+      "unit": " 款",
+      "unit_en": "",
+      "label": "完成登记的生成式 AI 应用或功能（截至 2026-08-31）",
+      "label_en": "Generative AI applications or features that have completed registration (as of 2026-08-31)",
+      "source_id": "cac_genai_2026_08"
+    },
+    "compute_intel_2026_07_pflops": {
+      "value": 245,
+      "value_en": 2.45,
+      "unit": " 万 PFLOPS",
+      "unit_en": " million PFLOPS",
+      "label": "全国智算总规模（FP16，截至 2026 年 7 月底）",
+      "label_en": "Total AI computing power nationwide (FP16, as of end-July 2026)",
+      "source_id": "people_compute_2026_07"
+    },
+    "hub_share_2026_07": {
+      "value": 85,
+      "unit": "%",
+      "label": "八大枢纽和三个算电协同发展区智算规模占全国比重（超过）",
+      "label_en": "Share of national AI computing power in the eight hubs and three computing–power coordination zones (more than)",
+      "prefix": "",
+      "source_id": "people_compute_2026_07"
+    },
+    "robots_cn_2025_wan": {
+      "value": 35.4,
+      "value_en": 354000,
+      "unit": " 万台",
+      "unit_en": " units",
+      "label": "2025 年中国工业机器人安装量",
+      "label_en": "Industrial robot installations in China, 2025",
+      "note": "原文 354,000 台",
+      "note_en": "Original: 354,000 units",
+      "source_id": "ifr_wr_2026"
+    },
+    "robots_cn_share_2025": {
+      "value": 59,
+      "unit": "%",
+      "label": "2025 年中国占全球安装量比重",
+      "label_en": "China's share of global installations, 2025",
+      "source_id": "ifr_wr_2026"
+    },
+    "robot_density_cn": {
+      "value": 166,
+      "unit": " 台/万名员工",
+      "unit_en": " robots per 10,000 employees",
+      "label": "中国机器人密度（2024 年，IFR 新口径）",
+      "label_en": "Robot density in China (2024, new IFR basis)",
+      "note": "按国家统计局更新后的就业数据计算，与旧口径不可比",
+      "note_en": "Calculated with employment data updated by the National Bureau of Statistics; not comparable with the old basis",
+      "source_id": "ifr_density_2026"
+    },
+    "notable_us_2025": {
+      "value": 59,
+      "unit": " 个",
+      "unit_en": "",
+      "label": "AI Index 2026：美国 2025 年 notable 模型",
+      "label_en": "AI Index 2026: notable models from the US in 2025",
+      "source_id": "stanford_ai_index_2026"
+    },
+    "notable_cn_2025": {
+      "value": 35,
+      "unit": " 个",
+      "unit_en": "",
+      "label": "AI Index 2026：中国 2025 年 notable 模型",
+      "label_en": "AI Index 2026: notable models from China in 2025",
+      "source_id": "stanford_ai_index_2026"
+    },
+    "model_gap": {
+      "value": 2.7,
+      "unit": "%",
+      "label": "中美顶级模型性能差距（2026 年 3 月）",
+      "label_en": "Performance gap between top US and Chinese models (March 2026)",
+      "source_id": "stanford_ai_index_2026"
+    },
+    "genai_users": {
+      "value": 6.02,
+      "value_en": 602,
+      "unit": " 亿",
+      "unit_en": " million",
+      "label": "生成式 AI 用户规模（2025 年 12 月）",
+      "label_en": "Generative AI users (December 2025)",
+      "source_id": "cnnic_57"
+    },
+    "genai_penetration": {
+      "value": 42.8,
+      "unit": "%",
+      "label": "生成式 AI 用户普及率（占总人口）",
+      "label_en": "Generative AI user penetration rate (share of total population)",
+      "source_id": "cnnic_57"
+    },
+    "smart_pioneer": {
+      "value": 15,
+      "unit": " 家",
+      "unit_en": "",
+      "label": "领航级智能工厂（截至 2025 年底）",
+      "label_en": "Pioneer-level smart factories (as of end-2025)",
+      "source_id": "nda_digital_china_2025"
+    },
+    "agri_info_rate": {
+      "value": 27.6,
+      "unit": "%",
+      "label": "农业生产信息化率（2023 年）",
+      "label_en": "Agricultural production informatisation rate (2023)",
+      "source_id": "cac_agri_info_2024"
+    },
+    "agri_drones": {
+      "value": 30,
+      "value_en": 300000,
+      "unit": " 万架",
+      "unit_en": "",
+      "label": "农用无人机保有量（超过）",
+      "label_en": "Agricultural drones in use (more than)",
+      "source_id": "moa_drones_2026"
+    },
+    "edu_platform_users": {
+      "value": 1.69,
+      "value_en": 169,
+      "unit": " 亿",
+      "unit_en": " million",
+      "label": "国家智慧教育平台累计注册用户（超过）",
+      "label_en": "Cumulative registered users of the national smart education platform (more than)",
+      "source_id": "moe_platform_2025"
+    }
+  }
+}

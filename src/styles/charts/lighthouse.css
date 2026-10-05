@@ -1,0 +1,120 @@
+.lighthouse .col {
+  transition: opacity 0.4s;
+}
+.lighthouse .is-dim {
+  opacity: 0.3;
+}
+.lighthouse .step-line {
+  fill: none;
+  stroke: var(--tool);
+  stroke-width: 2.5;
+}
+.lighthouse .step-area {
+  stroke: none;
+}
+.lighthouse .pt {
+  fill: var(--panel);
+  stroke: var(--tool);
+  stroke-width: 2.5;
+}
+.lighthouse .pt-label {
+  fill: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.lighthouse .pt-sub {
+  fill: var(--faint);
+  font-size: 11px;
+}
+.lighthouse .cn-label {
+  fill: var(--cn);
+  font-size: 12px;
+  font-weight: 700;
+}
+.lighthouse .batch path {
+  fill: none;
+  stroke: var(--green);
+  stroke-width: 1.4;
+}
+.lighthouse .batch text {
+  fill: var(--green);
+  font-size: 12px;
+  font-weight: 700;
+}
+.lighthouse .batch text.sub {
+  fill: var(--cn);
+}
+.lighthouse .annot-g {
+  transition: opacity 0.4s;
+}
+.lighthouse__insets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.lighthouse__card {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-2);
+  font-size: 13px;
+  color: var(--muted);
+}
+.lighthouse__card h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.lighthouse__card b {
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+.lighthouse__card .is-used {
+  color: var(--tool);
+}
+.lighthouse__card svg text {
+  font-size: 12px;
+  fill: var(--muted);
+}
+.lighthouse__card svg .v {
+  fill: var(--text);
+  font-weight: 700;
+  font-size: 15px;
+  font-variant-numeric: tabular-nums;
+}
+.lighthouse__card svg .v--to {
+  fill: var(--combo);
+}
+.lighthouse__card svg .arrow {
+  stroke: var(--combo);
+  stroke-width: 2;
+  fill: none;
+}
+.lighthouse__card svg .arrow-head {
+  fill: var(--combo);
+}
+.lighthouse__dis {
+  display: flex;
+  gap: 10px;
+  align-items: stretch;
+}
+.lighthouse__dis div {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+.lighthouse__dis div.is-used {
+  border-color: var(--tool);
+  background: color-mix(in srgb, var(--tool) 10%, transparent);
+}
+.lighthouse__dis strong {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--text);
+}

@@ -1,0 +1,1157 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="用数据可视化讲述人工智能如何通过改造劳动者、劳动资料、劳动对象及其优化组合，成为新质生产力。" />
+    <meta name="theme-color" content="#0B1020" />
+    <title>智能涌现：人工智能作为新质生产力</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='7' r='4' fill='%2334D399'/%3E%3Ccircle cx='7' cy='24' r='4' fill='%2322D3EE'/%3E%3Ccircle cx='25' cy='24' r='4' fill='%23A78BFA'/%3E%3Cpath d='M16 7L7 24L25 24Z' fill='none' stroke='%23F59E0B' stroke-width='2'/%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@500;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+    />
+  </head>
+  <body>
+    <!--
+      中英双语约定：每段读者可见的文字都有两个版本——中文元素标 lang="zh-CN"，英文孪生元素紧随其后、同标签同 class、标 lang="en"；
+      行内片段用 <span lang="zh-CN">…</span><span lang="en">…</span>；滚动步骤 .step 内用两个 <div lang> 包裹（保持 p:last-child 样式）。
+      两个版本都保留同样的 b[data-fact] 标签（数字与单位由 facts.json 按语言渲染），英文中不得手写统计数字。
+    -->
+    <a class="skip-link" href="#ch1"><span lang="zh-CN">跳到正文</span><span lang="en">Skip to content</span></a>
+    <div class="progress" aria-hidden="true"><div class="progress__bar"></div></div>
+
+    <header class="topbar">
+      <a class="topbar__brand" href="#top">
+        <svg class="topbar__logo" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 7L7 24L25 24Z" fill="none" stroke="var(--combo)" stroke-width="2" />
+          <circle cx="16" cy="7" r="4" fill="var(--worker)" />
+          <circle cx="7" cy="24" r="4" fill="var(--tool)" />
+          <circle cx="25" cy="24" r="4" fill="var(--object)" />
+        </svg>
+        <span lang="zh-CN">智能涌现</span><span lang="en">Emergence</span>
+      </a>
+      <div class="topbar__chapter" aria-live="polite"></div>
+      <div class="topbar__actions">
+        <button class="btn" id="btn-lang" type="button"><span>EN</span></button>
+        <button class="btn" type="button" data-open-sources>ⓘ <span class="js-src-label">数据来源</span></button>
+        <button class="btn" id="btn-motion" type="button" aria-pressed="false"><span>关闭动画</span></button>
+        <button class="btn" id="btn-theme" type="button" aria-pressed="false"><span>亮色</span></button>
+      </div>
+    </header>
+    <nav aria-label="章节导航"><ol class="navdots"></ol></nav>
+
+    <!-- ========== 序章 ========== -->
+    <section class="hero" id="top" data-nav="序章 · 智能涌现" data-nav-en="Prologue · Emergence" data-factor="combo">
+      <canvas class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <p class="hero__eyebrow" lang="zh-CN">AI × NEW QUALITY PRODUCTIVE FORCES</p>
+        <p class="hero__eyebrow" lang="en">A DATA STORY ON AI IN CHINA</p>
+        <h1 class="hero__title" lang="zh-CN">智能涌现</h1>
+        <h1 class="hero__title" lang="en">EMERGENCE</h1>
+        <p class="hero__subtitle" lang="zh-CN">人工智能作为新质生产力</p>
+        <p class="hero__subtitle" lang="en">AI as a New Quality Productive Force</p>
+        <p class="hero__lede" lang="zh-CN">
+          一项通用技术正在同时改造生产力的三要素：更强的劳动资料、更广的劳动对象、更高素质的劳动者，并让三者优化组合，推动全要素生产率跃升。
+        </p>
+        <p class="hero__lede" lang="en">
+          A single general-purpose technology is reshaping all three factors of production at once — more powerful means of labour, broader objects of labour and more highly skilled workers — and bringing them into an optimal combination that lifts total factor productivity.
+        </p>
+        <div class="hero__stats">
+          <div class="stat stat--object">
+            <span class="stat__value"><b data-fact="genai_filed_2026_08" data-count></b></span>
+            <span class="stat__label" lang="zh-CN">生成式 AI 服务完成备案（截至 2026 年 8 月底）</span>
+            <span class="stat__label" lang="en">Generative AI services filed with regulators (as of end-August 2026)</span>
+          </div>
+          <div class="stat stat--tool">
+            <span class="stat__value"><b data-fact="compute_intel_2026_07_pflops" data-count></b></span>
+            <span class="stat__label" lang="zh-CN">全国智算总规模（FP16，截至 2026 年 7 月底）</span>
+            <span class="stat__label" lang="en">China's total AI computing power (FP16, end-July 2026)</span>
+          </div>
+          <div class="stat stat--worker">
+            <span class="stat__value"><b data-fact="robots_cn_2025_wan" data-count></b></span>
+            <span class="stat__label" lang="zh-CN">中国 2025 年新装工业机器人（全球最大市场）</span>
+            <span class="stat__label" lang="en">Industrial robots installed in China in 2025 (the world's largest market)</span>
+          </div>
+        </div>
+        <a class="hero__scroll" href="#ch1"><span lang="zh-CN">向下滚动，粒子将重组为三要素</span><span lang="en">Scroll down — the particles regroup into the three factors</span><i></i></a>
+      </div>
+    </section>
+
+    <main id="main">
+      <!-- ========== 第 1 章 ========== -->
+      <section class="chapter" id="ch1" data-nav="01 · 概念与政策脉络" data-nav-en="01 · Concept &amp; policy" data-factor="combo">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">01</span>
+          <p class="chapter__kicker" lang="zh-CN">概念与政策脉络</p>
+          <p class="chapter__kicker" lang="en">Concept and policy timeline</p>
+          <h2 class="chapter__title" lang="zh-CN">新质生产力是国家级战略框架，“人工智能+”是主要抓手</h2>
+          <h2 class="chapter__title" lang="en">New quality productive forces are a national strategic framework — and AI Plus is the main lever</h2>
+          <p class="chapter__thesis" lang="zh-CN">
+            从“东数西算”到“人工智能+”行动，政策沿着“基础设施 → 概念提出 → 系统阐释 → 全面行动”的路径推进。
+          </p>
+          <p class="chapter__thesis" lang="en">
+            From East Data, West Computing to the AI Plus initiative, policy has advanced along a clear path: infrastructure → concept → systematic definition → full-scale action.
+          </p>
+        </header>
+
+        <blockquote class="quote-card" lang="zh-CN">
+          新质生产力“以<mark>劳动者</mark>、<mark class="m-tool">劳动资料</mark>、<mark class="m-object">劳动对象</mark>及其<mark class="m-combo">优化组合的跃升</mark>为基本内涵，以全要素生产率大幅提升为核心标志”。
+          <cite>—— 2024 年 1 月 31 日，中央政治局第十一次集体学习</cite>
+        </blockquote>
+        <blockquote class="quote-card" lang="en">
+          New quality productive forces “take as their basic substance the leap in <mark>workers</mark>, <mark class="m-tool">means of labour</mark>, <mark class="m-object">objects of labour</mark> and <mark class="m-combo">their optimal combination</mark>, and a substantial rise in total factor productivity as their core hallmark.”
+          <cite>— 11th group study session of the Political Bureau of the CPC Central Committee, January 2024 (English rendering by this site)</cite>
+        </blockquote>
+
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="radialTimeline">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">四年间，概念、政策、基础设施与就业四条线交织推进</h3>
+                <h3 class="fig__title" lang="en">Over four years, four strands — concept, policy, infrastructure and jobs — advanced together</h3>
+                <p class="fig__sub" lang="zh-CN">径向时间线 · 点击节点查看事件详情</p>
+                <p class="fig__sub" lang="en">Radial timeline · click a node for event details</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>一条政策时间线</h3>
+                <p>
+                  <b data-fact="eastdata_hubs"></b>国家算力枢纽节点、<b data-fact="eastdata_clusters"></b>国家数据中心集群获批，“东数西算”在 2022 年 2 月全面启动。基础设施先行，为后来的智能算力爆发埋下伏笔。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>A policy timeline</h3>
+                <p>
+                  With <b data-fact="eastdata_hubs"></b> national computing hubs and <b data-fact="eastdata_clusters"></b> national data-centre clusters approved, East Data, West Computing was launched in full in February 2022. Infrastructure came first, laying the groundwork for the later boom in AI computing power.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>概念：从提出到系统阐释</h3>
+                <p>
+                  2023 年 9 月在黑龙江首次提出“新质生产力”；同年中央经济工作会议提出以颠覆性技术和前沿技术催生新产业；2024 年 1 月，中央政治局集体学习给出了“三要素 + 优化组合 + 全要素生产率”的完整定义。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>The concept: from first mention to full definition</h3>
+                <p>
+                  “New quality productive forces” was first put forward in Heilongjiang in September 2023. Later that year, the Central Economic Work Conference called for disruptive and frontier technologies to give rise to new industries. In January 2024, a Politburo group study session set out the complete definition: three factors + optimal combination + total factor productivity.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div lang="zh-CN">
+                <h3>政策与基础设施：给 AI 铺路</h3>
+                <p>
+                  《算力基础设施高质量发展行动计划》提出到 2025 年算力规模超过 <b data-fact="compute_target_2025"></b>、智能算力占比达到 <b data-fact="intel_share_target"></b>；生成式 AI 管理办法、政府工作报告中的“人工智能+”，以及国发〔2025〕11号文件，构成了“AI 赋能千行百业”的政策骨架。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Policy and infrastructure: paving the way for AI</h3>
+                <p>
+                  The Action Plan for the High-Quality Development of Computing Infrastructure set 2025 targets of more than <b data-fact="compute_target_2025"></b> in total computing power, with AI computing power making up <b data-fact="intel_share_target"></b> of it. The interim measures on generative AI services, “AI Plus” in the Government Work Report and State Council document Guo Fa [2025] No. 11 together form the policy backbone for “AI empowering every industry”.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="3">
+              <div lang="zh-CN">
+                <h3>就业：新职业被正式命名</h3>
+                <p>
+                  2024 年 7 月，人社部发布 <b data-fact="new_occupations"></b>新职业、<b data-fact="new_work_types"></b>新工种，其中就有“生成式人工智能系统应用员”——劳动者这一要素，正在被 AI 重新定义。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Jobs: new occupations get official names</h3>
+                <p>
+                  In July 2024, the Ministry of Human Resources and Social Security announced <b data-fact="new_occupations"></b> new occupations and <b data-fact="new_work_types"></b> new job types, among them “generative AI system application specialist”. Workers, as a factor of production, are being redefined by AI.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solo">
+          <figure class="fig" data-chart="factorForce">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">全站导航：三要素如何汇聚成全要素生产率</h3>
+              <h3 class="fig__title" lang="en">Site map: how the three factors converge into total factor productivity</h3>
+              <p class="fig__sub" lang="zh-CN">力导向示意图 · 可拖拽 · 点击任一节点跳转到对应章节 <span class="tag tag--illustrative">示意</span></p>
+              <p class="fig__sub" lang="en">Force-directed diagram · drag nodes · click any node to jump to its chapter <span class="tag tag--illustrative">Illustrative</span></p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== 第 2 章 ========== -->
+      <section class="chapter" id="ch2" data-nav="02 · 劳动资料：算力" data-nav-en="02 · Means of labour: compute" data-factor="tool">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">02</span>
+          <p class="chapter__kicker" lang="zh-CN">新劳动资料（一）<span class="factor-chip">劳动资料</span></p>
+          <p class="chapter__kicker" lang="en">New means of labour (I) <span class="factor-chip">Means of labour</span></p>
+          <h2 class="chapter__title" lang="zh-CN">算力是新时代的“电力”</h2>
+          <h2 class="chapter__title" lang="en">Computing power is the “electricity” of a new era</h2>
+          <p class="chapter__thesis" lang="zh-CN">智能算力规模高速增长、空间布局重构，是 AI 生产力的物质基础。</p>
+          <p class="chapter__thesis" lang="en">AI computing power is growing fast and being redistributed across the country. It is the material foundation of AI as a productive force.</p>
+        </header>
+
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="chinaFlowMap" data-sources="geo_tianditu">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">“东数西算”：把东部的算力需求引向西部的能源与土地</h3>
+                <h3 class="fig__title" lang="en">East Data, West Computing: steering demand for computing power in the east towards energy and land in the west</h3>
+                <p class="fig__sub" lang="zh-CN">8 个国家算力枢纽 · 10 个数据中心集群 · 弧线为示意流向</p>
+                <p class="fig__sub" lang="en">8 national computing hubs · 10 data-centre clusters · arcs show illustrative flows</p>
+              </figcaption>
+              <footer class="fig__foot">
+                <p class="fig__note" lang="zh-CN">底图：天地图·国家地理信息公共服务平台 行政区划数据，审图号：GS（2026）4921号。</p>
+                <p class="fig__note" lang="en">Base map: administrative boundary data from Tianditu, the National Platform for Common Geospatial Information Services. Map approval number: GS（2026）4921号.</p>
+              </footer>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>一张底图</h3>
+                <p>
+                  东部人口与产业密集、算力需求旺盛；西部可再生能源丰富、土地与电价成本低。“东数西算”要解决的，正是这种空间错配。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>One base map</h3>
+                <p>
+                  The east is dense with people and industry, and hungry for computing power; the west is rich in renewable energy, with cheap land and electricity. East Data, West Computing exists to fix exactly this spatial mismatch.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>八个枢纽</h3>
+                <p>
+                  京津冀、长三角、粤港澳、成渝四个枢纽贴近需求；内蒙古、贵州、甘肃、宁夏四个枢纽依托资源。全国已建成万卡智算集群 <b data-fact="wanka_clusters"></b>。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Eight hubs</h3>
+                <p>
+                  Four hubs — Beijing–Tianjin–Hebei, the Yangtze River Delta, the Guangdong–Hong Kong–Macao Greater Bay Area and Chengdu–Chongqing — sit close to demand; the other four — Inner Mongolia, Guizhou, Gansu and Ningxia — draw on local resources. AI computing clusters at the “ten-thousand-card” scale built nationwide now number <b data-fact="wanka_clusters"></b>.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div lang="zh-CN">
+                <h3>数据向西流动</h3>
+                <p>
+                  2025 年，枢纽地区新增算力占全国新增算力的 <b data-fact="hub_new_share"></b>。弧线上流动的粒子代表“东数西算”的方向（示意）。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Data flows west</h3>
+                <p>
+                  In 2025, hub regions accounted for <b data-fact="hub_new_share"></b> of all new computing power added nationwide. The particles moving along the arcs show the direction of East Data, West Computing (illustrative).
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="3">
+              <div lang="zh-CN">
+                <h3>十个集群</h3>
+                <p>
+                  张家口、芜湖、韶关、天府、重庆、贵安、和林格尔、庆阳、中卫与长三角示范区，是算力的具体落点；规划要求集群内数据中心平均上架率至少 <b data-fact="rack_util_target"></b>。截至 2026 年 6 月底，全国算力设施整体上架率为 <b data-fact="utilization_2026"></b>。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Ten clusters</h3>
+                <p>
+                  Zhangjiakou, Wuhu, Shaoguan, Tianfu, Chongqing, Gui'an, Horinger, Qingyang, Zhongwei and the Yangtze River Delta demonstration zone are where computing power actually lands. The plan requires average rack utilisation of data centres within the clusters to reach at least <b data-fact="rack_util_target"></b>. As of the end of June 2026, overall rack utilisation across China's computing facilities stood at <b data-fact="utilization_2026"></b>.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="4">
+              <div lang="zh-CN">
+                <h3>需求在哪里</h3>
+                <p>
+                  另一份发展报告显示，人工智能骨干企业高度集中在北京（<b data-fact="prov_beijing"></b>）、广东（<b data-fact="prov_guangdong"></b>）和上海（<b data-fact="prov_shanghai"></b>）。这一数据经媒体转引，可信度标为 C。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Where is the demand?</h3>
+                <p>
+                  Another development report shows that leading AI companies are highly concentrated in Beijing (<b data-fact="prov_beijing"></b>), Guangdong (<b data-fact="prov_guangdong"></b>) and Shanghai (<b data-fact="prov_shanghai"></b>). These figures reached us via media reports, so their reliability is rated C.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="computeArea">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">智能算力规模快速攀升，但不同口径需要分开看</h3>
+                <h3 class="fig__title" lang="en">AI computing power is climbing fast — but figures on different bases must be read separately</h3>
+                <p class="fig__sub" lang="zh-CN">中国算力规模 · 可切换“算力中心侧 / 机架 / 设备侧”三种口径</p>
+                <p class="fig__sub" lang="en">China's computing power · switch between three bases: data-centre side / racks / device side</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>从总算力到智能算力</h3>
+                <p>
+                  2023 年 6 月底，全国算力总规模为 <b data-fact="compute_total_2023"></b>。到 2025 年 6 月底，仅智能算力就达到 <b data-fact="compute_intel_2025_06"></b>；2025 年底为 <b data-fact="compute_intel_2025_eflops"></b>（FP16），2026 年 6 月底升至 <b data-fact="compute_intel_2026_06"></b>（FP16），7 月底全国智算总规模达到 <b data-fact="compute_intel_2026_07_pflops"></b>。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>From total compute to AI compute</h3>
+                <p>
+                  At the end of June 2023, China's total computing power stood at <b data-fact="compute_total_2023"></b>. By the end of June 2025, AI computing power alone had reached <b data-fact="compute_intel_2025_06"></b>; it was <b data-fact="compute_intel_2025_eflops"></b> (FP16) at the end of 2025 and rose to <b data-fact="compute_intel_2026_06"></b> (FP16) by the end of June 2026; by the end of July the national total had reached <b data-fact="compute_intel_2026_07_pflops"></b>.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>⚠ 注意口径</h3>
+                <p>
+                  2025 年 6 月以来工信部发布的智能算力均按 FP16 半精度统计，可以连成一条线；但 2023 年的“算力总规模”是另一个指标，信通院“设备侧”算力又换算为 FP32。不同口径的数字不能放在一起算增速。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>⚠ Mind the basis</h3>
+                <p>
+                  Since June 2025 the MIIT has reported AI computing power in FP16 half precision, so those points form one series. But the 2023 “total computing power” is a different metric, and CAICT's device-side figures are converted to FP32. Figures on different bases cannot be combined into a growth rate.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div lang="zh-CN">
+                <h3>机架：物理载体</h3>
+                <p>
+                  在用标准机架从 2023 年 6 月的超过 <b data-fact="racks_2023"></b>，增长到 2025 年 6 月的 <b data-fact="racks_2025_06"></b>，再到 2025 年底的超过 <b data-fact="racks_2025_12"></b>。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Racks: the physical carrier</h3>
+                <p>
+                  The number of standard racks in use grew from more than <b data-fact="racks_2023"></b> in June 2023 to <b data-fact="racks_2025_06"></b> in June 2025, and to more than <b data-fact="racks_2025_12"></b> by the end of 2025.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="3">
+              <div lang="zh-CN">
+                <h3>设备侧：另一种算法</h3>
+                <p>
+                  中国信通院按计算设备统计：截至 2025 年 6 月，中国计算设备算力为 <b data-fact="device_cn_fp32"></b>（FP32），约占全球的 <b data-fact="device_cn_share"></b>；其中智能算力 <b data-fact="device_intel"></b>，同比增长 <b data-fact="device_intel_yoy"></b>。2024 年中国 AI 服务器出货 <b data-fact="ai_servers_2024"></b>，同比增长 <b data-fact="ai_servers_yoy"></b>。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Device side: another way of counting</h3>
+                <p>
+                  The China Academy of Information and Communications Technology (CAICT) counts by computing device: as of June 2025, the computing power of China's devices was <b data-fact="device_cn_fp32"></b> (FP32), about <b data-fact="device_cn_share"></b> of the global total. Of this, AI computing power was <b data-fact="device_intel"></b>, up <b data-fact="device_intel_yoy"></b> year on year. AI server shipments in China reached <b data-fact="ai_servers_2024"></b> in 2024, up <b data-fact="ai_servers_yoy"></b> year on year.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solo">
+          <figure class="fig" data-chart="regionDonut">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">东部仍占智算大头，西部已占约三分之一；能效持续改善</h3>
+              <h3 class="fig__title" lang="en">The east still holds the bulk of AI compute, but the west already has about a third — and energy efficiency keeps improving</h3>
+              <p class="fig__sub" lang="zh-CN">2026 年 6 月底各地区智算规模占比 · 算力中心 PUE（越接近 1 越节能）</p>
+              <p class="fig__sub" lang="en">Share of AI computing power by region, end of June 2026 · data-centre PUE (the closer to 1, the more energy-efficient)</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== 第 3 章 ========== -->
+      <section class="chapter" id="ch3" data-nav="03 · 劳动资料：大模型" data-nav-en="03 · Means of labour: large models" data-factor="tool">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">03</span>
+          <p class="chapter__kicker" lang="zh-CN">新劳动资料（二）<span class="factor-chip">劳动资料</span></p>
+          <p class="chapter__kicker" lang="en">New means of labour (II) <span class="factor-chip">Means of labour</span></p>
+          <h2 class="chapter__title" lang="zh-CN">大模型：“会思考的生产工具”</h2>
+          <h2 class="chapter__title" lang="en">Large models: production tools that “think”</h2>
+          <p class="chapter__thesis" lang="zh-CN">模型训练算力呈指数增长；中国在模型数量与性能上快速追赶。</p>
+          <p class="chapter__thesis" lang="en">The compute used to train models is growing exponentially, and China is catching up fast in both the number and the performance of its models.</p>
+        </header>
+
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="modelScatterBrush">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">七十多年来，训练一个模型所用的算力呈指数级增长</h3>
+                <h3 class="fig__title" lang="en">For more than seven decades, the compute used to train a model has grown exponentially</h3>
+                <p class="fig__sub" lang="zh-CN">Epoch AI 收录的知名 AI 模型 · 纵轴为对数刻度 · 拖动底部刷选框缩放时间</p>
+                <p class="fig__sub" lang="en">Notable AI models tracked by Epoch AI · log-scale vertical axis · drag the brush at the bottom to zoom in on a period</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>每个点是一个模型</h3>
+                <p>纵轴是训练所用的浮点运算次数（对数刻度），每上升一格就是十倍。点越大，参数越多。</p>
+              </div>
+              <div lang="en">
+                <h3>Every dot is a model</h3>
+                <p>The vertical axis shows the number of floating-point operations used in training (log scale): each step up is a tenfold increase. The larger the dot, the more parameters.</p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>中美两极</h3>
+                <p>近年的前沿模型主要来自美国和中国两个国家的机构。</p>
+              </div>
+              <div lang="en">
+                <h3>Two poles: the US and China</h3>
+                <p>In recent years, frontier models have come mainly from institutions in just two countries: the United States and China.</p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div lang="zh-CN">
+                <h3>里程碑</h3>
+                <p>从 AlexNet、Transformer 到 GPT-3，再到 DeepSeek-V3、DeepSeek-R1，每个里程碑都对应着训练算力的跃迁。</p>
+              </div>
+              <div lang="en">
+                <h3>Milestones</h3>
+                <p>From AlexNet and the Transformer to GPT-3, and on to DeepSeek-V3 and DeepSeek-R1, every milestone coincides with a leap in training compute.</p>
+              </div>
+            </div>
+            <div class="step" data-step="3">
+              <div lang="zh-CN">
+                <h3>聚焦大模型时代</h3>
+                <p>把时间窗口缩放到 2020 年以后：训练算力的增长曲线明显陡峭，中国模型密集出现。</p>
+              </div>
+              <div lang="en">
+                <h3>Zooming in on the large-model era</h3>
+                <p>Narrow the window to 2020 onwards: the growth curve of training compute turns markedly steeper, and Chinese models appear in quick succession.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="stepFilings" data-sources="derived">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">完成备案的生成式 AI 服务一年多增加了一倍多</h3>
+                <h3 class="fig__title" lang="en">Filed generative AI services more than doubled in just over a year</h3>
+                <p class="fig__sub" lang="zh-CN">国家网信办公告的累计备案数（阶梯）与相邻公告间的月均新增（柱）</p>
+                <p class="fig__sub" lang="en">Cumulative filings announced by the Cyberspace Administration of China (steps) and average monthly additions between consecutive announcements (bars)</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>备案数的阶梯</h3>
+                <p>
+                  累计备案数从 2025 年 3 月底的 <b data-fact="filed_2025_03"></b>，增长到 2025 年底的 <b data-fact="filed_2025_12"></b>，2026 年 4 月底达到 <b data-fact="genai_filed_2026_04"></b>，8 月底已达 <b data-fact="genai_filed_2026_08"></b>。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>A staircase of filings</h3>
+                <p>
+                  The cumulative number of filed services rose from <b data-fact="filed_2025_03"></b> at the end of March 2025 to <b data-fact="filed_2025_12"></b> at the end of 2025, reaching <b data-fact="genai_filed_2026_04"></b> by the end of April 2026 and <b data-fact="genai_filed_2026_08"></b> by the end of August.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>增速</h3>
+                <p>2025 年全年新增备案 <b data-fact="filed_new_2025"></b>。柱形为相邻两次公告之间的月均新增，由累计数推算。</p>
+              </div>
+              <div lang="en">
+                <h3>The pace</h3>
+                <p>New filings over the whole of 2025 totalled <b data-fact="filed_new_2025"></b>. Each bar shows the average monthly addition between two consecutive announcements, derived from the cumulative totals.</p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div lang="zh-CN">
+                <h3>应用层也在登记</h3>
+                <p>除了备案的大模型服务，截至 2026 年 8 月底还有 <b data-fact="registered_2026_08"></b>生成式 AI 应用或功能完成登记。</p>
+              </div>
+              <div lang="en">
+                <h3>The application layer registers too</h3>
+                <p>Beyond filed large-model services, the number of generative AI applications or features that had completed registration reached <b data-fact="registered_2026_08"></b> by the end of August 2026.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solo">
+          <figure class="fig" data-chart="notableDumbbell">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">美国的知名模型数量仍居首，中国稳居第二，顶级模型性能差距只剩 <b data-fact="model_gap"></b></h3>
+              <h3 class="fig__title" lang="en">The US still releases the most notable models and China is a firm second — with the top-model performance gap down to <b data-fact="model_gap"></b></h3>
+              <p class="fig__sub" lang="zh-CN">各国当年发布的 notable AI 模型数（2024 → 2025，本站按 Epoch AI 数据统计）· AI Index 2026 发布值作对照</p>
+              <p class="fig__sub" lang="en">Notable AI models released per year by country (2024 → 2025, counted by this site from Epoch AI data) · AI Index 2026 figures for reference</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== 第 4 章 ========== -->
+      <section class="chapter" id="ch4" data-nav="04 · 劳动对象：数据要素" data-nav-en="04 · Objects of labour: data" data-factor="object">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">04</span>
+          <p class="chapter__kicker" lang="zh-CN">新劳动对象 <span class="factor-chip">劳动对象</span></p>
+          <p class="chapter__kicker" lang="en">New objects of labour <span class="factor-chip">Objects of labour</span></p>
+          <h2 class="chapter__title" lang="zh-CN">数据要素与“可被生成的世界”</h2>
+          <h2 class="chapter__title" lang="en">Data as a factor of production — and a “world that can be generated”</h2>
+          <p class="chapter__thesis" lang="zh-CN">
+            AI 把文本、图像、语音，乃至分子和蛋白质，都变成可以加工的劳动对象，劳动对象的边界被极大拓展。
+          </p>
+          <p class="chapter__thesis" lang="en">
+            AI turns text, images and speech — even molecules and proteins — into objects of labour that can be worked on, vastly expanding the boundaries of what labour can act upon.
+          </p>
+        </header>
+
+        <div class="grid grid--2">
+          <figure class="fig" data-chart="circlePack">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">图像、文本、语音是生成式 AI 加工最多的“原料”</h3>
+              <h3 class="fig__title" lang="en">Images, text and speech are the “raw materials” generative AI works on most</h3>
+              <p class="fig__sub" lang="zh-CN">WIPO：2014–2023 年生成式 AI 专利按数据类型 · 悬停查看</p>
+              <p class="fig__sub" lang="en">WIPO: generative AI patents by data type, 2014–2023 · hover for details</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" data-chart="pictogram">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">数以亿计的人正在把 AI 用进日常</h3>
+              <h3 class="fig__title" lang="en">Hundreds of millions of people are bringing AI into everyday life</h3>
+              <p class="fig__sub" lang="zh-CN">2025 年底生成式 AI 三类主要用法的用户规模</p>
+              <p class="fig__sub" lang="en">Number of users for the three main uses of generative AI, end of 2025</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <p lang="zh-CN">
+            截至 2025 年底，中国网民达 <b data-fact="netizens"></b>，用 AI 解答问题的用户达 <b data-fact="users_qa"></b>，生成图片视频的达 <b data-fact="users_gen"></b>，把 AI 作为生活助手的达 <b data-fact="users_assist"></b>。40 岁以下用户占生成式 AI 用户的 <b data-fact="users_under40"></b>。
+          </p>
+          <p lang="en">
+            By the end of 2025, China had <b data-fact="netizens"></b> internet users. Those using AI to answer questions numbered <b data-fact="users_qa"></b>; those using it to generate images and video, <b data-fact="users_gen"></b>; and those relying on it as an everyday assistant, <b data-fact="users_assist"></b>. Under-40s made up <b data-fact="users_under40"></b> of generative AI users.
+          </p>
+        </div>
+
+        <div class="prose">
+          <h3 lang="zh-CN">AI for Science：科研范式的“质变”</h3>
+          <h3 lang="en">AI for Science: a “qualitative change” in how research is done</h3>
+          <p lang="zh-CN">
+            新质生产力强调“创新起主导作用”。当 AI 开始预测蛋白质结构、设计新分子，被加工的对象就从信息延伸到了物质世界的底层。AlphaFold 数据库已收录 <b data-fact="alphafold_structures"></b>蛋白质结构预测；2024 年诺贝尔化学奖授予了蛋白质结构预测与蛋白质设计。分子、基因、蛋白质类生成式 AI 专利虽然只有 <b data-fact="patents_molecule"></b>，但 2018–2023 年年均增长 <b data-fact="patents_molecule_cagr"></b>。
+          </p>
+          <p lang="en">
+            New quality productive forces give “innovation the leading role”. Once AI starts predicting protein structures and designing new molecules, the objects of labour extend from information down to the foundations of the physical world. Protein structure predictions in the AlphaFold database now number <b data-fact="alphafold_structures"></b>, and the 2024 Nobel Prize in Chemistry was awarded for protein structure prediction and protein design. Generative AI patents on molecules, genes and proteins number only <b data-fact="patents_molecule"></b>, but they grew by an average of <b data-fact="patents_molecule_cagr"></b> a year between 2018 and 2023.
+          </p>
+        </div>
+        <div class="solo">
+          <figure class="fig" data-chart="scienceTiles">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">从“读懂”到“生成”物质世界</h3>
+              <h3 class="fig__title" lang="en">From “reading” the physical world to “generating” it</h3>
+              <p class="fig__sub" lang="zh-CN">AI for Science 关键数字</p>
+              <p class="fig__sub" lang="en">AI for Science: key figures</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== 第 5 章 ========== -->
+      <section class="chapter" id="ch5" data-nav="05 · 劳动者：人机协同" data-nav-en="05 · Workers: human–AI collaboration" data-factor="worker">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">05</span>
+          <p class="chapter__kicker" lang="zh-CN">新劳动者 <span class="factor-chip">劳动者</span></p>
+          <p class="chapter__kicker" lang="en">New workers <span class="factor-chip">Workers</span></p>
+          <h2 class="chapter__title" lang="zh-CN">人机协同与技能转型</h2>
+          <h2 class="chapter__title" lang="en">Human–AI collaboration and the skills transition</h2>
+          <p class="chapter__thesis" lang="zh-CN">AI 不只是替代，更是“放大器”：对新手的提升最大，同时催生新职业、倒逼技能升级。但效应并非必然。</p>
+          <p class="chapter__thesis" lang="en">AI is not just a substitute but an “amplifier”: it helps novices most, while creating new occupations and forcing skills to upgrade. Yet the effect is not guaranteed.</p>
+        </header>
+
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="effectLollipop">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">多项实验显示 AI 提升了效率，但也有反例</h3>
+                <h3 class="fig__title" lang="en">Several experiments show AI raising productivity — but there are counterexamples</h3>
+                <p class="fig__sub" lang="zh-CN">生成式 AI 生产率实证研究的效应大小（%）· 点击查看研究设计</p>
+                <p class="fig__sub" lang="en">Effect sizes (%) in empirical studies of generative AI and productivity · click for study design</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>写作、编程、客服</h3>
+                <p>
+                  Copilot 帮助 <b data-fact="copilot_n"></b>开发者完成任务快 <b data-fact="copilot_faster"></b>；ChatGPT 使专业写作的平均完成时间缩短 <b data-fact="noy_time"></b>、质量提高 <b data-fact="noy_quality"></b>；客服每小时解决问题数平均提升 <b data-fact="bryn_avg"></b>。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Writing, coding, customer support</h3>
+                <p>
+                  Copilot helped <b data-fact="copilot_n"></b> developers complete a task <b data-fact="copilot_faster"></b> faster; ChatGPT cut the average time for professional writing tasks by <b data-fact="noy_time"></b> and raised quality by <b data-fact="noy_quality"></b>; and customer-support agents resolved on average <b data-fact="bryn_avg"></b> more issues per hour.
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>新手获益最大</h3>
+                <p>
+                  在 <b data-fact="bryn_n"></b>客服的研究中，新手和低技能员工的提升高达 <b data-fact="bryn_novice"></b>，是平均值的两倍多。AI 把资深员工的经验“编码”进工具，再传给新人。（期刊正式版样本为 <b data-fact="qje_n"></b>、平均提升 <b data-fact="qje_avg"></b>，与工作论文略有差异。）
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Novices gain the most</h3>
+                <p>
+                  In a study of <b data-fact="bryn_n"></b> customer-support agents, novice and low-skilled workers improved by as much as <b data-fact="bryn_novice"></b> — more than double the average. AI “encodes” the know-how of experienced staff into the tool and passes it on to newcomers. (The published journal version reports a sample of <b data-fact="qje_n"></b> and an average gain of <b data-fact="qje_avg"></b>, slightly different from the working paper.)
+                </p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div lang="zh-CN">
+                <h3>反例：资深开发者反而变慢</h3>
+                <p>
+                  METR 在 2025 年的随机对照试验中让 <b data-fact="metr_n"></b>资深开源开发者完成 <b data-fact="metr_tasks"></b>真实任务，使用 AI 工具后完成时间反而延长 <b data-fact="metr_slower"></b>。AI 的生产率效应取决于任务、经验和使用方式。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Counterexample: experienced developers slowed down</h3>
+                <p>
+                  In a 2025 randomised controlled trial, METR had <b data-fact="metr_n"></b> experienced open-source developers complete <b data-fact="metr_tasks"></b> real tasks. With AI tools, they actually took <b data-fact="metr_slower"></b> longer. AI's productivity effect depends on the task, on experience and on how the tools are used.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid--2">
+          <figure class="fig" data-chart="divergingBar">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">创造的岗位多于被替代的岗位，但结构性变动剧烈</h3>
+              <h3 class="fig__title" lang="en">More jobs are created than displaced, but the structural churn is intense</h3>
+              <p class="fig__sub" lang="zh-CN">WEF《未来就业报告 2025》：2025–2030 年全球岗位变化</p>
+              <p class="fig__sub" lang="en">WEF Future of Jobs Report 2025: global job changes, 2025–2030</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" data-chart="beeswarm">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">越发达的经济体，越多岗位暴露于 AI</h3>
+              <h3 class="fig__title" lang="en">The more advanced the economy, the more jobs are exposed to AI</h3>
+              <p class="fig__sub" lang="zh-CN">IMF：就业中暴露于 AI 的比例</p>
+              <p class="fig__sub" lang="en">IMF: share of employment exposed to AI</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <p lang="zh-CN">
+            WEF 预计到 2030 年将创造 <b data-fact="wef_created"></b>岗位、替代 <b data-fact="wef_displaced"></b>，净增 <b data-fact="wef_net"></b>；结构性变动占 <b data-fact="wef_churn"></b>。IMF 估计全球约 <b data-fact="imf_world"></b>的就业暴露于 AI，发达经济体约 <b data-fact="imf_advanced"></b>，低收入国家约 <b data-fact="imf_low"></b>。
+          </p>
+          <p lang="en">
+            The WEF expects jobs created by 2030 to total <b data-fact="wef_created"></b>, against <b data-fact="wef_displaced"></b> displaced — a net gain of <b data-fact="wef_net"></b> — with structural churn amounting to <b data-fact="wef_churn"></b>. The IMF estimates that about <b data-fact="imf_world"></b> of jobs worldwide are exposed to AI: about <b data-fact="imf_advanced"></b> in advanced economies and about <b data-fact="imf_low"></b> in low-income countries.
+          </p>
+        </div>
+        <div class="grid grid--2">
+          <figure class="fig" data-chart="newOccupations">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">新职业被正式命名：劳动者在升级</h3>
+              <h3 class="fig__title" lang="en">New occupations get official names: workers are upgrading</h3>
+              <p class="fig__sub" lang="zh-CN">人社部 2024 年 7 月发布的新职业与新工种</p>
+              <p class="fig__sub" lang="en">New occupations and job types announced by the Ministry of Human Resources and Social Security, July 2024</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" data-chart="radar">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">从“传统”到“新质”：三要素整体跃升</h3>
+              <h3 class="fig__title" lang="en">From “traditional” to “new quality”: a leap across all three factors</h3>
+              <p class="fig__sub" lang="zh-CN">概念对比 <span class="tag tag--illustrative">示意，非统计数据</span></p>
+              <p class="fig__sub" lang="en">Conceptual comparison <span class="tag tag--illustrative">Illustrative, not statistical data</span></p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== 第 6 章 ========== -->
+      <section class="chapter" id="ch6" data-nav="06 · 优化组合：生产力飞轮" data-nav-en="06 · Optimal combination: the flywheel" data-factor="combo">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">06</span>
+          <p class="chapter__kicker" lang="zh-CN">优化组合的跃升 <span class="factor-chip">优化组合</span></p>
+          <p class="chapter__kicker" lang="en">The optimal combination leap <span class="factor-chip">Optimal combination</span></p>
+          <h2 class="chapter__title" lang="zh-CN">AI 生产力飞轮：三要素不是并列，而是循环</h2>
+          <h2 class="chapter__title" lang="en">The AI productivity flywheel: the three factors form a loop, not a list</h2>
+          <p class="chapter__thesis" lang="zh-CN">
+            算力训练出模型，模型进入应用，应用产生数据，数据又反哺模型；劳动者在这个循环中借助工具不断升级。“优化组合”的含义正在于此：要素之间相互放大。
+          </p>
+          <p class="chapter__thesis" lang="en">
+            Computing power trains models, models flow into applications, applications generate data, and data feeds back into models; within this loop, workers keep upgrading with the help of new tools. That is what “optimal combination” means: the factors amplify one another.
+          </p>
+        </header>
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="flywheel">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">一个自我强化的循环</h3>
+                <h3 class="fig__title" lang="en">A self-reinforcing loop</h3>
+                <p class="fig__sub" lang="zh-CN">节点上的数字来自前几章的证据 <span class="tag tag--illustrative">示意：因果循环为概念框架</span></p>
+                <p class="fig__sub" lang="en">Figures on the nodes come from evidence in earlier chapters <span class="tag tag--illustrative">Illustrative: the causal loop is a conceptual framework</span></p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>算力 → 模型</h3>
+                <p>智能算力（第 2 章）是训练大模型的燃料。没有算力，就没有“会思考的工具”。</p>
+              </div>
+              <div lang="en">
+                <h3>Compute → models</h3>
+                <p>AI computing power (Chapter 2) is the fuel for training large models. Without compute, there are no tools that “think”.</p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>模型 → 应用</h3>
+                <p>备案上线的模型（第 3 章）进入客服、编程、写作和千行百业，成为劳动者手中的新工具。</p>
+              </div>
+              <div lang="en">
+                <h3>Models → applications</h3>
+                <p>Models that have been filed and launched (Chapter 3) move into customer support, coding, writing and every other industry, becoming new tools in workers' hands.</p>
+              </div>
+            </div>
+            <div class="step" data-step="2">
+              <div lang="zh-CN">
+                <h3>应用 → 数据 → 模型</h3>
+                <p>数以亿计的用户在使用中产生新的数据与反馈（第 4 章），又被用来改进模型。循环闭合，飞轮开始加速。</p>
+              </div>
+              <div lang="en">
+                <h3>Applications → data → models</h3>
+                <p>Hundreds of millions of users generate new data and feedback as they use these tools (Chapter 4), which in turn are used to improve the models. The loop closes and the flywheel starts to speed up.</p>
+              </div>
+            </div>
+            <div class="step" data-step="3">
+              <div lang="zh-CN">
+                <h3>劳动者居于中心</h3>
+                <p>新职业、新技能（第 5 章）让人能驾驭这一循环。人机协同的劳动者，是把三要素“优化组合”起来的关键。</p>
+              </div>
+              <div lang="en">
+                <h3>Workers at the centre</h3>
+                <p>New occupations and new skills (Chapter 5) let people steer this loop. Workers who collaborate with AI are the key to bringing the three factors into an “optimal combination”.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== 第 7 章 ========== -->
+      <section class="chapter" id="ch7" data-nav="07 · 产业赋能" data-nav-en="07 · Empowering industries" data-factor="combo">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">07</span>
+          <p class="chapter__kicker" lang="zh-CN">产业赋能</p>
+          <p class="chapter__kicker" lang="en">Empowering industries</p>
+          <h2 class="chapter__title" lang="zh-CN">千行百业的“AI+”</h2>
+          <h2 class="chapter__title" lang="en">“AI+” across every industry</h2>
+          <p class="chapter__thesis" lang="zh-CN">AI 已从实验室走进车间、银行和医院，制造业是主战场。</p>
+          <p class="chapter__thesis" lang="en">AI has moved out of the lab and into factory floors, banks and hospitals — and manufacturing is the main battleground.</p>
+        </header>
+
+        <div class="solo">
+          <figure class="fig" data-chart="sankey">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">生成式 AI 专利从哪里来、流向哪些行业</h3>
+              <h3 class="fig__title" lang="en">Where generative AI patents come from — and which industries they flow to</h3>
+              <p class="fig__sub" lang="zh-CN">WIPO：2014–2023 年生成式 AI 专利，按申请人所在国家与应用行业</p>
+              <p class="fig__sub" lang="en">WIPO: generative AI patents, 2014–2023, by applicant's country and application sector</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="grid grid--2">
+          <figure class="fig" data-chart="dotRobots" data-sources="derived">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">全球每新装两台工业机器人，就有一台以上在中国</h3>
+              <h3 class="fig__title" lang="en">Of every two industrial robots installed worldwide, more than one goes to China</h3>
+              <p class="fig__sub" lang="zh-CN">IFR：2024 年工业机器人新装机量 · 每个点代表 1000 台</p>
+              <p class="fig__sub" lang="en">IFR: new industrial robot installations, 2024 · each dot represents 1,000 units</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" data-chart="robotDensity">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">机器人密度：每万名制造业员工拥有的机器人</h3>
+              <h3 class="fig__title" lang="en">Robot density: robots per 10,000 manufacturing employees</h3>
+              <p class="fig__sub" lang="zh-CN">IFR，2024 年数据（2026 年 4 月发布；2025 年各国密度尚未公开）</p>
+              <p class="fig__sub" lang="en">IFR, 2024 data (released April 2026; 2025 density by country not yet public)</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <p lang="zh-CN">
+            2024 年全球安装工业机器人 <b data-fact="robots_world_2024"></b>，中国 <b data-fact="robots_cn_2024_wan"></b>，占 <b data-fact="robots_cn_share"></b>，创历史新高；中国运行存量 <b data-fact="robots_cn_stock"></b>，国产品牌在本土市场的份额由 <b data-fact="domestic_share_2023"></b>升至 <b data-fact="domestic_share_2024"></b>。IFR 2026 年 9 月发布的最新数据显示，2025 年中国新装 <b data-fact="robots_cn_2025_wan"></b>，占全球的 <b data-fact="robots_cn_share_2025"></b>。按 IFR 新口径，中国机器人密度为 <b data-fact="robot_density_cn"></b>（2024 年），仍有很大提升空间。
+          </p>
+          <p lang="en">
+            In 2024, industrial robot installations worldwide totalled <b data-fact="robots_world_2024"></b>. China accounted for <b data-fact="robots_cn_2024_wan"></b>, or <b data-fact="robots_cn_share"></b> — a record high. China's operational stock stood at <b data-fact="robots_cn_stock"></b>, and domestic brands' share of the home market rose from <b data-fact="domestic_share_2023"></b> to <b data-fact="domestic_share_2024"></b>. The latest IFR figures, released in September 2026, show China installed <b data-fact="robots_cn_2025_wan"></b> in 2025 — <b data-fact="robots_cn_share_2025"></b> of the world total. On the IFR's revised basis, China's robot density was <b data-fact="robot_density_cn"></b> in 2024, leaving plenty of room to grow.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <figure class="fig" data-chart="pyramid" data-sources="miit_smart_factory_2025">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">智能工厂的梯度培育</h3>
+              <h3 class="fig__title" lang="en">Building smart factories tier by tier</h3>
+              <p class="fig__sub" lang="zh-CN">截至 2025 年底累计建成的智能工厂（国家数据局《数字中国发展报告（2025年）》，宽度为对数比例）</p>
+              <p class="fig__sub" lang="en">Smart factories built by the end of 2025 (National Data Administration, Digital China Development Report 2025; widths on a log scale)</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" data-chart="lighthouse">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">“灯塔工厂”网络持续扩容</h3>
+              <h3 class="fig__title" lang="en">The Lighthouse factory network keeps growing</h3>
+              <p class="fig__sub" lang="zh-CN">WEF 全球灯塔网络成员数 · 大模型在生产制造环节的应用占比</p>
+              <p class="fig__sub" lang="en">Members of the WEF Global Lighthouse Network · share of large-model use cases in manufacturing and production</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <p lang="zh-CN">
+            截至 2025 年底，全国累计建成 <b data-fact="smart_basic"></b>基础级、<b data-fact="smart_advanced"></b>先进级、<b data-fact="smart_excellent"></b>卓越级智能工厂，并培育 <b data-fact="smart_pioneer"></b>领航级智能工厂。WEF 灯塔网络在 2025 年 9 月达到 <b data-fact="lighthouse_2025_09"></b>，新增 <b data-fact="lighthouse_batch"></b>中有 <b data-fact="lighthouse_batch_cn"></b>在中国。2026 年 6 月又新增 <b data-fact="lighthouse_batch_2026_06"></b>，总数达到 <b data-fact="lighthouse_2026_06"></b>。生产制造环节的大模型应用案例占比由 <b data-fact="mfg_case_before"></b>增至 <b data-fact="mfg_case_after"></b>。
+          </p>
+          <p lang="en">
+            By the end of 2025, China had built <b data-fact="smart_basic"></b> basic-level, <b data-fact="smart_advanced"></b> advanced-level and <b data-fact="smart_excellent"></b> excellence-level smart factories, and was cultivating <b data-fact="smart_pioneer"></b> pioneer-level ones. The WEF Lighthouse network had grown to <b data-fact="lighthouse_2025_09"></b> by September 2025; of the latest batch of <b data-fact="lighthouse_batch"></b>, <b data-fact="lighthouse_batch_cn"></b> are in China. Another <b data-fact="lighthouse_batch_2026_06"></b> joined in June 2026, bringing the total to <b data-fact="lighthouse_2026_06"></b>. The share of large-model use cases in manufacturing and production rose from <b data-fact="mfg_case_before"></b> to <b data-fact="mfg_case_after"></b>.
+          </p>
+        </div>
+
+        <div class="solo">
+          <figure class="fig" data-chart="industryCards">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">行业速览：点击卡片翻面查看证据</h3>
+              <h3 class="fig__title" lang="en">Industries at a glance: click a card to flip it and see the evidence</h3>
+              <p class="fig__sub" lang="zh-CN">只展示有来源的数据；缺乏可靠量化来源的行业标注为“案例/待补”</p>
+              <p class="fig__sub" lang="en">Only sourced data are shown; industries without a reliable quantitative source are marked “case study / to be added”</p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ========== 第 8 章 ========== -->
+      <section class="chapter" id="ch8" data-nav="08 · 全要素生产率与经济贡献" data-nav-en="08 · TFP &amp; economic impact" data-factor="combo">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">08</span>
+          <p class="chapter__kicker" lang="zh-CN">全要素生产率与经济贡献</p>
+          <p class="chapter__kicker" lang="en">Total factor productivity and economic contribution</p>
+          <h2 class="chapter__title" lang="zh-CN">产业规模突破万亿，宏观贡献可达万亿美元级，但测算区间很宽</h2>
+          <h2 class="chapter__title" lang="en">The industry has passed the trillion-yuan mark and its macro contribution could run to trillions of dollars — but the estimates vary widely</h2>
+          <p class="chapter__thesis" lang="zh-CN">全要素生产率大幅提升是新质生产力的核心标志。AI 核心产业高速增长，宏观测算的不确定性同样值得正视。</p>
+          <p class="chapter__thesis" lang="en">A substantial rise in total factor productivity is the core hallmark of new quality productive forces. China's core AI industry is growing fast — and the uncertainty in macro estimates deserves equally honest attention.</p>
+        </header>
+
+        <div class="solo">
+          <figure class="fig" data-chart="comboBarLine">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">中国人工智能产业规模约三年增长到原来的三倍（口径有变化）</h3>
+              <h3 class="fig__title" lang="en">China's AI industry roughly tripled in about three years (definitions changed along the way)</h3>
+              <p class="fig__sub" lang="zh-CN">产业规模（柱，亿元）与同比增速（线）· 口径从“核心产业”到“产业”有变化</p>
+              <p class="fig__sub" lang="en">Industry size (bars) and year-on-year growth (line) · the basis shifts from the “core AI industry” to the “AI industry”</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <p lang="zh-CN">
+            人工智能核心产业规模从 2022 年 7 月的超 <b data-fact="ai_scale_2022"></b>，增长到 2024 年的超 <b data-fact="ai_scale_2024"></b>（同比增长 <b data-fact="ai_scale_2024_yoy"></b>）；2025 年初步测算超 <b data-fact="ai_scale_2025"></b>，同比增长 <b data-fact="ai_scale_2025_yoy"></b>。截至 2026 年 6 月，人工智能企业超 <b data-fact="ai_firms_2026"></b>，约占全球的 <b data-fact="ai_firms_global_share"></b>。
+          </p>
+          <p lang="en">
+            China's core AI industry grew from more than <b data-fact="ai_scale_2022"></b> in July 2022 to more than <b data-fact="ai_scale_2024"></b> in 2024 (up <b data-fact="ai_scale_2024_yoy"></b> year on year). Preliminary estimates put 2025 at more than <b data-fact="ai_scale_2025"></b>, up <b data-fact="ai_scale_2025_yoy"></b>. As of June 2026, the number of AI companies exceeded <b data-fact="ai_firms_2026"></b>, about <b data-fact="ai_firms_global_share"></b> of the global total.
+          </p>
+        </div>
+
+        <div class="grid grid--2">
+          <figure class="fig" data-chart="sunburst">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">应用层企业最多，模型框架层增长最快</h3>
+              <h3 class="fig__title" lang="en">The application layer has the most companies; the model-and-framework layer is growing fastest</h3>
+              <p class="fig__sub" lang="zh-CN">内环：骨干企业数（2024）· 外环：产业规模占比与增速（2025）</p>
+              <p class="fig__sub" lang="en">Inner ring: number of leading companies (2024) · outer ring: share of industry size and growth (2025)</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" data-chart="rangePlot">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">宏观测算：数字很大，区间更宽</h3>
+              <h3 class="fig__title" lang="en">Macro estimates: big numbers, even wider ranges</h3>
+              <p class="fig__sub" lang="zh-CN">各机构对 AI 经济价值与生产率贡献的测算 <span class="tag tag--forecast">预测</span></p>
+              <p class="fig__sub" lang="en">Estimates by various institutions of AI's economic value and contribution to productivity <span class="tag tag--forecast">Forecast</span></p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <p lang="zh-CN">
+            模型框架层在 2025 年同比增长 <b data-fact="layer_model_yoy"></b>，基础层增长 <b data-fact="layer_base_yoy"></b>，应用层占产业规模的 <b data-fact="layer_app_share"></b>。麦肯锡测算，生成式 AI 每年可创造 <b data-fact="mck_value"></b>的价值，到 2040 年可使劳动生产率每年提高 <b data-fact="mck_productivity"></b>。国内有观点预测，到 2035 年 AI 将为中国 GDP 贡献超过 <b data-fact="gdp_2035"></b>。这些都是<strong>预测</strong>，不是统计。
+          </p>
+          <p lang="en">
+            In 2025, the model-and-framework layer grew <b data-fact="layer_model_yoy"></b> year on year and the foundation layer <b data-fact="layer_base_yoy"></b>, while the application layer accounted for <b data-fact="layer_app_share"></b> of the industry. McKinsey estimates that generative AI could create <b data-fact="mck_value"></b> in value every year and, through 2040, raise labour productivity growth by <b data-fact="mck_productivity"></b> a year. Some Chinese commentators forecast that by 2035 AI will contribute more than <b data-fact="gdp_2035"></b> to China's GDP. These are all <strong>forecasts</strong>, not statistics.
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== 第 9 章 ========== -->
+      <section class="chapter" id="ch9" data-nav="09 · 全球竞争格局" data-nav-en="09 · Global competition" data-factor="tool">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">09</span>
+          <p class="chapter__kicker" lang="zh-CN">全球竞争格局</p>
+          <p class="chapter__kicker" lang="en">The global competitive landscape</p>
+          <h2 class="chapter__title" lang="zh-CN">中美各有所长，差距正在缩小</h2>
+          <h2 class="chapter__title" lang="en">China and the US each have their strengths — and the gap is narrowing</h2>
+          <p class="chapter__thesis" lang="zh-CN">中国在专利、论文、机器人与应用规模上领先；美国在私人投资和顶级模型上领先。</p>
+          <p class="chapter__thesis" lang="en">China leads in patents, papers, robots and the scale of adoption; the US leads in private investment and top-tier models.</p>
+        </header>
+
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="barRace" data-sources="owid_definition">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">大规模 AI 系统的“军备竞赛”</h3>
+                <h3 class="fig__title" lang="en">The “arms race” in large-scale AI systems</h3>
+                <p class="fig__sub" lang="zh-CN">Our World in Data / Epoch AI：各国累计大规模 AI 系统数 · 可播放、拖动年份</p>
+                <p class="fig__sub" lang="en">Our World in Data / Epoch AI: cumulative large-scale AI systems by country · press play or drag the year</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>从零到数百</h3>
+                <p>大规模 AI 系统几乎全部出现在近几年。播放动画，观察各国排名如何变化。</p>
+              </div>
+              <div lang="en">
+                <h3>From zero to hundreds</h3>
+                <p>Almost all large-scale AI systems have appeared in the past few years. Play the animation and watch how the country rankings shift.</p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>两强格局</h3>
+                <p>美国和中国遥遥领先，其余国家的累计数量相差一个数量级。</p>
+              </div>
+              <div lang="en">
+                <h3>A two-horse race</h3>
+                <p>The US and China are far ahead; every other country's cumulative count is an order of magnitude smaller.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="scrolly">
+          <div class="scrolly__graphic">
+            <figure class="fig" data-chart="worldMap" data-sources="geo_tianditu tianditu_basemap">
+              <figcaption>
+                <h3 class="fig__title" lang="zh-CN">AI 实力的世界地图</h3>
+                <h3 class="fig__title" lang="en">A world map of AI strength</h3>
+                <p class="fig__sub" lang="zh-CN">可切换：累计大规模 AI 系统数 / 国家 AI 活力得分 · 可拖拽缩放</p>
+                <p class="fig__sub" lang="en">Toggle between cumulative large-scale AI systems and national AI vibrancy scores · drag to pan, scroll to zoom</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="scrolly__steps">
+            <div class="step" data-step="0">
+              <div lang="zh-CN">
+                <h3>高度集中</h3>
+                <p>大规模 AI 系统集中在少数国家。这种集中意味着算力、人才和资本的马太效应。</p>
+              </div>
+              <div lang="en">
+                <h3>Highly concentrated</h3>
+                <p>Large-scale AI systems are concentrated in a handful of countries — a sign of a Matthew effect in which compute, talent and capital attract still more of the same.</p>
+              </div>
+            </div>
+            <div class="step" data-step="1">
+              <div lang="zh-CN">
+                <h3>综合活力</h3>
+                <p>
+                  Stanford Global AI Vibrancy Tool 2025 用 7 大支柱、多项指标为各国打分。美国总分 <b data-fact="vibrancy_us"></b>，中国 <b data-fact="vibrancy_cn"></b>，位列前二。本站读取官方数据文件、按工具默认权重复算，悬停气泡可查看各支柱得分。
+                </p>
+              </div>
+              <div lang="en">
+                <h3>Overall vibrancy</h3>
+                <p>
+                  Stanford's Global AI Vibrancy Tool 2025 scores countries on seven pillars and many indicators. The US scores <b data-fact="vibrancy_us"></b> and China <b data-fact="vibrancy_cn"></b>, ranking first and second. This site recomputes the scores from the tool's official data file with its default weights; hover over a bubble for the pillar scores.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="solo">
+          <figure class="fig" data-chart="globe3d" data-sources="geo_tianditu tianditu_basemap">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">在 3D 地球上看大规模 AI 系统的分布</h3>
+              <h3 class="fig__title" lang="en">Large-scale AI systems on a 3D globe</h3>
+              <p class="fig__sub" lang="zh-CN">每根光柱代表一个国家/地区的累计大规模 AI 系统数 · 拖拽旋转、滚轮缩放 · 拖动年份滑块回放</p>
+              <p class="fig__sub" lang="en">Each column of light shows a country's or region's cumulative number of large-scale AI systems · drag to rotate, scroll to zoom · drag the year slider to replay</p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="grid grid--2-1">
+          <figure class="fig" data-chart="mirrorBars">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">中美对照：投资看美国，专利看中国</h3>
+              <h3 class="fig__title" lang="en">China vs. the US: the US leads on investment, China on patents</h3>
+              <p class="fig__sub" lang="zh-CN">各项指标各自标准化（较大者 = 100%），条形旁为原始值</p>
+              <p class="fig__sub" lang="en">Each indicator is normalised separately (larger value = 100%); raw values appear beside the bars</p>
+            </figcaption>
+          </figure>
+          <figure class="fig" data-chart="researchTiles" data-accent="var(--cn)">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">中国在论文与专利上居首</h3>
+              <h3 class="fig__title" lang="en">China ranks first in AI papers and patents</h3>
+              <p class="fig__sub" lang="zh-CN">Stanford AI Index 2025：2023 年中国占全球的比重</p>
+              <p class="fig__sub" lang="en">Stanford AI Index 2025: China's share of the global total, 2023</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="prose">
+          <p lang="zh-CN">
+            2025 年美国私人 AI 投资 <b data-fact="invest_us_2025"></b>，中国 <b data-fact="invest_cn_2025"></b>；全球私人投资 <b data-fact="invest_global_2025"></b>，同比增长 <b data-fact="invest_global_yoy"></b>。AI Index 提示，这一口径很可能低估了中国，因为政府引导基金未计入。另一面，2014–2023 年中国生成式 AI 专利 <b data-fact="patents_cn"></b>，是美国（<b data-fact="patents_us"></b>）的约六倍。
+          </p>
+          <p lang="en">
+            In 2025, private AI investment reached <b data-fact="invest_us_2025"></b> in the US and <b data-fact="invest_cn_2025"></b> in China; global private investment totalled <b data-fact="invest_global_2025"></b>, up <b data-fact="invest_global_yoy"></b> year on year. The AI Index cautions that this measure probably understates China, because government guidance funds are not included. On the other side of the ledger, China's generative AI patents from 2014 to 2023 numbered <b data-fact="patents_cn"></b> — about six times the US figure (<b data-fact="patents_us"></b>).
+          </p>
+        </div>
+      </section>
+
+      <!-- ========== 第 10 章 ========== -->
+      <section class="chapter" id="ch10" data-nav="10 · 挑战与治理" data-nav-en="10 · Challenges &amp; governance" data-factor="risk">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">10</span>
+          <p class="chapter__kicker" lang="zh-CN">挑战与治理</p>
+          <p class="chapter__kicker" lang="en">Challenges and governance</p>
+          <h2 class="chapter__title" lang="zh-CN">绿色、就业与鸿沟：新质生产力的张力</h2>
+          <h2 class="chapter__title" lang="en">Green growth, jobs and divides: the tensions within new quality productive forces</h2>
+          <p class="chapter__thesis" lang="zh-CN">
+            “新质生产力本身就是绿色生产力”。但 AI 也带来真实的能耗压力、就业冲击与数字鸿沟。只讲好处会像宣传片，正视张力，论证才更有说服力。
+          </p>
+          <p class="chapter__thesis" lang="en">
+            “New quality productive forces are, in themselves, green productive forces.” Yet AI also brings real pressure on energy, shocks to employment and a digital divide. Telling only the upside would read like a promotional film; facing the tensions makes the argument more convincing.
+          </p>
+        </header>
+        <div class="solo">
+          <figure class="fig" data-chart="energySlope" data-sources="derived">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">数据中心用电量可能在六年内翻一番以上</h3>
+              <h3 class="fig__title" lang="en">Data-centre electricity use could more than double in six years</h3>
+              <p class="fig__sub" lang="zh-CN">IEA《Energy and AI》全球数据中心用电量 · 以及中国的能效回应 <span class="tag tag--forecast">含预测</span></p>
+              <p class="fig__sub" lang="en">IEA Energy and AI: global data-centre electricity consumption · and China's energy-efficiency response <span class="tag tag--forecast">Includes forecasts</span></p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3 lang="zh-CN">能耗</h3>
+            <h3 lang="en">Energy</h3>
+            <p lang="zh-CN">IEA 估计全球数据中心用电将从 2024 年约 <b data-fact="iea_2024"></b>增至 2030 年约 <b data-fact="iea_2030"></b>（IEA 基准情景）。回应：PUE 降至 <b data-fact="pue_2025_06"></b>，超大型设施降至 <b data-fact="pue_hyperscale"></b>，“东数西算”引导算力向可再生能源富集地区布局。</p>
+            <p lang="en">The IEA estimates that global data-centre electricity use will rise from about <b data-fact="iea_2024"></b> in 2024 to about <b data-fact="iea_2030"></b> in 2030 (IEA Base Case). The response: PUE has fallen to <b data-fact="pue_2025_06"></b>, and to <b data-fact="pue_hyperscale"></b> at hyperscale facilities, while East Data, West Computing steers computing power towards regions rich in renewable energy.</p>
+          </article>
+          <article class="card">
+            <h3 lang="zh-CN">就业冲击</h3>
+            <h3 lang="en">Job disruption</h3>
+            <p lang="zh-CN">WEF 预计 2030 年前约 <b data-fact="wef_displaced"></b>岗位被替代，结构性变动占 <b data-fact="wef_churn"></b>。新增岗位不会自动落到被替代者身上，技能培训是关键。</p>
+            <p lang="en">The WEF expects jobs displaced by 2030 to number about <b data-fact="wef_displaced"></b>, with structural churn of <b data-fact="wef_churn"></b>. New jobs will not automatically go to the people displaced — skills training is key.</p>
+          </article>
+          <article class="card">
+            <h3 lang="zh-CN">数字鸿沟</h3>
+            <h3 lang="en">The digital divide</h3>
+            <p lang="zh-CN">IMF 估计发达经济体约 <b data-fact="imf_advanced"></b>就业暴露于 AI，低收入国家约 <b data-fact="imf_low"></b>。冲击更小，往往也意味着红利更少。</p>
+            <p lang="en">The IMF estimates that about <b data-fact="imf_advanced"></b> of jobs in advanced economies are exposed to AI, against about <b data-fact="imf_low"></b> in low-income countries. Less disruption often means smaller dividends, too.</p>
+          </article>
+          <article class="card">
+            <h3 lang="zh-CN">效应并非必然</h3>
+            <h3 lang="en">Gains are not guaranteed</h3>
+            <p lang="zh-CN">METR 随机对照试验中，资深开发者使用 AI 工具后耗时反增 <b data-fact="metr_slower"></b>。生产率提升需要与之匹配的组织、流程和技能。</p>
+            <p lang="en">In METR's randomised controlled trial, experienced developers took <b data-fact="metr_slower"></b> longer when using AI tools. Productivity gains require organisation, processes and skills to match.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ========== 第 11 章 ========== -->
+      <section class="chapter" id="ch11" data-nav="11 · 展望与模拟器" data-nav-en="11 · Outlook &amp; simulator" data-factor="combo">
+        <header class="chapter__head">
+          <span class="chapter__num" aria-hidden="true">11</span>
+          <p class="chapter__kicker" lang="zh-CN">未来展望</p>
+          <p class="chapter__kicker" lang="en">Looking ahead</p>
+          <h2 class="chapter__title" lang="zh-CN">国家目标给出路径，你也能“算出”AI 的生产力效应</h2>
+          <h2 class="chapter__title" lang="en">National targets set the path — and you can “calculate” AI's productivity effect yourself</h2>
+          <p class="chapter__thesis" lang="zh-CN">
+            国发〔2025〕11号提出：到 2027 年新一代智能终端、智能体等应用普及率超 <b data-fact="target_2027"></b>，到 2030 年超 <b data-fact="target_2030"></b>，到 2035 年全面步入智能经济和智能社会发展新阶段。作为参照，截至 2025 年 12 月我国生成式 AI 用户已达 <b data-fact="genai_users"></b>，普及率 <b data-fact="genai_penetration"></b>（CNNIC）。这是另一个口径的指标，不能视为目标进度。
+          </p>
+          <p class="chapter__thesis" lang="en">
+            State Council document Guo Fa [2025] No. 11 sets the targets: adoption of new-generation intelligent terminals, AI agents and similar applications should exceed <b data-fact="target_2027"></b> by 2027 and <b data-fact="target_2030"></b> by 2030, and by 2035 China should fully enter a new stage of development as an intelligent economy and intelligent society. For reference, China had <b data-fact="genai_users"></b> generative AI users by December 2025, a penetration rate of <b data-fact="genai_penetration"></b> (CNNIC) — a different indicator that should not be read as progress toward the target.
+          </p>
+        </header>
+        <div class="solo">
+          <figure class="fig" data-chart="gauge">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">“人工智能+”行动的两个普及率目标</h3>
+              <h3 class="fig__title" lang="en">Two adoption targets of the AI Plus initiative</h3>
+              <p class="fig__sub" lang="zh-CN">国发〔2025〕11号 <span class="tag tag--target">目标</span></p>
+              <p class="fig__sub" lang="en">State Council document Guo Fa [2025] No. 11 <span class="tag tag--target">Target</span></p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="solo">
+          <figure class="fig" data-chart="simulator">
+            <figcaption>
+              <h3 class="fig__title" lang="zh-CN">AI 生产力模拟器</h3>
+              <h3 class="fig__title" lang="en">AI productivity simulator</h3>
+              <p class="fig__sub" lang="zh-CN">参数只取自本站引用的实验研究 <span class="tag tag--scenario">情景演示</span></p>
+              <p class="fig__sub" lang="en">Parameters are taken only from experimental studies cited on this site <span class="tag tag--scenario">Scenario demo</span></p>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="outro" id="outro" data-nav="结语" data-nav-en="Epilogue" data-factor="combo" data-text="新质生产力" data-text-en="AI · NQPF">
+        <canvas class="outro__canvas" aria-hidden="true"></canvas>
+        <div class="outro__inner">
+          <h2 lang="zh-CN">三要素汇聚，生产力跃升</h2>
+          <h2 lang="en">Three factors converge, productivity leaps</h2>
+          <p lang="zh-CN">
+            人工智能同时改造了劳动资料、劳动对象与劳动者，并让三者在循环中相互放大。这就是“人工智能作为新质生产力”的作用和意义：它带来的不只是量的增长，更是质的跃升。
+          </p>
+          <p lang="en">
+            AI is reshaping the means of labour, the objects of labour and workers all at once, and letting the three amplify one another in a loop. That is the role and significance of “AI as a new quality productive force”: it brings not just quantitative growth but a qualitative leap.
+          </p>
+          <button class="btn btn--primary" type="button" data-open-sources><span lang="zh-CN">打开数据来源总面板</span><span lang="en">Open the full sources panel</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="sources">
+      <div class="site-footer__inner">
+        <h2 lang="zh-CN">数据与方法</h2>
+        <h2 lang="en">Data and methods</h2>
+        <div id="source-summary"></div>
+        <ul lang="zh-CN">
+          <li>页面上的每一个数字都来自 <code>public/data/</code> 中带 <code>source_id</code> 的记录；悬停正文中的数字可查看来源，点击图表右下角“ⓘ 来源”可查看该图引用的全部来源与原文摘录。</li>
+          <li>口径说明：FP16 与 FP32、算力中心侧与设备侧的算力不可直接比较；产业规模存在“核心产业”与“产业”两种表述；预测值、目标值、示意图与模拟器输出均已单独标注。</li>
+          <li>地图：中国行政区划来自天地图·国家地理信息公共服务平台（审图号：GS（2026）4921号）；世界地图与 3D 地球的底图为天地图在线服务，本站不绘制、不修改任何国界。</li>
+          <li>本网站为“可视化导论”课程作业，使用 D3.js v7 绘制全部数据图表；开发过程使用了 AI 编程助手辅助。</li>
+        </ul>
+        <ul lang="en">
+          <li>Every number on this page comes from a record with a <code>source_id</code> in <code>public/data/</code>. Hover over a number in the text to see its source, or click “ⓘ Sources” at the bottom right of a chart to see every source it cites, with excerpts from the original documents.</li>
+          <li>A note on definitions: FP16 and FP32 figures are not directly comparable, nor are data-centre-side and device-side computing power; industry size is reported both as the “core AI industry” and as the “AI industry”; forecasts, targets, illustrative diagrams and simulator output are all labelled separately.</li>
+          <li>Maps: China's administrative boundaries come from Tianditu, the National Platform for Common Geospatial Information Services (map approval number GS（2026）4921号); the world map and 3D globe use Tianditu's online base map. This site draws and alters no borders.</li>
+          <li>This website is coursework for the course Introduction to Visualization. All data charts are drawn with D3.js v7; an AI coding assistant was used during development.</li>
+        </ul>
+        <p><button class="btn" type="button" data-open-sources>ⓘ <span lang="zh-CN">数据来源总面板</span><span lang="en">Full sources panel</span></button></p>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

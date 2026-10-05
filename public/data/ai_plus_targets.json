@@ -1,0 +1,121 @@
+{
+  "id": "ai_plus_targets",
+  "title": "“人工智能+”行动目标（国发〔2025〕11号）",
+  "title_en": "“AI Plus” action targets (Guo Fa [2025] No. 11)",
+  "target": true,
+  "metric": "新一代智能终端、智能体等应用普及率",
+  "metric_en": "Adoption rate of new-generation intelligent terminals, AI agents and similar applications",
+  "records": [
+    {
+      "year": 2027,
+      "value": 70,
+      "unit": "%",
+      "qualifier": "超",
+      "qualifier_en": "over",
+      "current": null,
+      "source_id": "gov_ai_plus_2025"
+    },
+    {
+      "year": 2030,
+      "value": 90,
+      "unit": "%",
+      "qualifier": "超",
+      "qualifier_en": "over",
+      "current": null,
+      "source_id": "gov_ai_plus_2025"
+    }
+  ],
+  "milestone_2035": {
+    "year": 2035,
+    "text": "全面步入智能经济和智能社会发展新阶段",
+    "text_en": "Fully enter a new stage of development as an intelligent economy and intelligent society",
+    "source_id": "gov_ai_plus_2025"
+  },
+  "actions": [
+    {
+      "name": "科学技术",
+      "name_en": "Science and technology",
+      "source_id": "gov_ai_plus_2025"
+    },
+    {
+      "name": "产业发展",
+      "name_en": "Industrial development",
+      "source_id": "gov_ai_plus_2025"
+    },
+    {
+      "name": "消费提质",
+      "name_en": "Consumption upgrading",
+      "source_id": "gov_ai_plus_2025"
+    },
+    {
+      "name": "民生福祉",
+      "name_en": "People's livelihood and well-being",
+      "source_id": "gov_ai_plus_2025"
+    },
+    {
+      "name": "治理能力",
+      "name_en": "Governance capacity",
+      "source_id": "gov_ai_plus_2025"
+    },
+    {
+      "name": "全球合作",
+      "name_en": "Global cooperation",
+      "source_id": "gov_ai_plus_2025"
+    }
+  ],
+  "simulator": {
+    "label": "情景演示，基于单项实验结果线性外推，非预测",
+    "label_en": "Scenario demo: linear extrapolation from individual experimental results, not a forecast",
+    "scenario_defaults": {
+      "team_size": 20,
+      "adoption": 60,
+      "novice_share": 30,
+      "task_share": 50,
+      "annual_hours": 2000,
+      "source_id": "illustrative",
+      "note": "用户可调的情景参数默认值，非统计数据",
+      "note_en": "Default values of user-adjustable scenario parameters, not statistical data"
+    },
+    "params": [
+      {
+        "role": "customer_service",
+        "name": "客服",
+        "name_en": "Customer support",
+        "kind": "throughput",
+        "avg": 14,
+        "novice": 34,
+        "source_id": "nber_w31161"
+      },
+      {
+        "role": "coding",
+        "name": "编程",
+        "name_en": "Coding",
+        "kind": "time",
+        "avg": 55.8,
+        "novice": null,
+        "source_id": "peng_2023_copilot",
+        "note": "“快 55.8%”按完成时间缩短 55.8% 解释",
+        "note_en": "“55.8% faster” is interpreted as a 55.8% reduction in completion time"
+      },
+      {
+        "role": "writing",
+        "name": "写作",
+        "name_en": "Writing",
+        "kind": "time",
+        "avg": 40,
+        "novice": null,
+        "source_id": "noy_zhang_2023"
+      }
+    ]
+  },
+  "reference_indicator": {
+    "label": "参考：生成式 AI 用户普及率（口径不同）",
+    "label_en": "Reference: generative AI user penetration rate (different basis)",
+    "value": 42.8,
+    "unit": "%",
+    "date": "2025-12",
+    "note": "生成式 AI 用户占总人口的比例（CNNIC），不等于“新一代智能终端、智能体等应用普及率”，不能视为目标进度。",
+    "note_en": "Generative AI users as a share of the total population (CNNIC). This is not the “adoption rate of new-generation intelligent terminals, AI agents and similar applications” and cannot be read as progress towards the target.",
+    "source_id": "cnnic_57"
+  }
+}

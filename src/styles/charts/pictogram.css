@@ -1,0 +1,72 @@
+/* 生成式 AI 用户象形图 */
+.pictogram .pg-row {
+  transition: opacity 0.6s;
+}
+.pictogram .pg-row.is-dim {
+  opacity: 0.35;
+}
+.pictogram .pg-label {
+  fill: var(--text);
+  font-size: 14px;
+  font-weight: 600;
+}
+.pictogram .pg-value {
+  fill: var(--object);
+  font-size: 18px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+.pictogram .pg-icon {
+  opacity: 0;
+  transform-box: fill-box;
+  transition: opacity 0.45s ease-out, translate 0.45s ease-out;
+  translate: 0 6px;
+}
+.pictogram .pg-icon.is-in {
+  opacity: 1;
+  translate: 0 0;
+}
+.pictogram .pg-fill {
+  fill: var(--object);
+}
+.pictogram .pg-ghost {
+  fill: none;
+  stroke: var(--object);
+  stroke-opacity: 0.55;
+  stroke-width: 0.8px;
+}
+.pictogram .pg-sep {
+  stroke: var(--border);
+  stroke-dasharray: 3 4;
+}
+.pictogram .pg-ctx {
+  transition: opacity 0.6s;
+}
+.pictogram .pg-ctx-title {
+  fill: var(--muted);
+  font-size: 12px;
+}
+.pictogram .pg-ctx.is-hot .pg-ctx-title {
+  fill: var(--text);
+  font-weight: 600;
+}
+.pictogram .pg-net {
+  fill: var(--slate);
+  fill-opacity: 0.22;
+  stroke: var(--slate);
+  stroke-opacity: 0.4;
+}
+.pictogram .pg-tick rect {
+  fill: var(--object);
+}
+.pictogram .pg-tick-label {
+  fill: var(--muted);
+  font-size: 11px;
+}
+.pictogram .pg-age-bg {
+  fill: var(--slate);
+  fill-opacity: 0.22;
+}
+.pictogram .pg-age {
+  fill: var(--green);
+}

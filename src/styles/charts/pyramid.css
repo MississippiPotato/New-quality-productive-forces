@@ -1,0 +1,57 @@
+.pyramid__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-bottom: 6px;
+}
+.pyramid__head .seg {
+  margin: 0;
+}
+.pyramid__period {
+  font-size: 13px;
+  color: var(--muted);
+}
+.pyramid .tier rect.block {
+  stroke: var(--tool);
+  stroke-width: 1.2;
+}
+.pyramid .tier--top rect.block {
+  filter: drop-shadow(0 0 16px color-mix(in srgb, var(--tool) 55%, transparent));
+}
+:root[data-theme='light'] .pyramid .tier--top rect.block {
+  filter: none;
+}
+.pyramid .tier__level {
+  fill: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 3px;
+}
+.pyramid .tier__value {
+  fill: var(--text);
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  paint-order: stroke;
+  stroke: var(--panel);
+  stroke-width: 3px;
+}
+.pyramid .tier__value tspan.q {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+}
+.pyramid .guide {
+  stroke: var(--tool);
+  stroke-opacity: 0.35;
+  stroke-dasharray: 3 4;
+}
+.pyramid .scale-tick {
+  fill: var(--faint);
+  font-size: 11px;
+}

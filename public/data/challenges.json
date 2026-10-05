@@ -1,0 +1,85 @@
+{
+  "id": "challenges",
+  "title": "挑战与治理：能耗、就业冲击、数字鸿沟",
+  "title_en": "Challenges and governance: energy use, job disruption, the digital divide",
+  "datacenter_electricity": {
+    "unit": "TWh",
+    "records": [
+      {
+        "year": 2024,
+        "value": 415,
+        "qualifier": "约",
+        "qualifier_en": "about",
+        "forecast": false,
+        "source_id": "iea_energy_ai_2025"
+      },
+      {
+        "year": 2030,
+        "value": 945,
+        "qualifier": "约",
+        "qualifier_en": "about",
+        "forecast": true,
+        "source_id": "iea_energy_ai_2025"
+      }
+    ],
+    "scenario": "IEA Base Case（基准情景）",
+    "scenario_en": "IEA Base Case"
+  },
+  "responses": [
+    {
+      "label": "全国在用算力中心平均 PUE（2025-06）",
+      "label_en": "Average PUE of computing centres in use nationwide (2025-06)",
+      "value": 1.42,
+      "source_id": "miit_2025_conf"
+    },
+    {
+      "label": "超大型算力设施平均 PUE（2025）",
+      "label_en": "Average PUE of hyperscale computing facilities (2025)",
+      "value": 1.34,
+      "source_id": "eastdata_progress_2025"
+    },
+    {
+      "label": "2025 年枢纽地区新增算力占全国新增比重",
+      "label_en": "Hub regions’ share of new computing power added nationwide (2025)",
+      "value": 80,
+      "unit": "%",
+      "qualifier": "以上",
+      "qualifier_en": "over",
+      "source_id": "eastdata_progress_2025"
+    }
+  ],
+  "tensions": [
+    {
+      "key": "energy",
+      "title": "能耗",
+      "title_en": "Energy use",
+      "text": "数据中心用电快速增长（IEA 基准情景预计 2030 年约为 2024 年的两倍多），与“新质生产力本身就是绿色生产力”形成张力。",
+      "text_en": "Data-centre electricity use is growing fast (the IEA Base Case projects 2030 consumption at a little more than double the 2024 level), in tension with the principle that “new quality productive forces are in themselves green productive forces”.",
+      "source_id": "iea_energy_ai_2025"
+    },
+    {
+      "key": "jobs",
+      "title": "就业冲击",
+      "title_en": "Job disruption",
+      "text": "WEF 预计 2030 年前约 9200 万岗位被替代，结构性变动占 22%。",
+      "text_en": "The WEF expects about 92 million jobs to be displaced by 2030, with structural churn of 22%.",
+      "source_id": "wef_fojr_2025"
+    },
+    {
+      "key": "divide",
+      "title": "数字鸿沟",
+      "title_en": "Digital divide",
+      "text": "IMF：发达经济体约 60% 就业暴露于 AI，低收入国家约 26%——既意味着冲击更小，也意味着红利更少。",
+      "text_en": "IMF: about 60% of jobs in advanced economies are exposed to AI, against about 26% in low-income countries — meaning less disruption, but also smaller dividends.",
+      "source_id": "imf_sdn_2024_001"
+    },
+    {
+      "key": "evidence",
+      "title": "效应并非必然",
+      "title_en": "Gains are not automatic",
+      "text": "METR 随机对照试验发现资深开发者使用 AI 工具后耗时反增 19%。",
+      "text_en": "A METR randomised controlled trial found that experienced developers took 19% longer when using AI tools.",
+      "source_id": "metr_2025"
+    }
+  ]
+}

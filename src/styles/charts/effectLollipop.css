@@ -1,0 +1,175 @@
+.effect-lollipop {
+  position: relative;
+}
+.effect-lollipop .seg {
+  margin-bottom: 8px;
+}
+.effect-lollipop__hint {
+  margin: 0 0 4px;
+  font-size: 12px;
+  color: var(--faint);
+}
+.effect-lollipop .row {
+  cursor: pointer;
+}
+.effect-lollipop .row__hit {
+  fill: transparent;
+  rx: 8px;
+  transition: fill 0.2s;
+}
+.effect-lollipop .row:hover .row__hit,
+.effect-lollipop .row.is-open .row__hit {
+  fill: color-mix(in srgb, var(--text) 5%, transparent);
+}
+.effect-lollipop .row:focus-visible .row__hit {
+  stroke: var(--cyan);
+  stroke-width: 1.5px;
+}
+.effect-lollipop .row:focus-visible text {
+  stroke: none;
+}
+.effect-lollipop .row__name {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+}
+.effect-lollipop .row__metric {
+  fill: var(--faint);
+  font-size: 11.5px;
+}
+.effect-lollipop .row__value {
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.effect-lollipop .row__caret {
+  fill: var(--faint);
+  font-size: 12px;
+}
+.effect-lollipop .row:hover .row__caret,
+.effect-lollipop .row.is-open .row__caret {
+  fill: var(--cyan);
+}
+.effect-lollipop .group__label {
+  fill: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+.effect-lollipop .group__rule {
+  stroke: var(--grid);
+}
+.effect-lollipop .zero-line {
+  stroke: var(--muted);
+  stroke-width: 1.2;
+}
+.effect-lollipop .dir-label {
+  font-size: 11px;
+  fill: var(--faint);
+}
+.effect-lollipop .pulse {
+  fill: none;
+  stroke: var(--rose);
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: lollipop-pulse 1.8s ease-out infinite;
+}
+@keyframes lollipop-pulse {
+  from {
+    transform: scale(0.6);
+    opacity: 0.9;
+  }
+  to {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+.effect-lollipop .counter-tag rect {
+  fill: color-mix(in srgb, var(--rose) 18%, transparent);
+  stroke: var(--rose);
+}
+.effect-lollipop .counter-tag text {
+  fill: var(--rose);
+  font-size: 11px;
+  font-weight: 700;
+}
+.effect-lollipop .bracket path {
+  fill: none;
+  stroke: var(--worker);
+  stroke-width: 1.4;
+}
+.effect-lollipop .bracket text {
+  fill: var(--worker);
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+.effect-lollipop__detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 12px 40px 12px 14px;
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--detail-c, var(--green));
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--bg-2) 92%, transparent);
+  box-shadow: var(--shadow);
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--muted);
+  opacity: 0;
+  pointer-events: none;
+  transition:
+    opacity 0.25s,
+    top 0.35s var(--ease);
+}
+.effect-lollipop__detail.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+.effect-lollipop__detail h4 {
+  margin: 0 0 4px;
+  font-size: 14px;
+  color: var(--text);
+}
+.effect-lollipop__detail dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2px 12px;
+  margin: 0;
+}
+.effect-lollipop__detail dt {
+  color: var(--faint);
+  white-space: nowrap;
+}
+.effect-lollipop__detail dd {
+  margin: 0;
+  color: var(--text);
+}
+.effect-lollipop__detail .version {
+  color: var(--orange);
+}
+.effect-lollipop__close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+.effect-lollipop__close:hover {
+  color: var(--text);
+  background: var(--panel-2);
+}
+.effect-lollipop .chart-note--warn {
+  padding: 8px 12px;
+  border: 1px solid color-mix(in srgb, var(--rose) 40%, transparent);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--rose) 8%, transparent);
+}

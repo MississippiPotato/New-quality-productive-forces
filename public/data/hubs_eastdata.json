@@ -1,0 +1,371 @@
+{
+  "id": "hubs_eastdata",
+  "title": "“东数西算”8 枢纽 10 集群",
+  "title_en": "East Data, West Computing: 8 hubs, 10 clusters",
+  "notes": "枢纽与集群坐标为城市中心近似点，东西部之间弧线为示意流向。",
+  "notes_en": "Hub and cluster coordinates are approximate city-centre points; arcs between east and west show illustrative flow directions.",
+  "records": [
+    {
+      "name": "京津冀",
+      "name_en": "Beijing–Tianjin–Hebei",
+      "short_en": "BTH",
+      "type": "hub",
+      "role": "east_demand",
+      "province": "北京市",
+      "province_en": "Beijing",
+      "lon": 116.4,
+      "lat": 39.9,
+      "parent_hub": null,
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "长三角",
+      "name_en": "Yangtze River Delta",
+      "short_en": "YRD",
+      "type": "hub",
+      "role": "east_demand",
+      "province": "上海市",
+      "province_en": "Shanghai",
+      "lon": 121.47,
+      "lat": 31.23,
+      "parent_hub": null,
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "粤港澳",
+      "name_en": "Guangdong–Hong Kong–Macao Greater Bay Area",
+      "short_en": "GBA",
+      "type": "hub",
+      "role": "east_demand",
+      "province": "广东省",
+      "province_en": "Guangdong",
+      "lon": 113.26,
+      "lat": 23.13,
+      "parent_hub": null,
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "成渝",
+      "name_en": "Chengdu–Chongqing",
+      "short_en": "CY",
+      "type": "hub",
+      "role": "east_demand",
+      "province": "四川省",
+      "province_en": "Sichuan",
+      "lon": 105.3,
+      "lat": 30.1,
+      "parent_hub": null,
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "内蒙古",
+      "name_en": "Inner Mongolia",
+      "short_en": "Inner Mongolia",
+      "type": "hub",
+      "role": "west_resource",
+      "province": "内蒙古自治区",
+      "province_en": "Inner Mongolia Autonomous Region",
+      "lon": 111.75,
+      "lat": 40.84,
+      "parent_hub": null,
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "贵州",
+      "name_en": "Guizhou",
+      "short_en": "Guizhou",
+      "type": "hub",
+      "role": "west_resource",
+      "province": "贵州省",
+      "province_en": "Guizhou",
+      "lon": 106.63,
+      "lat": 26.65,
+      "parent_hub": null,
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "甘肃",
+      "name_en": "Gansu",
+      "short_en": "Gansu",
+      "type": "hub",
+      "role": "west_resource",
+      "province": "甘肃省",
+      "province_en": "Gansu",
+      "lon": 103.83,
+      "lat": 36.06,
+      "parent_hub": null,
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "宁夏",
+      "name_en": "Ningxia",
+      "short_en": "Ningxia",
+      "type": "hub",
+      "role": "west_resource",
+      "province": "宁夏回族自治区",
+      "province_en": "Ningxia Hui Autonomous Region",
+      "lon": 106.23,
+      "lat": 38.49,
+      "parent_hub": null,
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "张家口集群",
+      "name_en": "Zhangjiakou cluster",
+      "short_en": "Zhangjiakou",
+      "type": "cluster",
+      "role": "east_demand",
+      "province": "河北省",
+      "province_en": "Hebei",
+      "lon": 114.89,
+      "lat": 40.82,
+      "parent_hub": "京津冀",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "长三角生态绿色一体化发展示范区集群",
+      "name_en": "Yangtze River Delta Eco-Green Integrated Development Demonstration Zone cluster",
+      "short_en": "YRD Demo Zone",
+      "type": "cluster",
+      "role": "east_demand",
+      "province": "上海市/江苏省/浙江省",
+      "province_en": "Shanghai/Jiangsu/Zhejiang",
+      "lon": 120.9,
+      "lat": 31,
+      "parent_hub": "长三角",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "芜湖集群",
+      "name_en": "Wuhu cluster",
+      "short_en": "Wuhu",
+      "type": "cluster",
+      "role": "east_demand",
+      "province": "安徽省",
+      "province_en": "Anhui",
+      "lon": 118.43,
+      "lat": 31.35,
+      "parent_hub": "长三角",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "韶关集群",
+      "name_en": "Shaoguan cluster",
+      "short_en": "Shaoguan",
+      "type": "cluster",
+      "role": "east_demand",
+      "province": "广东省",
+      "province_en": "Guangdong",
+      "lon": 113.6,
+      "lat": 24.81,
+      "parent_hub": "粤港澳",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "天府集群",
+      "name_en": "Tianfu cluster",
+      "short_en": "Tianfu",
+      "type": "cluster",
+      "role": "east_demand",
+      "province": "四川省",
+      "province_en": "Sichuan",
+      "lon": 104.07,
+      "lat": 30.4,
+      "parent_hub": "成渝",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "重庆集群",
+      "name_en": "Chongqing cluster",
+      "short_en": "Chongqing",
+      "type": "cluster",
+      "role": "east_demand",
+      "province": "重庆市",
+      "province_en": "Chongqing",
+      "lon": 106.55,
+      "lat": 29.56,
+      "parent_hub": "成渝",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "贵安集群",
+      "name_en": "Gui'an cluster",
+      "short_en": "Gui'an",
+      "type": "cluster",
+      "role": "west_resource",
+      "province": "贵州省",
+      "province_en": "Guizhou",
+      "lon": 106.25,
+      "lat": 26.42,
+      "parent_hub": "贵州",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "和林格尔集群",
+      "name_en": "Horinger cluster",
+      "short_en": "Horinger",
+      "type": "cluster",
+      "role": "west_resource",
+      "province": "内蒙古自治区",
+      "province_en": "Inner Mongolia Autonomous Region",
+      "lon": 111.82,
+      "lat": 40.38,
+      "parent_hub": "内蒙古",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "庆阳集群",
+      "name_en": "Qingyang cluster",
+      "short_en": "Qingyang",
+      "type": "cluster",
+      "role": "west_resource",
+      "province": "甘肃省",
+      "province_en": "Gansu",
+      "lon": 107.64,
+      "lat": 35.71,
+      "parent_hub": "甘肃",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    },
+    {
+      "name": "中卫集群",
+      "name_en": "Zhongwei cluster",
+      "short_en": "Zhongwei",
+      "type": "cluster",
+      "role": "west_resource",
+      "province": "宁夏回族自治区",
+      "province_en": "Ningxia Hui Autonomous Region",
+      "lon": 105.19,
+      "lat": 37.51,
+      "parent_hub": "宁夏",
+      "source_id": "ndrc_eastdata_2022",
+      "coord_source_id": "coords_approx"
+    }
+  ],
+  "flows": [
+    {
+      "from": "京津冀",
+      "to": "内蒙古",
+      "source_id": "coords_approx"
+    },
+    {
+      "from": "京津冀",
+      "to": "宁夏",
+      "source_id": "coords_approx"
+    },
+    {
+      "from": "长三角",
+      "to": "甘肃",
+      "source_id": "coords_approx"
+    },
+    {
+      "from": "长三角",
+      "to": "贵州",
+      "source_id": "coords_approx"
+    },
+    {
+      "from": "粤港澳",
+      "to": "贵州",
+      "source_id": "coords_approx"
+    },
+    {
+      "from": "成渝",
+      "to": "甘肃",
+      "source_id": "coords_approx"
+    },
+    {
+      "from": "成渝",
+      "to": "宁夏",
+      "source_id": "coords_approx"
+    }
+  ],
+  "province_ai_share": {
+    "unit": "%",
+    "source_id": "ai_dev_report_2023",
+    "records": [
+      {
+        "province": "北京市",
+        "province_en": "Beijing",
+        "value": 28.09,
+        "source_id": "ai_dev_report_2023"
+      },
+      {
+        "province": "广东省",
+        "province_en": "Guangdong",
+        "value": 26.45,
+        "source_id": "ai_dev_report_2023"
+      },
+      {
+        "province": "上海市",
+        "province_en": "Shanghai",
+        "value": 14.23,
+        "source_id": "ai_dev_report_2023"
+      },
+      {
+        "province": "浙江省",
+        "province_en": "Zhejiang",
+        "value": 8.95,
+        "source_id": "ai_dev_report_2023"
+      },
+      {
+        "province": "江苏省",
+        "province_en": "Jiangsu",
+        "value": 6.86,
+        "source_id": "ai_dev_report_2023"
+      }
+    ]
+  },
+  "facts": [
+    {
+      "label": "集群平均上架率目标",
+      "label_en": "Target average rack utilisation within clusters",
+      "value": 65,
+      "unit": "%",
+      "qualifier": "至少",
+      "qualifier_en": "at least",
+      "source_id": "ndrc_eastdata_2022"
+    },
+    {
+      "label": "2025 年枢纽地区新增算力占全国新增比重",
+      "label_en": "Hub regions’ share of new computing power added nationwide (2025)",
+      "value": 80,
+      "unit": "%",
+      "qualifier": "以上",
+      "qualifier_en": "over",
+      "source_id": "eastdata_progress_2025"
+    },
+    {
+      "label": "万卡智算集群",
+      "label_en": "AI computing clusters at ten-thousand-card scale",
+      "value": 42,
+      "unit": "个",
+      "unit_en": "clusters",
+      "qualifier": "",
+      "source_id": "nda_digital_china_2025"
+    },
+    {
+      "label": "全国算力设施整体上架率（2026-06）",
+      "label_en": "Overall rack utilisation of computing facilities nationwide (2026-06)",
+      "value": 71.4,
+      "unit": "%",
+      "qualifier": "",
+      "source_id": "miit_2026_06"
+    }
+  ]
+}

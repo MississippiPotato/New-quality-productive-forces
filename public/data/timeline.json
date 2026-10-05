@@ -1,0 +1,118 @@
+{
+  "id": "timeline",
+  "title": "新质生产力与“人工智能+”政策时间线",
+  "title_en": "Timeline of new quality productive forces and “AI Plus” policy",
+  "categories": {
+    "concept": "概念",
+    "concept_en": "Concept",
+    "policy": "政策",
+    "policy_en": "Policy",
+    "infra": "基础设施",
+    "infra_en": "Infrastructure",
+    "jobs": "就业",
+    "jobs_en": "Jobs"
+  },
+  "categories_en": {
+    "concept": "Concept",
+    "policy": "Policy",
+    "infra": "Infrastructure",
+    "jobs": "Jobs"
+  },
+  "records": [
+    {
+      "date": "2022-02-17",
+      "category": "infra",
+      "title": "“东数西算”全面启动",
+      "title_en": "East Data, West Computing launched in full",
+      "detail": "8 个国家算力枢纽节点和 10 个国家数据中心集群完成批复，“东数西算”工程正式全面启动。",
+      "detail_en": "Approval of 8 national computing hubs and 10 national data-centre clusters was completed, and the East Data, West Computing project was formally launched in full.",
+      "source_id": "ndrc_eastdata_2022"
+    },
+    {
+      "date": "2023-07-10",
+      "category": "policy",
+      "title": "《生成式人工智能服务管理暂行办法》公布",
+      "title_en": "Interim Measures for the Management of Generative AI Services published",
+      "detail": "2023 年 7 月 10 日公布，8 月 15 日起施行。",
+      "detail_en": "Published on 10 July 2023; in force from 15 August.",
+      "source_id": "cac_genai_measures_2023"
+    },
+    {
+      "date": "2023-09-07",
+      "category": "concept",
+      "title": "首次提出“新质生产力”",
+      "title_en": "“New quality productive forces” proposed for the first time",
+      "detail": "习近平总书记在黑龙江考察期间首次提出“新质生产力”（新时代推动东北全面振兴座谈会；听取黑龙江省委和省政府工作汇报）。",
+      "detail_en": "General Secretary Xi Jinping first put forward “new quality productive forces” during an inspection tour of Heilongjiang (at a symposium on promoting the full revitalisation of Northeast China in the new era, and while hearing work reports from the Heilongjiang Provincial Party Committee and Provincial Government).",
+      "source_id": "xi_heilongjiang_2023_09"
+    },
+    {
+      "date": "2023-10-15",
+      "date_precision": "month",
+      "category": "infra",
+      "title": "《算力基础设施高质量发展行动计划》",
+      "title_en": "Action Plan for the High-Quality Development of Computing Infrastructure",
+      "detail": "提出到 2025 年算力规模超过 300 EFLOPS，智能算力占比达到 35%。",
+      "detail_en": "Set 2025 targets of more than 300 EFLOPS in total computing power, with AI computing power making up 35%.",
+      "source_id": "miit_compute_plan_2023"
+    },
+    {
+      "date": "2023-12-12",
+      "category": "concept",
+      "title": "中央经济工作会议",
+      "title_en": "Central Economic Work Conference",
+      "detail": "提出“以颠覆性技术和前沿技术催生新产业、新模式、新动能，发展新质生产力”。",
+      "detail_en": "Called for “using disruptive and frontier technologies to spawn new industries, new models and new growth drivers, and developing new quality productive forces”.",
+      "source_id": "cewc_2023_12"
+    },
+    {
+      "date": "2024-01-31",
+      "category": "concept",
+      "title": "中央政治局第十一次集体学习",
+      "title_en": "11th group study session of the CPC Central Committee Political Bureau",
+      "detail": "首次系统阐释新质生产力内涵：“创新起主导作用……以劳动者、劳动资料、劳动对象及其优化组合的跃升为基本内涵，以全要素生产率大幅提升为核心标志”。",
+      "detail_en": "First systematic explanation of new quality productive forces: “innovation plays the leading role … its basic connotation is the leap in workers, means of labour, objects of labour and their optimal combination, and its core hallmark is a substantial increase in total factor productivity”.",
+      "source_id": "politburo_2024_01"
+    },
+    {
+      "date": "2024-03-15",
+      "date_precision": "month",
+      "category": "policy",
+      "title": "政府工作报告提出“人工智能+”",
+      "title_en": "Government Work Report proposes “AI Plus”",
+      "detail": "政府工作报告首次提出“人工智能+”行动。",
+      "detail_en": "The Government Work Report proposed the “AI Plus” initiative for the first time.",
+      "source_id": "gov_report_2024"
+    },
+    {
+      "date": "2024-07-31",
+      "category": "jobs",
+      "title": "19 个新职业、28 个新工种",
+      "title_en": "19 new occupations, 28 new job types",
+      "detail": "人社部发布生成式人工智能系统应用员等 19 个新职业、28 个新工种。",
+      "detail_en": "The Ministry of Human Resources and Social Security announced 19 new occupations, including generative AI system application specialist, and 28 new job types.",
+      "source_id": "mohrss_2024_new_jobs"
+    },
+    {
+      "date": "2025-08-26",
+      "category": "policy",
+      "title": "“人工智能+”行动意见（国发〔2025〕11号）",
+      "title_en": "Opinions on the “AI Plus” initiative (Guo Fa [2025] No. 11)",
+      "detail": "8 月 21 日印发、8 月 26 日公布《国务院关于深入实施“人工智能+”行动的意见》。",
+      "detail_en": "The State Council's Opinions on Deepening the Implementation of the “AI Plus” Initiative were issued on 21 August and published on 26 August.",
+      "source_id": "gov_ai_plus_2025"
+    },
+    {
+      "date": "2026-03-15",
+      "date_precision": "year",
+      "category": "policy",
+      "title": "“十五五”规划与机器人",
+      "title_en": "The 15th Five-Year Plan and robotics",
+      "detail": "IFR 指出“十五五”规划（2026–2030）把机器人置于现代产业体系核心。",
+      "detail_en": "The IFR notes that the 15th Five-Year Plan (2026–2030) places robotics at the heart of the modern industrial system.",
+      "source_id": "ifr_15th_fyp_2026"
+    }
+  ],
+  "notes": "date_precision 为 month/year 的事件只确定到月/年，绘图时取该月/年内的占位日，卡片中只显示到月/年。",
+  "notes_en": "Events whose date_precision is month/year are known only to the month/year; they are plotted on a placeholder day within that month/year, and cards show only the month/year."
+}

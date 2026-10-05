@@ -1,0 +1,35 @@
+{
+  "name": "ai-new-productivity",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run validate && vite build",
+    "preview": "vite preview",
+    "fetch": "node scripts/fetch_open_data.mjs",
+    "clean:epoch": "node scripts/clean_epoch.mjs",
+    "validate": "node scripts/validate_data.mjs",
+    "test": "vitest run",
+    "lint": "eslint src scripts",
+    "format": "prettier --write \"src/**/*.{js,css}\" \"scripts/**/*.mjs\" index.html",
+    "shot": "node scripts/shot.mjs"
+  },
+  "dependencies": {
+    "d3": "^7.9.0",
+    "d3-sankey": "^0.12.3",
+    "d3-tile": "^1.0.0",
+    "scrollama": "^3.2.0",
+    "three": "^0.186.1",
+    "topojson-client": "^3.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.11.0",
+    "globals": "^17.12.0",
+    "playwright-core": "^1.63.0",
+    "prettier": "^3.9.9",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.3"
+  }
+}

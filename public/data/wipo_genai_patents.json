@@ -1,0 +1,202 @@
+{
+  "id": "wipo_genai_patents",
+  "title": "WIPO 生成式 AI 专利（2014–2023）",
+  "title_en": "WIPO generative AI patents (2014–2023)",
+  "unit": "项",
+  "unit_en": "patent families",
+  "period_label": "2014–2023",
+  "by_country": [
+    {
+      "name": "中国",
+      "name_en": "China",
+      "code": "CN",
+      "value": 38210,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "美国",
+      "name_en": "United States",
+      "code": "US",
+      "value": 6276,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "韩国",
+      "name_en": "South Korea",
+      "code": "KR",
+      "value": 4155,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "日本",
+      "name_en": "Japan",
+      "code": "JP",
+      "value": 3409,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "印度",
+      "name_en": "India",
+      "code": "IN",
+      "value": 1350,
+      "source_id": "wipo_genai_2024"
+    }
+  ],
+  "by_org": [
+    {
+      "name": "腾讯",
+      "name_en": "Tencent",
+      "country": "CN",
+      "value": 2074,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "平安",
+      "name_en": "Ping An",
+      "country": "CN",
+      "value": 1564,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "百度",
+      "name_en": "Baidu",
+      "country": "CN",
+      "value": 1234,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "中科院",
+      "name_en": "Chinese Academy of Sciences",
+      "country": "CN",
+      "value": 607,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "IBM",
+      "country": "US",
+      "value": 601,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "阿里",
+      "name_en": "Alibaba",
+      "country": "CN",
+      "value": 571,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "三星",
+      "name_en": "Samsung",
+      "country": "KR",
+      "value": 468,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "Alphabet",
+      "country": "US",
+      "value": 443,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "字节跳动",
+      "name_en": "ByteDance",
+      "country": "CN",
+      "value": 418,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "微软",
+      "name_en": "Microsoft",
+      "country": "US",
+      "value": 377,
+      "source_id": "wipo_genai_2024"
+    }
+  ],
+  "by_data_type": [
+    {
+      "name": "图像/视频",
+      "name_en": "Image/video",
+      "key": "image",
+      "value": 17996,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "文本",
+      "name_en": "Text",
+      "key": "text",
+      "value": 13494,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "语音/音乐",
+      "name_en": "Speech/music",
+      "key": "audio",
+      "value": 13480,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "分子/基因/蛋白质",
+      "name_en": "Molecules/genes/proteins",
+      "key": "molecule",
+      "value": 1494,
+      "since": 2014,
+      "cagr_5y": 0.788,
+      "source_id": "wipo_genai_2024"
+    }
+  ],
+  "by_industry": [
+    {
+      "name": "生命科学",
+      "name_en": "Life sciences",
+      "value": 5346,
+      "lower_bound": false,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "文档管理与出版",
+      "name_en": "Document management and publishing",
+      "value": 4976,
+      "lower_bound": false,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "商业解决方案",
+      "name_en": "Business solutions",
+      "value": 4801,
+      "lower_bound": false,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "工业与制造",
+      "name_en": "Industry and manufacturing",
+      "value": 2522,
+      "lower_bound": false,
+      "source_id": "wipo_genai_2024",
+      "note": "报告附录 Table A2 写作 2,528，正文图 26 为 2,522",
+      "note_en": "Appendix Table A2 of the report gives 2,528; Figure 26 in the main text gives 2,522"
+    },
+    {
+      "name": "交通",
+      "name_en": "Transport",
+      "value": 2267,
+      "lower_bound": false,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "安全",
+      "name_en": "Security",
+      "value": 2226,
+      "lower_bound": false,
+      "source_id": "wipo_genai_2024"
+    },
+    {
+      "name": "电信",
+      "name_en": "Telecommunications",
+      "value": 2194,
+      "lower_bound": false,
+      "source_id": "wipo_genai_2024"
+    }
+  ],
+  "notes": "一件专利可同时属于多个数据类型或行业，各分类之和不等于总量。行业数值取自报告图 26（2014–2023）。",
+  "notes_en": "A patent can belong to several data types or industries, so category totals do not add up to the overall total. Industry values are taken from Figure 26 of the report (2014–2023)."
+}

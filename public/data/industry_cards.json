@@ -1,0 +1,204 @@
+{
+  "id": "industry_cards",
+  "title": "千行百业的“AI+”",
+  "title_en": "“AI Plus” across every industry",
+  "records": [
+    {
+      "key": "manufacturing",
+      "name": "制造",
+      "name_en": "Manufacturing",
+      "icon": "factory",
+      "kind": "data",
+      "facts": [
+        {
+          "label": "2025 年中国新装工业机器人（占全球 59%）",
+          "label_en": "Industrial robots newly installed in China in 2025 (59% of global)",
+          "value": 35.4,
+          "value_en": 354000,
+          "unit": "万台",
+          "unit_en": "units",
+          "source_id": "ifr_wr_2026"
+        },
+        {
+          "label": "生产制造环节大模型应用案例占比",
+          "label_en": "Share of large-model use cases in manufacturing and production",
+          "value": 25.9,
+          "unit": "%",
+          "from": 19.9,
+          "source_id": "caict_weikai_2025_12"
+        },
+        {
+          "label": "卓越级智能工厂（截至 2025 年底）",
+          "label_en": "Excellence-level smart factories (as of end-2025)",
+          "value": 500,
+          "value_en": "500+",
+          "unit": "余家",
+          "unit_en": "",
+          "source_id": "nda_digital_china_2025"
+        }
+      ]
+    },
+    {
+      "key": "finance",
+      "name": "金融",
+      "name_en": "Finance",
+      "icon": "bank",
+      "kind": "data",
+      "facts": [
+        {
+          "label": "生成式 AI 每年可为银行业带来价值（预测）",
+          "label_en": "Annual value generative AI could bring to banking (forecast)",
+          "value": "2000–3400",
+          "value_en": "$200–340",
+          "unit": "亿美元",
+          "unit_en": "billion",
+          "source_id": "mckinsey_genai_2023"
+        },
+        {
+          "label": "平安生成式 AI 专利（2014–2023）",
+          "label_en": "Ping An generative AI patents (2014–2023)",
+          "value": 1564,
+          "unit": "项",
+          "unit_en": "patent families",
+          "source_id": "wipo_genai_2024"
+        }
+      ]
+    },
+    {
+      "key": "health",
+      "name": "医疗与生命科学",
+      "name_en": "Healthcare & life sciences",
+      "icon": "dna",
+      "kind": "data",
+      "facts": [
+        {
+          "label": "生命科学领域生成式 AI 专利",
+          "label_en": "Generative AI patents in life sciences",
+          "value": 5346,
+          "unit": "项",
+          "unit_en": "patent families",
+          "source_id": "wipo_genai_2024"
+        },
+        {
+          "label": "AlphaFold 数据库蛋白质结构预测",
+          "label_en": "Protein structure predictions in the AlphaFold database",
+          "value": 2,
+          "value_en": 200,
+          "unit": "亿多个",
+          "unit_en": "million+",
+          "source_id": "alphafold_db"
+        }
+      ]
+    },
+    {
+      "key": "transport",
+      "name": "交通",
+      "name_en": "Transport",
+      "icon": "car",
+      "kind": "data",
+      "facts": [
+        {
+          "label": "交通领域生成式 AI 专利",
+          "label_en": "Generative AI patents in transport",
+          "value": 2267,
+          "unit": "项",
+          "unit_en": "patent families",
+          "source_id": "wipo_genai_2024"
+        },
+        {
+          "label": "新职业：智能网联汽车测试员",
+          "label_en": "New occupation: intelligent connected vehicle tester",
+          "value": null,
+          "unit": "",
+          "source_id": "mohrss_2024_new_jobs"
+        }
+      ]
+    },
+    {
+      "key": "retail",
+      "name": "零售与消费",
+      "name_en": "Retail & consumer",
+      "icon": "cart",
+      "kind": "data",
+      "facts": [
+        {
+          "label": "生成式 AI 每年可为零售与消费品带来价值（预测）",
+          "label_en": "Annual value generative AI could bring to retail and consumer goods (forecast)",
+          "value": "4000–6600",
+          "value_en": "$400–660",
+          "unit": "亿美元",
+          "unit_en": "billion",
+          "source_id": "mckinsey_genai_2023"
+        }
+      ]
+    },
+    {
+      "key": "agriculture",
+      "name": "农业",
+      "name_en": "Agriculture",
+      "icon": "leaf",
+      "kind": "data",
+      "facts": [
+        {
+          "label": "农业生产信息化率（2023 年）",
+          "label_en": "Agricultural production informatisation rate (2023)",
+          "value": 27.6,
+          "unit": "%",
+          "source_id": "cac_agri_info_2024"
+        },
+        {
+          "label": "目标：2028 年底农业生产信息化率",
+          "label_en": "Target: agricultural production informatisation rate by end-2028",
+          "value": 32,
+          "unit": "% 以上",
+          "unit_en": "% or more",
+          "source_id": "moa_smart_agri_plan"
+        },
+        {
+          "label": "农用无人机保有量（居全球首位）",
+          "label_en": "Agricultural drones in use (world's largest fleet)",
+          "value": 30,
+          "value_en": 300000,
+          "unit": "万架以上",
+          "unit_en": "or more",
+          "source_id": "moa_drones_2026"
+        }
+      ]
+    },
+    {
+      "key": "education",
+      "name": "教育",
+      "name_en": "Education",
+      "icon": "book",
+      "kind": "data",
+      "facts": [
+        {
+          "label": "国家智慧教育平台累计注册用户",
+          "label_en": "Cumulative registered users of the national smart education platform",
+          "value": 1.69,
+          "value_en": 169,
+          "unit": "亿以上",
+          "unit_en": "million or more",
+          "source_id": "moe_platform_2025"
+        },
+        {
+          "label": "人工智能精品课程",
+          "label_en": "Featured AI courses",
+          "value": 1000,
+          "unit": "门以上",
+          "unit_en": "or more",
+          "source_id": "moe_ai_courses_2025"
+        },
+        {
+          "label": "参加 AI 应用能力培训的本科毕业生",
+          "label_en": "Undergraduate graduates trained in AI application skills",
+          "value": 131,
+          "value_en": 1.31,
+          "unit": "万人",
+          "unit_en": "million",
+          "source_id": "moe_ai_courses_2025"
+        }
+      ]
+    }
+  ]
+}

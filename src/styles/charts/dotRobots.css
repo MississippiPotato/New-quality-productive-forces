@@ -1,0 +1,80 @@
+.dot-robots .cluster {
+  transition: opacity 0.4s;
+}
+.dot-robots .cluster.is-dim,
+.dot-robots .side.is-dim {
+  opacity: 0.3;
+}
+.dot-robots .side {
+  transition: opacity 0.4s;
+}
+.dot-robots .cl-name {
+  fill: var(--text);
+  font-size: 14px;
+  font-weight: 700;
+}
+.dot-robots .cl-value {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.dot-robots .cl-sub {
+  fill: var(--muted);
+  font-size: 12px;
+}
+.dot-robots .cl-share {
+  fill: var(--cn);
+  font-size: 12.5px;
+  font-weight: 700;
+}
+.dot-robots .side-title {
+  fill: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+.dot-robots .side-big {
+  fill: var(--cn);
+  font-family: var(--font-mono);
+  font-size: 26px;
+  font-weight: 700;
+}
+.dot-robots .side-unit {
+  fill: var(--muted);
+  font-size: 13px;
+}
+.dot-robots .side-rule {
+  stroke: var(--border);
+}
+.dot-robots .slope-line {
+  stroke: var(--cn);
+  stroke-width: 2.5;
+}
+.dot-robots .slope-dot {
+  fill: var(--cn);
+  stroke: var(--panel);
+  stroke-width: 2;
+}
+.dot-robots .slope-val {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.dot-robots .slope-year {
+  fill: var(--faint);
+  font-size: 11px;
+}
+.dot-robots .slope-base {
+  stroke: var(--grid);
+}
+.dot-robots .bar-bg {
+  fill: var(--grid);
+}
+.dot-robots .bar-fg {
+  fill: var(--cn);
+}
+.dot-robots .cl-value tspan.u {
+  font-family: var(--font-sans);
+  font-size: 14px;
+}

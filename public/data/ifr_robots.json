@@ -1,0 +1,133 @@
+{
+  "id": "ifr_robots",
+  "title": "工业机器人（IFR World Robotics 2025）",
+  "title_en": "Industrial robots (IFR World Robotics 2025)",
+  "installations_2024": {
+    "unit": "台",
+    "unit_en": "units",
+    "world": {
+      "value": 542000,
+      "source_id": "ifr_wr_2025"
+    },
+    "china": {
+      "value": 295000,
+      "share": 54,
+      "source_id": "ifr_wr_2025"
+    },
+    "others": [
+      {
+        "country": "日本",
+        "country_en": "Japan",
+        "value": 44500,
+        "source_id": "ifr_wr_2025"
+      },
+      {
+        "country": "美国",
+        "country_en": "United States",
+        "value": 34200,
+        "source_id": "ifr_wr_2025"
+      },
+      {
+        "country": "韩国",
+        "country_en": "South Korea",
+        "value": 30600,
+        "source_id": "ifr_wr_2025"
+      },
+      {
+        "country": "德国",
+        "country_en": "Germany",
+        "value": 26982,
+        "source_id": "ifr_wr_2025"
+      }
+    ]
+  },
+  "china_stock": {
+    "value": 2027000,
+    "unit": "台",
+    "unit_en": "units",
+    "source_id": "ifr_wr_2025"
+  },
+  "domestic_brand_share": [
+    {
+      "year": 2023,
+      "value": 47,
+      "unit": "%",
+      "source_id": "ifr_wr_2025"
+    },
+    {
+      "year": 2024,
+      "value": 57,
+      "unit": "%",
+      "source_id": "ifr_wr_2025"
+    }
+  ],
+  "density": {
+    "unit": "台/万名员工",
+    "unit_en": "robots per 10,000 employees",
+    "records": [
+      {
+        "country": "韩国",
+        "country_en": "South Korea",
+        "value": 1220,
+        "source_id": "ifr_density_2026"
+      },
+      {
+        "country": "新加坡",
+        "country_en": "Singapore",
+        "value": 818,
+        "source_id": "ifr_density_2026"
+      },
+      {
+        "country": "德国",
+        "country_en": "Germany",
+        "value": 449,
+        "source_id": "ifr_density_2026"
+      },
+      {
+        "country": "日本",
+        "country_en": "Japan",
+        "value": 446,
+        "source_id": "ifr_density_2026"
+      },
+      {
+        "country": "美国",
+        "country_en": "United States",
+        "value": 307,
+        "source_id": "ifr_density_2026"
+      },
+      {
+        "country": "中国",
+        "country_en": "China",
+        "value": 166,
+        "source_id": "ifr_density_2026"
+      }
+    ],
+    "year": 2024,
+    "method_note": "2024 年数据（IFR 2026-04-08 发布）。中国数值按国家统计局更新后的就业数据计算，与 IFR 此前按旧口径公布的中国密度不可直接比较；全球平均为 132。",
+    "method_note_en": "2024 data (published by the IFR on 2026-04-08). China's value is calculated with employment data updated by the National Bureau of Statistics and is not directly comparable with the density for China the IFR previously published on the old basis; the global average is 132."
+  },
+  "installations_2025": {
+    "unit": "台",
+    "unit_en": "units",
+    "world": {
+      "value": 600000,
+      "qualifier": "超过",
+      "qualifier_en": "more than",
+      "source_id": "ifr_wr_2026"
+    },
+    "china": {
+      "value": 354000,
+      "share": 59,
+      "source_id": "ifr_wr_2026"
+    },
+    "us": {
+      "value": 38400,
+      "source_id": "ifr_wr_2026"
+    },
+    "domestic_brand_share": {
+      "value": 55,
+      "unit": "%",
+      "source_id": "ifr_wr_2026"
+    }
+  }
+}

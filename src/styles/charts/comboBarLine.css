@@ -1,0 +1,42 @@
+/* 产业规模组合图：顶部企业数胶囊 */
+.cbl-kpi {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  margin: 0 0 10px;
+  padding: 4px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg-2);
+}
+.cbl-kpi__label {
+  font-size: 13px;
+  color: var(--muted);
+}
+.cbl-kpi__value {
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--cyan);
+  font-variant-numeric: tabular-nums;
+}
+.cbl-kpi__unit {
+  font-size: 13px;
+  color: var(--muted);
+}
+.cbl-kpi__share {
+  padding-left: 10px;
+  border-left: 1px solid var(--border);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+}
+.combo-bl .cbl-bar__firms {
+  font-size: 11px;
+  font-weight: 600;
+  fill: var(--bg);
+}
+.combo-bl .cbl-pt .pt__label {
+  font-size: 13px;
+  font-weight: 800;
+}

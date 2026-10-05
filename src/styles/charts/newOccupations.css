@@ -1,0 +1,98 @@
+.new-occ .big-num {
+  fill: var(--worker);
+  font-family: var(--font-mono);
+  font-size: 46px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.new-occ .big-label {
+  fill: var(--text);
+  font-size: 15px;
+  font-weight: 700;
+}
+.new-occ .big-sub {
+  fill: var(--faint);
+  font-size: 12px;
+}
+.new-occ .cell {
+  fill: var(--worker);
+  filter: drop-shadow(0 0 6px color-mix(in srgb, var(--worker) 45%, transparent));
+}
+:root[data-theme='light'] .new-occ .cell {
+  filter: none;
+}
+.new-occ .block {
+  transition: opacity 0.4s;
+}
+.new-occ .block.is-dim {
+  opacity: 0.25;
+}
+.new-occ .divider {
+  stroke: var(--border);
+  stroke-dasharray: 3 5;
+}
+.new-occ__examples {
+  margin-top: 14px;
+}
+.new-occ__examples h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--muted);
+}
+.new-occ__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.new-occ__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px 5px 10px;
+  border: 1px solid color-mix(in srgb, var(--worker) 45%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--worker) 10%, transparent);
+  color: var(--text);
+  font-size: 13.5px;
+  opacity: 0;
+  transform: translateY(6px);
+  transition:
+    opacity 0.5s,
+    transform 0.5s,
+    box-shadow 0.4s;
+}
+.new-occ__chip::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--worker);
+  box-shadow: 0 0 8px var(--worker);
+}
+.new-occ.is-played .new-occ__chip {
+  opacity: 1;
+  transform: none;
+}
+.new-occ.is-chips .new-occ__chip {
+  box-shadow:
+    0 0 0 1px var(--worker),
+    0 0 16px color-mix(in srgb, var(--worker) 35%, transparent);
+}
+.new-occ__caption {
+  margin: 14px 0 0;
+  padding: 10px 14px;
+  border-left: 3px solid var(--worker);
+  border-radius: 0 10px 10px 0;
+  background: var(--bg-2);
+  font-size: 14px;
+  color: var(--muted);
+}
+.new-occ__caption b {
+  color: var(--worker);
+  font-family: var(--font-mono);
+  font-size: 16px;
+}
