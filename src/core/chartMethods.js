@@ -1,4 +1,4 @@
-import { t } from './i18n.js';
+import { t, isEn } from './i18n.js';
 
 const methods = {
   computeArea: {
@@ -17,8 +17,15 @@ const methods = {
 
 export function chartMethodsHtml(name) {
   const method = methods[name];
-  return method ? `<section class="source-methods"><h3>${t(...method.title)}</h3><p>${t(...method.text)}</p></section>` : '';
+  const stored = [...document.querySelectorAll(`figure[data-chart="${name}"] template.chart-method-note`)]
+    .filter((el) => el.dataset.lang === (isEn() ? 'en' : 'zh'))
+    .map((el) => el.content.querySelector('p')?.innerHTML.replace(/⚠\s*/g, '').trim())
+    .filter(Boolean);
+  const title = [...document.querySelectorAll(`figure[data-chart="${name}"] .fig__title`)]
+    .find((el) => el.lang === (isEn() ? 'en' : 'zh-CN'))?.textContent || name;
+  return `${method ? `<section class="source-methods"><h3>${t(...method.title)}</h3><p>${t(...method.text)}</p></section>` : ''}${stored.length ? `<section class="source-methods"><h3>${title}</h3>${[...new Set(stored)].map((html) => `<p>${html}</p>`).join('')}</section>` : ''}`;
 }
 export function allMethodsHtml() {
-  return Object.keys(methods).map(chartMethodsHtml).join('');
+  const names = new Set([...Object.keys(methods), ...[...document.querySelectorAll('figure[data-chart]:has(template.chart-method-note)')].map((fig) => fig.dataset.chart)]);
+  return [...names].map(chartMethodsHtml).join('');
 }

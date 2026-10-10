@@ -112,6 +112,7 @@ function renderMethods() {
   if (el) el.innerHTML = allMethodsHtml();
 }
 renderMethods();
+window.addEventListener('chapterchange', renderMethods);
 onLangChange(() => {
   renderMethods();
   const summary = document.getElementById('source-summary');

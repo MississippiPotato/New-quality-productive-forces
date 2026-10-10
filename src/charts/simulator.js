@@ -75,7 +75,6 @@ export function createSimulator(container, data) {
 
   // ---- 顶部常驻警示 ----
   const banner = root.append('div').attr('class', 'sim__banner').attr('role', 'note');
-  banner.append('span').attr('class', 'sim__banner-icon').attr('aria-hidden', 'true').text('⚠');
   banner.append('span').attr('class', 'tag tag--scenario').text(SCENARIO);
   banner.append('span').attr('class', 'sim__banner-text').text(tf(cfg, 'label'));
 

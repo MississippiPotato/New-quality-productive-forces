@@ -9,6 +9,7 @@ import { initScrolly, initNav } from './core/scroller.js';
 import { openAllSources, renderSourceTable } from './core/sourcePanel.js';
 import { createParticles } from './hero/particles.js';
 import { initLang, toggleLang, onLangChange, t, isEn } from './core/i18n.js';
+import { navIcon } from './core/navIcons.js';
 
 initLang();
 initTheme();
@@ -19,6 +20,14 @@ if (qs.get('theme')) setTheme(qs.get('theme'));
 const themeBtn = document.getElementById('btn-theme');
 const motionBtn = document.getElementById('btn-motion');
 const langBtn = document.getElementById('btn-lang');
+for (const button of [themeBtn, motionBtn]) {
+  button.classList.add('toolbar-icon');
+  button.querySelector('span').classList.add('sr-only');
+}
+document.querySelectorAll('.topbar__actions [data-open-sources]').forEach((button) => {
+  button.classList.add('toolbar-sources');
+  button.innerHTML = `${navIcon('source')}<span class="js-src-label"></span>`;
+});
 const syncButtons = () => {
   themeBtn.setAttribute('aria-pressed', theme.mode === 'light');
   themeBtn.querySelector('span').textContent = theme.mode === 'dark' ? t('亮色', 'Light') : t('暗色', 'Dark');
@@ -26,6 +35,12 @@ const syncButtons = () => {
   motionBtn.querySelector('span').textContent = theme.reducedMotion
     ? t('开启动画', 'Motion on')
     : t('关闭动画', 'Motion off');
+  for (const [button, icon] of [[themeBtn, theme.mode === 'dark' ? 'sun' : 'moon'], [motionBtn, theme.reducedMotion ? 'play' : 'pause']]) {
+    button.querySelector('svg')?.remove();
+    button.insertAdjacentHTML('afterbegin', navIcon(icon));
+    button.setAttribute('aria-label', button.querySelector('span').textContent);
+    button.title = button.querySelector('span').textContent;
+  }
   langBtn.querySelector('span').textContent = isEn() ? '中文' : 'EN';
   langBtn.setAttribute('aria-label', isEn() ? '切换到中文' : 'Switch to English');
   document.querySelectorAll('[data-open-sources] .js-src-label').forEach((el) => {

@@ -131,8 +131,15 @@ export function hatch(svg, id, c = 'var(--hatch)') {
   return `url(#${id})`;
 }
 
-/** 图下方的口径提示条 */
+/** 方法说明存入模板，由来源面板读取；动态说明仍可用返回的选择集更新。 */
 export function note(container, html, kind = 'info') {
+  if (kind === 'warn') {
+    const template = document.createElement('template');
+    template.className = 'chart-method-note';
+    template.dataset.lang = isEn() ? 'en' : 'zh';
+    container.append(template);
+    return d3.select(template.content).append('p').html(html);
+  }
   return d3.select(container).append('p').attr('class', `chart-note chart-note--${kind}`).html(html);
 }
 

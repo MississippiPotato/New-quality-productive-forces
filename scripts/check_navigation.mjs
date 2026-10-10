@@ -83,11 +83,13 @@ try {
       failed: [...chapter.querySelectorAll('figure[data-chart]')].filter((fig) => !fig.querySelector('.fig__body')?.children.length || fig.querySelector('.chart-note--warn')?.textContent.includes('加载失败')).map((fig) => fig.dataset.chart),
       missing: chapter.querySelectorAll('.fact--missing').length,
       overflow: document.documentElement.scrollWidth > innerWidth,
+      warningNotes: chapter.querySelectorAll('.chart-note--warn').length,
+      warningSymbols: chapter.innerText.includes('⚠'),
     }));
     charts += report.count;
-    if (report.failed.length || report.missing || report.overflow) failures.push({ id, ...report });
+    if (report.failed.length || report.missing || report.overflow || report.warningNotes || report.warningSymbols) failures.push({ id, ...report });
   }
-  for (const [id, name, snippet] of [['ch2', 'computeArea', lang === 'en' ? 'FP16' : '算力总规模'], ['ch2', 'regionDonut', 'PUE'], ['ch6', 'flywheel', lang === 'en' ? 'conceptual' : '概念']]) {
+  for (const [id, name, snippet] of [['ch2', 'computeArea', lang === 'en' ? 'FP16' : '算力总规模'], ['ch2', 'regionDonut', 'PUE'], ['ch6', 'flywheel', lang === 'en' ? 'conceptual' : '概念'], ['ch5', 'effectLollipop', lang === 'en' ? 'Tasks, samples' : '任务、样本'], ['ch5', 'beeswarm', lang === 'en' ? 'countries' : '国家']]) {
     await openChapter(id);
     const figure = page.locator(`figure[data-chart="${name}"]`);
     await figure.scrollIntoViewIfNeeded();

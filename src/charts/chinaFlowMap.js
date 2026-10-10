@@ -200,7 +200,10 @@ export function createChinaFlowMap(container, data) {
       return `<b>${SUFFIX_Q.has(q) ? `${v}${q}` : `${q}${v}`}</b>${d.label}`;
     });
   const clusterList = facts.append('div').attr('class', 'cfm__clusters');
-  const caveat = note(container, '', 'warn');
+  note(container, t(
+    `省份占比来自《中国新一代人工智能科技产业发展报告2023》，口径为该报告统计的 2200 家人工智能“骨干企业”；仅摘录前 ${share.records.length} 个省份，其余省份为“未摘录”，不代表数值为 0。`,
+    `Provincial shares come from the China New-Generation AI Technology Industry Development Report 2023 using the report’s sample of 2,200 leading enterprises. Only the top ${share.records.length} provinces are excerpted; the others are not excerpted, which does not mean zero.`,
+  ), 'warn');
   note(
     container,
     t(
@@ -665,15 +668,6 @@ export function createChinaFlowMap(container, data) {
       })
       .attr('tabindex', (f) => (choro && shareBy.has(f.properties.name) ? 0 : -1));
     tt(gInset).style('opacity', choro ? 1 : 0);
-
-    caveat.html(
-      choro
-        ? t(
-            `⚠ 省份占比来自《中国新一代人工智能科技产业发展报告2023》，口径为该报告统计的 2200 家人工智能“骨干企业”；仅摘录前 ${share.records.length} 个省份，其余省份为“未摘录”，不代表数值为 0。`,
-            `⚠ Provincial shares come from the <i>China New-Generation AI Technology Industry Development Report 2023</i> using the report’s sample of 2,200 “leading enterprises”. Only the top ${share.records.length} provinces are excerpted; the others are “not excerpted”, which does not mean zero.`,
-          )
-        : '',
-    );
 
     renderLabels(animate);
     renderLegend();

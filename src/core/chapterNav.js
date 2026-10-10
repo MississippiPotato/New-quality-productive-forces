@@ -1,4 +1,5 @@
 import { t, isEn, onLangChange } from './i18n.js';
+import { navIcon } from './navIcons.js';
 
 let navigateTo;
 export function goToChapter(href) {
@@ -13,8 +14,8 @@ export function initChapterNav() {
   toolbar.innerHTML = `<button type="button" class="btn reader-back"></button>
     <button type="button" class="btn reader-menu" aria-haspopup="dialog"></button>
     <span class="reader-location" aria-live="polite"></span>
-    <button type="button" class="btn reader-prev"></button>
-    <button type="button" class="btn reader-next"></button>`;
+    <div class="reader-turns"><button type="button" class="btn reader-prev"></button>
+    <button type="button" class="btn reader-next"></button></div>`;
   header.querySelector('.topbar__chapter').replaceWith(toolbar);
   document.querySelector('.navdots')?.closest('nav')?.remove();
   const dialog = document.createElement('dialog');
@@ -53,18 +54,19 @@ export function initChapterNav() {
     const index = chapters.indexOf(current);
     toolbar.setAttribute('aria-label', t('阅读导航', 'Reading navigation'));
     document.querySelector('.evidence-entry')?.setAttribute('aria-label', t('数据阅读入口', 'Explore the evidence'));
-    toolbar.querySelector('.reader-back').textContent = t('← 返回', '← Back');
+    toolbar.querySelector('.reader-back').innerHTML = `${navIcon('back')}<span>${t('返回', 'Back')}</span>`;
+    toolbar.querySelector('.reader-back').setAttribute('aria-label', t('返回', 'Back'));
     toolbar.querySelector('.reader-back').disabled = index === 0 && routeIndex === 0;
-    toolbar.querySelector('.reader-menu').textContent = t('☰ 目录', '☰ Chapters');
-    toolbar.querySelector('.reader-location').innerHTML = `<span>${number(index)}</span> ${shortTitle(index)}`;
-    toolbar.querySelector('.reader-prev').textContent = '←';
-    toolbar.querySelector('.reader-next').textContent = '→';
+    toolbar.querySelector('.reader-menu').innerHTML = `${navIcon('menu')}<span>${t('目录', 'Chapters')}</span>`;
+    toolbar.querySelector('.reader-location').innerHTML = `<span>${number(index)}</span><strong>${shortTitle(index)}</strong>`;
+    toolbar.querySelector('.reader-prev').innerHTML = navIcon('previous');
+    toolbar.querySelector('.reader-next').innerHTML = navIcon('next');
     toolbar.querySelector('.reader-prev').setAttribute('aria-label', t('上一章', 'Previous chapter'));
     toolbar.querySelector('.reader-next').setAttribute('aria-label', t('下一章', 'Next chapter'));
     toolbar.querySelector('.reader-prev').disabled = index === 0;
     toolbar.querySelector('.reader-next').disabled = index === chapters.length - 1;
     sidebar.setAttribute('aria-label', t('章节目录', 'Chapters'));
-    sidebar.innerHTML = `<a class="sidebar-brand" href="#top"><span class="sidebar-mark" aria-hidden="true">◈</span>${t('智能涌现', 'Emergence')}</a><p class="sidebar-eyebrow">${t('人工智能与新质生产力', 'AI & PRODUCTIVITY')}</p><nav class="directory-list">${contents()}</nav>`;
+    sidebar.innerHTML = `<a class="sidebar-brand" href="#top">${header.querySelector('.topbar__logo').outerHTML}${t('智能涌现', 'Emergence')}</a><p class="sidebar-eyebrow">${t('人工智能与新质生产力', 'AI & PRODUCTIVITY')}</p><nav class="directory-list">${contents()}</nav>`;
     dialog.innerHTML = `<header class="directory-head"><div><p>${t('用数据回答四个问题', 'Four questions, explored through data')}</p><h2 id="directory-title">${t('章节目录', 'Chapters')}</h2></div><button type="button" class="btn directory-close">${t('关闭', 'Close')}</button></header>
       <nav class="directory-list">${contents(true)}</nav>`;
     dialog.querySelector('.directory-close').addEventListener('click', () => dialog.close());

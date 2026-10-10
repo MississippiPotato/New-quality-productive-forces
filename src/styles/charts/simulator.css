@@ -9,11 +9,10 @@
   gap: 8px;
   margin: 0 0 16px;
   padding: 10px 14px;
-  border: 1px solid color-mix(in srgb, var(--rose) 55%, var(--border));
+  border: 1px solid var(--border);
   border-radius: 12px;
-  background: color-mix(in srgb, var(--rose) 12%, var(--panel));
+  background: var(--panel-2);
   backdrop-filter: blur(8px);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.25);
   color: var(--text);
   font-size: 14px;
   font-weight: 600;
