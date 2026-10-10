@@ -1,6 +1,7 @@
 import './styles/tokens.css';
 import './styles/base.css';
 import './styles/sections.css';
+import './styles/reader.css';
 import { initTheme, setTheme, toggleTheme, setMotion, theme } from './core/theme.js';
 import { bindFacts } from './core/facts.js';
 import { initFigures } from './core/figure.js';
@@ -85,9 +86,9 @@ addEventListener('scroll', onScroll, { passive: true });
 onScroll();
 
 // ---------- 数据绑定、图表、滚动叙事 ----------
+initNav();
 bindFacts();
 initFigures();
 initScrolly();
-initNav();
 const table = document.getElementById('source-summary');
 if (table) renderSourceTable(table);

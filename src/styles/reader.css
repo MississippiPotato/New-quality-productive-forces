@@ -1,0 +1,54 @@
+[hidden] { display: none !important; }
+:root { --reader-header: 125px; }
+.chapter-reader { scroll-padding-top: calc(var(--reader-header) + 16px); }
+.reader-nav { position: fixed; z-index: 49; inset-inline: 0; display: flex; gap: 8px; align-items: center; padding: 8px 24px; color: var(--text); background: var(--panel); border-bottom: 1px solid var(--border); }
+.reader-nav .btn { min-height: 44px; white-space: nowrap; }
+.reader-location { flex: 1; min-width: 0; font-size: 14px; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
+.btn:disabled { opacity: .35; cursor: default; }
+.chapter-reader .chapter { padding-top: calc(var(--reader-header) + 40px); border-top: 0; }
+.chapter-reader .hero, .chapter-reader .outro { padding-top: calc(var(--reader-header) + 48px); }
+.chapter-reader .site-footer { padding-top: calc(var(--reader-header) + 40px); min-height: 100vh; }
+.chapter-reader .scrolly__graphic { top: calc(var(--reader-header) + 12px); }
+.chapter-reader .chapter__num { font-size: clamp(48px, 6vw, 76px); opacity: .8; }
+.chapter-pager { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: var(--maxw); margin: 48px auto 0; padding: 24px 0; border-top: 1px solid var(--border); }
+.chapter-pager .btn { min-height: 44px; text-decoration: none; }
+.chapter-directory { width: min(900px, calc(100% - 32px)); max-height: calc(100dvh - 32px); padding: 24px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 20px; box-shadow: var(--shadow); }
+.chapter-directory::backdrop { background: rgba(0, 0, 0, .65); backdrop-filter: blur(6px); }
+.directory-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; gap: 12px; }
+.directory-head p { color: var(--muted); font-size: 13px; margin: 0; }
+.chapter-directory .btn, .reader-nav ~ main .fig__src { min-height: 44px; }
+.directory-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 10px; }
+.directory-list a { display: grid; gap: 4px; min-height: 80px; padding: 14px 16px; color: var(--text); text-decoration: none; border: 1px solid var(--border); border-radius: 12px; background: var(--bg); }
+.directory-list a:hover, .directory-list a[aria-current] { border-color: var(--cyan); background: color-mix(in srgb, var(--cyan) 8%, var(--bg)); }
+.directory-list small { color: var(--muted); font-size: 12px; }
+.directory-list strong { font-size: 15px; }
+.evidence-entry { margin: 24px auto; max-width: 920px; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; text-align: left; }
+.evidence-entry a { padding: 20px; border-radius: 14px; border: 1px solid var(--border); background: color-mix(in srgb,var(--panel) 85%,transparent); text-decoration: none; color: var(--text); }
+.evidence-entry small { color: var(--cyan); }
+.evidence-entry strong { display: block; margin: 8px 0; }
+.evidence-entry p { margin: 0; color: var(--muted); font-size: 14px; }
+.source-methods { padding: 18px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg); margin-bottom: 24px; }
+.source-methods p { color: var(--muted); font-size: 14px; }
+.chapter-reader .hero__scroll { margin-top: 12px; }
+@media (max-width: 800px) {
+  .topbar { gap: 8px; padding: 8px 12px; flex-wrap: wrap; }
+  .topbar__chapter { display: none; }
+  .topbar__actions { margin-left: auto; gap: 4px; flex-wrap: wrap; }
+  .topbar__actions .btn { padding: 6px 9px; min-height: 44px; font-size: 12px; }
+  .reader-nav { padding: 6px 12px; gap: 5px; flex-wrap: wrap; }
+  .reader-location { order: -1; flex: 0 0 100%; text-align: left; padding: 0 4px; font-size: 12px; }
+  .reader-nav .btn { flex: 1; font-size: 12px; padding: 6px; }
+  .chapter-pager { flex-wrap: wrap; }
+  .chapter-pager .btn--primary { flex-basis: 100%; text-align: center; }
+  .chapter-reader .chapter { padding-inline: 16px; }
+  .chapter-reader .scrolly__graphic { position: relative; top: auto; }
+  .chapter-reader .scrolly__steps { padding: 16px 0 0; }
+  .chapter-reader .scrolly .step { margin-bottom: 16px; opacity: 1; backdrop-filter: none; }
+  .chapter-directory { padding: 16px; }
+  .directory-list { grid-template-columns: 1fr; }
+  .evidence-entry { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .topbar__brand { font-size: 13px; gap: 4px; }
+  .topbar__actions #btn-motion { display: none; }
+}

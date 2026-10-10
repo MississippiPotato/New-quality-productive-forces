@@ -39,7 +39,7 @@ function ensureShell(fig) {
     btn.disabled = true;
     btn.addEventListener('click', () => {
       const ids = instances.get(fig)?.sourceIds;
-      if (ids) openSources([...ids], figTitle(fig, fig.dataset.chart));
+      if (ids) openSources([...ids], figTitle(fig, fig.dataset.chart), fig.dataset.chart);
     });
     foot.append(btn);
   }
@@ -86,6 +86,7 @@ function rebuildAll() {
     const btn = fig.querySelector('.fig__src');
     if (btn) btn.innerHTML = srcLabel();
     if (!state.chart || !state.factory) continue;
+    if (fig.closest('[data-nav]')?.hidden) { state.needsRebuild = true; continue; }
     const body = fig.querySelector('.fig__body');
     try {
       state.chart.destroy?.();
@@ -94,10 +95,14 @@ function rebuildAll() {
     }
     body.innerHTML = '';
     state.chart = state.factory(body, state.data, { ...fig.dataset });
+    state.needsRebuild = false;
     if (state.step != null) state.chart.update?.(state.step);
   }
 }
 onLangChange(rebuildAll);
+window.addEventListener('chapterchange', () => {
+  if ([...instances].some(([fig, state]) => state.needsRebuild && !fig.closest('[data-nav]')?.hidden)) rebuildAll();
+});
 
 /** 懒加载：figure 进入视口前一屏才初始化 */
 export function initFigures(root = document) {

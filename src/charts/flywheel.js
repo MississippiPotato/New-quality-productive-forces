@@ -9,7 +9,6 @@ import {
   chartHeight,
   fmt,
   legend,
-  note,
   srTable,
 } from '../core/chartUtils.js';
 import { theme, onThemeChange } from '../core/theme.js';
@@ -161,13 +160,7 @@ export function createFlywheel(container, data) {
       shape: 'line',
     },
   ]);
-  note(
-    container,
-    t(
-      '飞轮的箭头方向表达概念上的因果关系，并非统计估计；各节点数字来自不同来源、不同时点，不可相互换算。',
-      'Arrows express conceptual causality, not statistical estimates; node figures come from different sources and dates and cannot be converted into one another.',
-    ),
-  );
+
 
   const ev = flywheelEvidence(data);
   srTable(

@@ -1,6 +1,7 @@
 // 来源弹窗（单图）与数据来源总面板（全站），中英双语
 import { loader } from './loader.js';
-import { t, tf, isEn } from './i18n.js';
+import { t, tf, isEn, onLangChange } from './i18n.js';
+import { chartMethodsHtml, allMethodsHtml } from './chartMethods.js';
 
 const REL = () => ({
   A: { label: t('A 官方/原始', 'A · Official / primary'), cls: 'a' },
@@ -72,11 +73,11 @@ function show(title, html) {
   d.showModal();
 }
 
-export async function openSources(ids, title) {
+export async function openSources(ids, title, chartName) {
   const sources = await loader.json('sources');
   const byId = new Map(sources.map((s) => [s.id, s]));
   const list = ids.map((id) => byId.get(id)).filter(Boolean);
-  show(`${t('来源', 'Sources')} · ${title}`, `<ul class="src-list">${list.map(sourceItem).join('')}</ul>`);
+  show(`${t('来源与方法', 'Sources & methods')} · ${title}`, `${chartMethodsHtml(chartName)}<ul class="src-list">${list.map(sourceItem).join('')}</ul>`);
 }
 
 export async function openAllSources() {
@@ -90,7 +91,7 @@ export async function openAllSources() {
     .join(' ');
   show(
     t(`数据来源总面板（${sources.length} 条）`, `All data sources (${sources.length})`),
-    `<p class="src-legend">${t('可信度', 'Reliability')}：${legendHtml}</p>
+    `${allMethodsHtml()}<p class="src-legend">${t('可信度', 'Reliability')}：${legendHtml}</p>
      ${groups.map((g) => `<h3>${g.name}</h3><ul class="src-list">${g.items.map(sourceItem).join('')}</ul>`).join('')}
      ${other.length ? `<h3>${t('其他', 'Other')}</h3><ul class="src-list">${other.map(sourceItem).join('')}</ul>` : ''}`,
   );
@@ -98,9 +99,21 @@ export async function openAllSources() {
 
 /** 页面底部内嵌的来源统计（不弹窗） */
 export async function renderSourceTable(el) {
+  renderMethods();
   const sources = await loader.json('sources');
   const counts = sources.reduce((m, s) => ((m[s.reliability] = (m[s.reliability] || 0) + 1), m), {});
   el.innerHTML = `<p class="src-summary">${Object.entries(REL())
     .map(([k, r]) => `<span class="badge badge--${r.cls}">${r.label}</span> ${counts[k] || 0}${t(' 条', '')}`)
     .join(' · ')}</p>`;
 }
+
+function renderMethods() {
+  const el = document.getElementById('chart-methods');
+  if (el) el.innerHTML = allMethodsHtml();
+}
+renderMethods();
+onLangChange(() => {
+  renderMethods();
+  const summary = document.getElementById('source-summary');
+  if (summary) renderSourceTable(summary);
+});

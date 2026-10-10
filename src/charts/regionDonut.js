@@ -9,7 +9,6 @@ import {
   tr,
   fmt,
   legend,
-  note,
   srTable,
   styleAxis,
   toDate,
@@ -74,22 +73,8 @@ export function createRegionDonut(container, data) {
       shape: 'square',
     })),
   );
-  note(
-    container,
-    t(
-      '⚠ 两个 PUE 数值口径不同：“全国在用算力中心平均”与“超大型算力设施平均”的统计范围与来源均不同，虚线只作并列对照，不是严格的时间序列，不能读作同口径下降幅度。',
-      '⚠ The two PUE values use different bases: “average of computing centres in use nationwide” and “average of very large computing facilities” differ in coverage and source. The dotted line is only a side-by-side comparison, not a strict time series, and should not be read as a like-for-like decline.',
-    ),
-    'warn',
-  );
-  note(
-    container,
-    t(
-      'PUE = 数据中心总耗电量 ÷ IT 设备耗电量，理论下限为 1.0。区域占比为智能算力规模在东部、西部、中部、东北的分布。',
-      'PUE = total data-centre electricity use ÷ IT equipment electricity use; the theoretical minimum is 1.0. Regional shares show how AI computing capacity is distributed across the eastern, western, central and northeastern regions.',
-    ),
-    'info',
-  );
+
+
   srTable(
     container,
     t(`区域智算规模占比（${dateLabel}）`, `AI compute share by region (${dateLabel})`),
@@ -120,7 +105,6 @@ export function createRegionDonut(container, data) {
   const gP = svgP.append('g');
   const gGrid = gP.append('g');
   const gRef = gP.append('g');
-  const gConn = gP.append('g');
   const gPts = gP.append('g');
   const gTicks = gP.append('g');
 
@@ -334,24 +318,6 @@ export function createRegionDonut(container, data) {
       });
     ref.select('line').attr('x1', 0).attr('x2', iw).attr('y1', y(1)).attr('y2', y(1));
     ref.select('text').attr('x', iw).attr('y', y(1)).text(t('理想值 1.0', 'Ideal 1.0'));
-
-    // 虚线连接（非时间序列）
-    gConn
-      .selectAll('path')
-      .data([pue])
-      .join('path')
-      .style('fill', 'none')
-      .style('stroke', 'var(--tool)')
-      .style('stroke-width', 2)
-      .style('stroke-dasharray', '2 6')
-      .style('stroke-linecap', 'round')
-      .attr(
-        'd',
-        d3
-          .line()
-          .x((d) => x(d.label))
-          .y((d) => y(d.value)),
-      );
 
     // 每个点：竖线到基线 + 圆点 + 数值
     const pts = gPts

@@ -6,6 +6,7 @@ import * as d3 from 'd3';
 import { observeSize, observeVisible, createSvg, chartHeight } from '../core/chartUtils.js';
 import { theme, onThemeChange } from '../core/theme.js';
 import { t, isEn } from '../core/i18n.js';
+import { goToChapter } from '../core/chapterNav.js';
 import '../styles/charts/factorForce.css';
 
 // 节点文案为代码标签：语言在图表创建时读取（切换语言时 figure.js 会重建图表）
@@ -85,13 +86,7 @@ function setLines(text, lines, firstDy) {
 
 /** 跳转到章节：平滑滚动 + 更新地址栏 hash（pushState 不触发瞬时跳转） */
 function navigate(href) {
-  const el = document.querySelector(href);
-  el?.scrollIntoView({ behavior: theme.reducedMotion ? 'auto' : 'smooth', block: 'start' });
-  try {
-    history.pushState(null, '', href);
-  } catch {
-    location.hash = href;
-  }
+  goToChapter(href);
 }
 
 export function createFactorForce(container) {

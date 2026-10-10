@@ -9,7 +9,6 @@ import {
   tr,
   fmt,
   legend,
-  note,
   styleAxis,
   toDate,
   srTable,
@@ -39,7 +38,6 @@ export function createComputeArea(container, data) {
     .attr('aria-label', t('口径切换', 'Measurement basis'));
   const svg = createSvg(container);
   const legendWrap = root.append('div');
-  const caveat = note(container, '', 'warn');
   srTable(
     container,
     t('中国算力规模（多口径）', 'China computing power (several bases)'),
@@ -81,7 +79,6 @@ export function createComputeArea(container, data) {
     .filter((r) => r.metric === 'total' || r.metric === 'intelligent')
     .map((r) => ({ ...r, d: toDate(r.date) }));
   const target = data.targets[0];
-  const unspecified = center.find((d) => d.metric === 'intelligent' && d.precision === '未注明');
   const racks = data.racks.map((r) => ({ ...r, d: toDate(r.date) }));
   const device = data.records.filter((r) => r.scope.startsWith('设备侧'));
   const DEVICE_LABEL = {
@@ -262,19 +259,7 @@ export function createComputeArea(container, data) {
             },
           ],
     );
-    caveat.html(
-      view === 'center'
-        ? t(
-            `⚠ 口径提示：${unspecified ? `${unspecified.date} 的 ${fmt.int(unspecified.value)} EFLOPS 未注明精度，` : ''}FP16 数据见圆点；“算力总规模”与“智能算力”是不同指标，FP16 与 FP32 口径不可直接比较。${highlight ? '<strong>虚线段跨越了口径变化，不应读作同口径增速。</strong>' : ''}`,
-            `⚠ Basis: ${unspecified ? `the ${fmt.int(unspecified.value)} EFLOPS of ${unspecified.date} has no stated precision; ` : ''}FP16 values are circles. “Total compute” and “AI compute” are different metrics, and FP16 and FP32 figures are not directly comparable.${highlight ? ' <strong>The dashed segment crosses a change of basis and should not be read as a like-for-like growth rate.</strong>' : ''}`,
-          )
-        : view === 'racks'
-          ? t(
-              '口径提示：2023 年为“在用数据中心机架”，2025 年为“在用算力中心 / 算力设施标准机架”，名称随统计口径演变。',
-              'Basis: 2023 counts data-centre racks in use; 2025 counts standard racks in computing centres / facilities — the statistical definition evolved.',
-            )
-          : '',
-    );
+
   }
 
   function renderDevice(iw, ih, tt) {
@@ -326,12 +311,7 @@ export function createComputeArea(container, data) {
       { label: t('中国', 'China'), color: 'var(--orange)', shape: 'square' },
       { label: t('全球', 'World'), color: 'var(--other)', shape: 'square' },
     ]);
-    caveat.html(
-      t(
-        '⚠ 设备侧 FP32 口径（计算设备算力总和）与上一视图的算力中心侧 FP16 口径不可直接比较。',
-        '⚠ Device-side FP32 figures (sum of computing devices) are not directly comparable with the data-centre-side FP16 figures in the other view.',
-      ),
-    );
+
   }
 
   function tipHtml(d) {
