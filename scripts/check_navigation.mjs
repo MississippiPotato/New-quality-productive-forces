@@ -24,13 +24,22 @@ await mkdir('output/playwright', { recursive: true });
 const current = () => page.evaluate(() => document.body.dataset.chapter);
 async function openChapter(id) {
   await page.locator('.reader-menu').click();
-  await page.locator(`.directory-list a[href="#${id}"]`).click();
+  await page.locator(`.chapter-directory .directory-list a[href="#${id}"]`).click();
   await page.waitForFunction((expected) => document.body.dataset.chapter === expected, id);
   await page.waitForTimeout(180);
 }
 try {
   await page.goto(`${base}/?lang=${lang}&theme=${width < 800 ? 'light' : 'dark'}`, { waitUntil: 'networkidle' });
   assert.equal(await current(), 'top');
+  assert.equal(await page.locator('.reader-sidebar .directory-group').count(), 4);
+  if (width > 1100) {
+    const chapterLink = page.locator('.reader-sidebar a[href="#ch5"]');
+    await chapterLink.focus();
+    await page.keyboard.press('Enter');
+    await page.waitForFunction(() => document.body.dataset.chapter === 'ch5');
+    assert.equal(await page.locator('.reader-sidebar a[aria-current="page"]').getAttribute('href'), '#ch5');
+    await page.locator('.reader-sidebar .directory-list a[href="#top"]').click();
+  }
   await page.waitForTimeout(1800);
   await page.screenshot({ path: `output/playwright/home-${width}-${lang}.png` });
   await openChapter('ch5');
@@ -46,6 +55,7 @@ try {
   await page.reload({ waitUntil: 'networkidle' });
   assert.equal(await current(), 'ch5');
   await page.locator('.reader-menu').click();
+  assert.equal(await page.locator('.chapter-directory .directory-group').count(), 4);
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('.chapter-directory').evaluate((el) => el.open), false);
   await openChapter('ch1');
