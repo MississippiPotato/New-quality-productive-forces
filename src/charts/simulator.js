@@ -10,9 +10,9 @@ import '../styles/charts/simulator.css';
 
 // source_id → 研究简称（标识符映射，不含统计数字）；语言在图表创建时读取
 const studies = () => ({
-  nber_w31161: t(
-    'Brynjolfsson、Li、Raymond，NBER 工作论文 w31161（客服实验）',
-    'Brynjolfsson, Li & Raymond, NBER Working Paper w31161 (customer-support experiment)',
+  qje_2025_brynjolfsson: t(
+    'Brynjolfsson、Li、Raymond，QJE（客服研究）',
+    'Brynjolfsson, Li & Raymond, QJE (customer-support study)',
   ),
   peng_2023_copilot: t(
     'Peng 等，arXiv 2302.06590（GitHub Copilot 编程实验）',

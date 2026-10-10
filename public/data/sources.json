@@ -563,8 +563,7 @@
     "reliability": "A",
     "manual": true,
     "chapter": [
-      5,
-      11
+      5
     ],
     "summary": "5,179 名客服。表 2 第 6 列首选设定 log 系数 0.138（SE 0.0199，按办公地点聚类）；本站据此推算 95% CI 约 +10.4% 至 +19.4%。",
     "summary_en": "5,179 customer-support agents. Preferred specification in Table 2, column 6: log coefficient 0.138 (SE 0.0199, clustered by office location); this site derives a 95% CI of about +10.4% to +19.4% from it.",
@@ -573,17 +572,18 @@
   {
     "id": "qje_2025_brynjolfsson",
     "org": "Quarterly Journal of Economics",
-    "title": "Generative AI at Work（QJE 2025 正式版）",
-    "title_en": "Generative AI at Work (QJE 2025, published version)",
+    "title": "Generative AI at Work（QJE 2025）",
+    "title_en": "Generative AI at Work (QJE 2025)",
     "date": "2025",
     "url": "https://doi.org/10.1093/qje/qjae044",
     "reliability": "A",
     "manual": true,
     "chapter": [
-      5
+      5,
+      11
     ],
-    "summary": "QJE 140(2): 889–942；5,172 名客服、平均 +15%。正式版表格主规格系数 0.301（每小时解决问题数）、标准误 0.0329；本站据此计算 95% 置信区间约 [0.237, 0.365]，论文未直接列出。",
-    "summary_en": "QJE 140(2): 889–942; 5,172 customer-support agents, +15% on average. Main-specification coefficient in the published tables 0.301 (resolutions per hour), standard error 0.0329; from these this site computes a 95% confidence interval of about [0.237, 0.365], which the paper does not list itself.",
+    "summary": "QJE 140(2): 889–942；5,172 名客服，每小时解决问题数平均提升约 15%，新手和低技能员工提升约 30%。本网站的图表、正文与客服模拟参数统一采用这一发表结果。同一研究早期工作论文报告 5,179 名客服、平均 14%、新手和低技能员工 34%；这些是版本差异，不作为另一项独立研究重复展示。期刊论文主规格系数 0.301（每小时解决问题数）、标准误 0.0329；本站据此计算 95% 置信区间约 [0.237, 0.365]，论文未直接列出，且该区间不是百分比。",
+    "summary_en": "QJE 140(2): 889–942; 5,172 customer-support agents, about 15% more issues resolved per hour on average and about 30% for less experienced and lower-skilled workers. The chart, narrative and customer-support simulator consistently use these published results. An earlier working-paper version of the same study reported 5,179 agents, 14% on average and 34% for less experienced and lower-skilled workers; these version differences are not displayed as an independent study. The main-specification coefficient is 0.301 resolutions per hour (SE 0.0329); this site derives a 95% confidence interval of about [0.237, 0.365], which the paper does not list itself and which is not in percentage units.",
     "quote": "Access to AI assistance increases worker productivity, as measured by issues resolved per hour, by 15% on average, with substantial heterogeneity across workers."
   },
   {

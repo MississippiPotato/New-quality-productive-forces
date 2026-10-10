@@ -44,7 +44,7 @@ function ciText(d) {
   return `${range}${derived}`;
 }
 
-/** 样本量：中文“5179名客服”；英文“5,179 agents” */
+/** 样本量：中文“5172名客服”；英文“5,172 agents” */
 const sampleText = (d) =>
   isEn() ? `${fmt.int(d.sample)} ${tf(d, 'sample_unit')}` : `${d.sample}${d.sample_unit}`;
 

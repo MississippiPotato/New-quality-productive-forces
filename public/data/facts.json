@@ -320,41 +320,19 @@
       "label_en": "Average annual growth of molecule/gene/protein patents, 2018–2023",
       "source_id": "wipo_genai_2024"
     },
-    "bryn_avg": {
-      "value": 14,
-      "unit": "%",
-      "label": "客服每小时解决问题数平均提升（NBER 工作论文）",
-      "label_en": "Average gain in issues resolved per hour by customer-support agents (NBER working paper)",
-      "source_id": "nber_w31161"
-    },
-    "bryn_novice": {
-      "value": 34,
-      "unit": "%",
-      "label": "新手和低技能员工提升",
-      "label_en": "Gain for novice and low-skilled workers",
-      "source_id": "nber_w31161"
-    },
-    "bryn_n": {
-      "value": 5179,
-      "unit": " 名",
-      "unit_en": "",
-      "label": "样本客服人数（工作论文）",
-      "label_en": "Customer-support agents in the sample (working paper)",
-      "source_id": "nber_w31161"
-    },
     "qje_avg": {
       "value": 15,
       "unit": "%",
-      "label": "QJE 正式版平均提升",
-      "label_en": "Average gain in the published QJE version",
+      "label": "客服每小时解决问题数平均提升",
+      "label_en": "Average gain in issues resolved per hour by customer-support agents",
       "source_id": "qje_2025_brynjolfsson"
     },
     "qje_n": {
       "value": 5172,
       "unit": " 名客服",
       "unit_en": " agents",
-      "label": "QJE 正式版样本",
-      "label_en": "Sample in the published QJE version",
+      "label": "客服研究样本人数",
+      "label_en": "Customer-support agents in the study sample",
       "source_id": "qje_2025_brynjolfsson"
     },
     "copilot_faster": {
@@ -961,6 +939,13 @@
       "label": "国家智慧教育平台累计注册用户（超过）",
       "label_en": "Cumulative registered users of the national smart education platform (more than)",
       "source_id": "moe_platform_2025"
+    },
+    "qje_novice": {
+      "value": 30,
+      "unit": "%",
+      "label": "新手和低技能客服每小时解决问题数提升",
+      "label_en": "Gain in issues resolved per hour for less experienced and lower-skilled customer-support agents",
+      "source_id": "qje_2025_brynjolfsson"
     }
   }
 }

@@ -82,9 +82,9 @@
         "name": "客服",
         "name_en": "Customer support",
         "kind": "throughput",
-        "avg": 14,
-        "novice": 34,
-        "source_id": "nber_w31161"
+        "avg": 15,
+        "novice": 30,
+        "source_id": "qje_2025_brynjolfsson"
       },
       {
         "role": "coding",
